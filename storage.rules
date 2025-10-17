@@ -1,0 +1,71 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Helper functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    
+    function isAdmin() {
+      return isAuthenticated() && 
+        firestore.get(/databases/(default)/documents/users/$(request.auth.uid)).data.role == 'admin';
+    }
+    
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+    
+    // Default rule - deny all
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+    
+    // User profile images
+    match /users/{userId}/profile/{imageId} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated() && (isOwner(userId) || isAdmin());
+    }
+    
+    // Project files
+    match /projects/{projectId}/{allFiles=**} {
+      allow read: if isAuthenticated() && 
+        (firestore.get(/databases/(default)/documents/projects/$(projectId)).data.team.hasAny([request.auth.uid]) || 
+         firestore.get(/databases/(default)/documents/projects/$(projectId)).data.owner == request.auth.uid || 
+         isAdmin());
+      allow write: if isAuthenticated() && 
+        (firestore.get(/databases/(default)/documents/projects/$(projectId)).data.team.hasAny([request.auth.uid]) || 
+         firestore.get(/databases/(default)/documents/projects/$(projectId)).data.owner == request.auth.uid || 
+         isAdmin());
+    }
+    
+    // Email attachments
+    match /emails/{emailId}/attachments/{attachmentId} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated();
+    }
+    
+    // Transcript files
+    match /transcripts/{transcriptId}/{allFiles=**} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated();
+    }
+    
+    // Crisis response files
+    match /crisis/{responseId}/{allFiles=**} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated();
+    }
+    
+    // Playbook files
+    match /playbooks/{playbookId}/{allFiles=**} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated();
+    }
+    
+    // Report files
+    match /reports/{reportId}/{allFiles=**} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated() && isAdmin();
+    }
+  }
+}

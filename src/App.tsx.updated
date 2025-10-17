@@ -1,0 +1,31 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import './App.css';
+
+// Import pages
+import AdminConfigPage from './pages/AdminConfigPage';
+import TranscriptProcessingPage from './pages/TranscriptProcessingPage';
+import ZoomMeetingsPage from './pages/ZoomMeetingsPage';
+import PlaybooksPage from './pages/PlaybooksPage';
+import InvoicesPage from './pages/InvoicesPage';
+import CrisisResponsePage from './pages/CrisisResponsePage';
+import BmadAnalystPage from './pages/BmadAnalystPage';
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Navigate to="/admin/config" replace />} />
+        <Route path="/admin/config" element={<AdminConfigPage />} />
+        <Route path="/admin/transcripts" element={<TranscriptProcessingPage />} />
+        <Route path="/admin/zoom" element={<ZoomMeetingsPage />} />
+        <Route path="/admin/playbooks" element={<PlaybooksPage />} />
+        <Route path="/admin/invoices" element={<InvoicesPage />} />
+        <Route path="/admin/crisis-response" element={<CrisisResponsePage />} />
+        <Route path="/admin/bmad-analyst" element={<BmadAnalystPage />} />
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;

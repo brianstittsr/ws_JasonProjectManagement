@@ -1,0 +1,199 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Helper functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    
+    function isAdmin() {
+      return isAuthenticated() && 
+        get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
+    }
+    
+    function isManager() {
+      return isAuthenticated() && 
+        get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'manager';
+    }
+    
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+    
+    function isTeamMember(projectId) {
+      return isAuthenticated() && 
+        (request.auth.uid in get(/databases/$(database)/documents/projects/$(projectId)).data.team || 
+         request.auth.uid == get(/databases/$(database)/documents/projects/$(projectId)).data.owner);
+    }
+    
+    // User profiles
+    match /users/{userId} {
+      allow read: if isAuthenticated();
+      allow create: if isAuthenticated() && request.auth.uid == userId;
+      allow update: if isOwner(userId) || isAdmin();
+      allow delete: if isAdmin();
+    }
+    
+    // Projects
+    match /projects/{projectId} {
+      allow read: if isAuthenticated();
+      allow create: if isAuthenticated() && (isAdmin() || isManager());
+      allow update: if isAdmin() || isManager() || isTeamMember(projectId);
+      allow delete: if isAdmin() || isOwner(resource.data.owner);
+      
+      // Features
+      match /features/{featureId} {
+        allow read: if isAuthenticated() && isTeamMember(projectId);
+        allow write: if isAuthenticated() && (isAdmin() || isManager() || isTeamMember(projectId));
+        
+        // Tasks
+        match /tasks/{taskId} {
+          allow read: if isAuthenticated() && isTeamMember(projectId);
+          allow write: if isAuthenticated() && (isAdmin() || isManager() || isTeamMember(projectId));
+        }
+      }
+    }
+    
+    // Jira configurations
+    match /jiraConfigs/{configId} {
+      allow read: if isAuthenticated() && (isOwner(resource.data.userId) || isAdmin());
+      allow write: if isAuthenticated() && (isOwner(request.resource.data.userId) || isAdmin());
+    }
+    
+    // Jira issues
+    match /jiraIssues/{issueId} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated() && (isAdmin() || isManager());
+      
+      // Comments
+      match /comments/{commentId} {
+        allow read: if isAuthenticated();
+        allow write: if isAuthenticated();
+      }
+      
+      // Follow-ups
+      match /followUps/{followUpId} {
+        allow read: if isAuthenticated();
+        allow write: if isAuthenticated();
+      }
+    }
+    
+    // Email configurations
+    match /emailConfigs/{configId} {
+      allow read: if isAuthenticated() && (isOwner(resource.data.userId) || isAdmin());
+      allow write: if isAuthenticated() && (isOwner(request.resource.data.userId) || isAdmin());
+    }
+    
+    // Processed emails
+    match /processedEmails/{emailId} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated();
+      
+      // Email attachments
+      match /attachments/{attachmentId} {
+        allow read: if isAuthenticated();
+        allow write: if isAuthenticated();
+      }
+    }
+    
+    // Email auto-drafts
+    match /emailAutoDrafts/{draftId} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated();
+    }
+    
+    // Playbook templates
+    match /playbookTemplates/{templateId} {
+      allow read: if isAuthenticated();
+      allow create: if isAuthenticated() && (isAdmin() || isManager());
+      allow update: if isAuthenticated() && (isAdmin() || isManager() || resource.data.createdBy == request.auth.uid);
+      allow delete: if isAuthenticated() && (isAdmin() || resource.data.createdBy == request.auth.uid);
+    }
+    
+    // Playbook runs
+    match /playbookRuns/{runId} {
+      allow read: if isAuthenticated();
+      allow create: if isAuthenticated();
+      allow update: if isAuthenticated() && (isAdmin() || isManager() || resource.data.owner == request.auth.uid || request.auth.uid in resource.data.participants);
+      allow delete: if isAuthenticated() && (isAdmin() || resource.data.owner == request.auth.uid);
+    }
+    
+    // Crisis templates
+    match /crisisTemplates/{templateId} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated() && (isAdmin() || isManager());
+    }
+    
+    // Crisis responses
+    match /crisisResponses/{responseId} {
+      allow read: if isAuthenticated();
+      allow create: if isAuthenticated();
+      allow update: if isAuthenticated() && (isAdmin() || isManager() || resource.data.assignedTo == request.auth.uid);
+      allow delete: if isAuthenticated() && (isAdmin() || isManager());
+    }
+    
+    // WhatsApp configurations
+    match /whatsAppConfigs/{configId} {
+      allow read: if isAuthenticated() && (isOwner(resource.data.userId) || isAdmin());
+      allow write: if isAuthenticated() && (isOwner(request.resource.data.userId) || isAdmin());
+    }
+    
+    // WhatsApp messages
+    match /whatsAppMessages/{messageId} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated() && (isAdmin() || isManager());
+    }
+    
+    // Archon configurations
+    match /archonConfigs/{configId} {
+      allow read: if isAuthenticated() && (isOwner(resource.data.userId) || isAdmin());
+      allow write: if isAuthenticated() && (isOwner(request.resource.data.userId) || isAdmin());
+    }
+    
+    // Archon knowledge
+    match /archonKnowledge/{knowledgeId} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated() && (isAdmin() || isManager());
+    }
+    
+    // Report configurations
+    match /reportConfigs/{configId} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated() && (isAdmin() || isManager());
+    }
+    
+    // Reports
+    match /reports/{reportId} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated() && (isAdmin() || isManager());
+    }
+    
+    // Transcripts
+    match /transcripts/{transcriptId} {
+      allow read: if isAuthenticated();
+      allow create: if isAuthenticated();
+      allow update: if isAuthenticated() && (isAdmin() || isManager() || resource.data.userId == request.auth.uid);
+      allow delete: if isAuthenticated() && (isAdmin() || resource.data.userId == request.auth.uid);
+      
+      // Transcript action items
+      match /actionItems/{itemId} {
+        allow read: if isAuthenticated();
+        allow write: if isAuthenticated();
+      }
+    }
+    
+    // BMAD Analyst sessions
+    match /bmadAnalystSessions/{sessionId} {
+      allow read: if isAuthenticated() && (isOwner(resource.data.userId) || isAdmin());
+      allow create: if isAuthenticated() && isOwner(request.resource.data.userId);
+      allow update: if isAuthenticated() && isOwner(resource.data.userId);
+      allow delete: if isAuthenticated() && (isOwner(resource.data.userId) || isAdmin());
+      
+      // BMAD Analyst messages
+      match /messages/{messageId} {
+        allow read: if isAuthenticated() && (isOwner(get(/databases/$(database)/documents/bmadAnalystSessions/$(sessionId)).data.userId) || isAdmin());
+        allow write: if isAuthenticated() && isOwner(get(/databases/$(database)/documents/bmadAnalystSessions/$(sessionId)).data.userId);
+      }
+    }
+  }
+}
