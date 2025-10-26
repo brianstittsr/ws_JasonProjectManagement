@@ -1,0 +1,326 @@
+{
+  "folders": [
+    {
+      "path": "/Resbyte",
+      "children": [
+        {
+          "path": "/Resbyte/Clients",
+          "children": [
+            {
+              "path": "/Resbyte/Clients/La_Madeleine",
+              "children": [
+                {
+                  "path": "/Resbyte/Clients/La_Madeleine/Project_Documentation",
+                  "children": [
+                    { "path": "/Resbyte/Clients/La_Madeleine/Project_Documentation/Project_Brief" },
+                    { "path": "/Resbyte/Clients/La_Madeleine/Project_Documentation/Requirements" },
+                    { "path": "/Resbyte/Clients/La_Madeleine/Project_Documentation/Technical_Specifications" },
+                    { "path": "/Resbyte/Clients/La_Madeleine/Project_Documentation/SOW_Contracts" }
+                  ]
+                },
+                {
+                  "path": "/Resbyte/Clients/La_Madeleine/Meeting_Records",
+                  "children": [
+                    { "path": "/Resbyte/Clients/La_Madeleine/Meeting_Records/Transcripts" },
+                    { "path": "/Resbyte/Clients/La_Madeleine/Meeting_Records/Recordings" },
+                    { "path": "/Resbyte/Clients/La_Madeleine/Meeting_Records/Action_Items" },
+                    { "path": "/Resbyte/Clients/La_Madeleine/Meeting_Records/Decisions" }
+                  ]
+                },
+                {
+                  "path": "/Resbyte/Clients/La_Madeleine/Technical_Integration",
+                  "children": [
+                    {
+                      "path": "/Resbyte/Clients/La_Madeleine/Technical_Integration/NCR_Voyix",
+                      "children": [
+                        { "path": "/Resbyte/Clients/La_Madeleine/Technical_Integration/NCR_Voyix/API_Documentation" },
+                        { "path": "/Resbyte/Clients/La_Madeleine/Technical_Integration/NCR_Voyix/Webhook_Configurations" },
+                        { "path": "/Resbyte/Clients/La_Madeleine/Technical_Integration/NCR_Voyix/Test_Results" }
+                      ]
+                    },
+                    { "path": "/Resbyte/Clients/La_Madeleine/Technical_Integration/Other_Systems" }
+                  ]
+                },
+                {
+                  "path": "/Resbyte/Clients/La_Madeleine/Reports",
+                  "children": [
+                    { "path": "/Resbyte/Clients/La_Madeleine/Reports/Weekly_Status" },
+                    { "path": "/Resbyte/Clients/La_Madeleine/Reports/Monthly_Executive" },
+                    { "path": "/Resbyte/Clients/La_Madeleine/Reports/Metrics_Dashboard" }
+                  ]
+                },
+                {
+                  "path": "/Resbyte/Clients/La_Madeleine/Deliverables",
+                  "children": [
+                    { "path": "/Resbyte/Clients/La_Madeleine/Deliverables/Phase_1" },
+                    { "path": "/Resbyte/Clients/La_Madeleine/Deliverables/Phase_2" },
+                    { "path": "/Resbyte/Clients/La_Madeleine/Deliverables/Phase_3" }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "path": "/Resbyte/Internal",
+          "children": [
+            {
+              "path": "/Resbyte/Internal/Templates",
+              "children": [
+                {
+                  "path": "/Resbyte/Internal/Templates/Project_Management",
+                  "children": [
+                    { "path": "/Resbyte/Internal/Templates/Project_Management/Project_Brief_Templates" },
+                    { "path": "/Resbyte/Internal/Templates/Project_Management/SOW_Templates" },
+                    { "path": "/Resbyte/Internal/Templates/Project_Management/Status_Report_Templates" },
+                    { "path": "/Resbyte/Internal/Templates/Project_Management/Risk_Register_Templates" }
+                  ]
+                },
+                {
+                  "path": "/Resbyte/Internal/Templates/Meeting_Templates",
+                  "children": [
+                    { "path": "/Resbyte/Internal/Templates/Meeting_Templates/Agenda_Templates" },
+                    { "path": "/Resbyte/Internal/Templates/Meeting_Templates/Minutes_Templates" },
+                    { "path": "/Resbyte/Internal/Templates/Meeting_Templates/Action_Item_Templates" }
+                  ]
+                },
+                {
+                  "path": "/Resbyte/Internal/Templates/Technical_Documentation",
+                  "children": [
+                    { "path": "/Resbyte/Internal/Templates/Technical_Documentation/API_Integration_Templates" },
+                    { "path": "/Resbyte/Internal/Templates/Technical_Documentation/System_Architecture_Templates" },
+                    { "path": "/Resbyte/Internal/Templates/Technical_Documentation/Test_Plan_Templates" }
+                  ]
+                },
+                {
+                  "path": "/Resbyte/Internal/Templates/Financial",
+                  "children": [
+                    { "path": "/Resbyte/Internal/Templates/Financial/Invoice_Templates" },
+                    { "path": "/Resbyte/Internal/Templates/Financial/Budget_Templates" },
+                    { "path": "/Resbyte/Internal/Templates/Financial/Time_Tracking_Templates" }
+                  ]
+                }
+              ]
+            },
+            {
+              "path": "/Resbyte/Internal/Playbooks",
+              "children": [
+                { "path": "/Resbyte/Internal/Playbooks/Daily_Standup" },
+                { "path": "/Resbyte/Internal/Playbooks/Sprint_Planning" },
+                { "path": "/Resbyte/Internal/Playbooks/Weekly_Status_Report" },
+                { "path": "/Resbyte/Internal/Playbooks/Feature_Development_Lifecycle" },
+                { "path": "/Resbyte/Internal/Playbooks/Bug_Triage_Process" }
+              ]
+            },
+            {
+              "path": "/Resbyte/Internal/Team",
+              "children": [
+                { "path": "/Resbyte/Internal/Team/Skills_Matrix" },
+                { "path": "/Resbyte/Internal/Team/Resource_Allocation" },
+                { "path": "/Resbyte/Internal/Team/Training_Materials" },
+                { "path": "/Resbyte/Internal/Team/Process_Documentation" }
+              ]
+            },
+            {
+              "path": "/Resbyte/Internal/Knowledge_Base",
+              "children": [
+                { "path": "/Resbyte/Internal/Knowledge_Base/Technical_Guides" },
+                { "path": "/Resbyte/Internal/Knowledge_Base/Best_Practices" },
+                { "path": "/Resbyte/Internal/Knowledge_Base/Lessons_Learned" },
+                { "path": "/Resbyte/Internal/Knowledge_Base/Reference_Materials" }
+              ]
+            }
+          ]
+        },
+        {
+          "path": "/Resbyte/Generated_Documents",
+          "children": [
+            {
+              "path": "/Resbyte/Generated_Documents/Reports",
+              "children": [
+                {
+                  "path": "/Resbyte/Generated_Documents/Reports/CEO_Reports",
+                  "children": [
+                    { "path": "/Resbyte/Generated_Documents/Reports/CEO_Reports/Daily" },
+                    { "path": "/Resbyte/Generated_Documents/Reports/CEO_Reports/Weekly" },
+                    { "path": "/Resbyte/Generated_Documents/Reports/CEO_Reports/Monthly" }
+                  ]
+                },
+                { "path": "/Resbyte/Generated_Documents/Reports/Client_Reports" },
+                { "path": "/Resbyte/Generated_Documents/Reports/Team_Reports" }
+              ]
+            },
+            {
+              "path": "/Resbyte/Generated_Documents/Meeting_Documents",
+              "children": [
+                { "path": "/Resbyte/Generated_Documents/Meeting_Documents/Transcripts" },
+                { "path": "/Resbyte/Generated_Documents/Meeting_Documents/Minutes" },
+                { "path": "/Resbyte/Generated_Documents/Meeting_Documents/Action_Items" }
+              ]
+            },
+            {
+              "path": "/Resbyte/Generated_Documents/Project_Documentation",
+              "children": [
+                { "path": "/Resbyte/Generated_Documents/Project_Documentation/Requirements" },
+                { "path": "/Resbyte/Generated_Documents/Project_Documentation/Specifications" },
+                { "path": "/Resbyte/Generated_Documents/Project_Documentation/Plans" }
+              ]
+            },
+            {
+              "path": "/Resbyte/Generated_Documents/Financial_Documents",
+              "children": [
+                { "path": "/Resbyte/Generated_Documents/Financial_Documents/Invoices" },
+                { "path": "/Resbyte/Generated_Documents/Financial_Documents/Estimates" },
+                { "path": "/Resbyte/Generated_Documents/Financial_Documents/Budget_Reports" }
+              ]
+            }
+          ]
+        },
+        {
+          "path": "/Resbyte/API_Integrations",
+          "children": [
+            {
+              "path": "/Resbyte/API_Integrations/NCR_Voyix",
+              "children": [
+                { "path": "/Resbyte/API_Integrations/NCR_Voyix/Documentation" },
+                { "path": "/Resbyte/API_Integrations/NCR_Voyix/Configuration" },
+                { "path": "/Resbyte/API_Integrations/NCR_Voyix/Test_Data" }
+              ]
+            },
+            {
+              "path": "/Resbyte/API_Integrations/Olo",
+              "children": [
+                {
+                  "path": "/Resbyte/API_Integrations/Olo/Documentation",
+                  "children": [
+                    { "path": "/Resbyte/API_Integrations/Olo/Documentation/API_References" },
+                    { "path": "/Resbyte/API_Integrations/Olo/Documentation/Integration_Guides" },
+                    { "path": "/Resbyte/API_Integrations/Olo/Documentation/Best_Practices" }
+                  ]
+                },
+                {
+                  "path": "/Resbyte/API_Integrations/Olo/Configuration",
+                  "children": [
+                    { "path": "/Resbyte/API_Integrations/Olo/Configuration/Webhook_Settings" },
+                    { "path": "/Resbyte/API_Integrations/Olo/Configuration/Authentication" },
+                    { "path": "/Resbyte/API_Integrations/Olo/Configuration/Environment_Setup" }
+                  ]
+                },
+                {
+                  "path": "/Resbyte/API_Integrations/Olo/Test_Data",
+                  "children": [
+                    { "path": "/Resbyte/API_Integrations/Olo/Test_Data/Sample_Payloads" },
+                    { "path": "/Resbyte/API_Integrations/Olo/Test_Data/Response_Examples" },
+                    { "path": "/Resbyte/API_Integrations/Olo/Test_Data/Test_Results" }
+                  ]
+                }
+              ]
+            },
+            {
+              "path": "/Resbyte/API_Integrations/Kanopi",
+              "children": [
+                {
+                  "path": "/Resbyte/API_Integrations/Kanopi/Documentation",
+                  "children": [
+                    { "path": "/Resbyte/API_Integrations/Kanopi/Documentation/API_References" },
+                    { "path": "/Resbyte/API_Integrations/Kanopi/Documentation/Integration_Guides" },
+                    { "path": "/Resbyte/API_Integrations/Kanopi/Documentation/Best_Practices" }
+                  ]
+                },
+                {
+                  "path": "/Resbyte/API_Integrations/Kanopi/Configuration",
+                  "children": [
+                    { "path": "/Resbyte/API_Integrations/Kanopi/Configuration/Webhook_Settings" },
+                    { "path": "/Resbyte/API_Integrations/Kanopi/Configuration/Authentication" },
+                    { "path": "/Resbyte/API_Integrations/Kanopi/Configuration/Environment_Setup" }
+                  ]
+                },
+                {
+                  "path": "/Resbyte/API_Integrations/Kanopi/Test_Data",
+                  "children": [
+                    { "path": "/Resbyte/API_Integrations/Kanopi/Test_Data/Sample_Payloads" },
+                    { "path": "/Resbyte/API_Integrations/Kanopi/Test_Data/Response_Examples" },
+                    { "path": "/Resbyte/API_Integrations/Kanopi/Test_Data/Test_Results" }
+                  ]
+                }
+              ]
+            },
+            {
+              "path": "/Resbyte/API_Integrations/FreedomPay",
+              "children": [
+                {
+                  "path": "/Resbyte/API_Integrations/FreedomPay/Documentation",
+                  "children": [
+                    { "path": "/Resbyte/API_Integrations/FreedomPay/Documentation/API_References" },
+                    { "path": "/Resbyte/API_Integrations/FreedomPay/Documentation/Integration_Guides" },
+                    { "path": "/Resbyte/API_Integrations/FreedomPay/Documentation/Security_Requirements" },
+                    { "path": "/Resbyte/API_Integrations/FreedomPay/Documentation/Compliance_Documents" }
+                  ]
+                },
+                {
+                  "path": "/Resbyte/API_Integrations/FreedomPay/Configuration",
+                  "children": [
+                    { "path": "/Resbyte/API_Integrations/FreedomPay/Configuration/Terminal_Settings" },
+                    { "path": "/Resbyte/API_Integrations/FreedomPay/Configuration/Authentication" },
+                    { "path": "/Resbyte/API_Integrations/FreedomPay/Configuration/Environment_Setup" },
+                    { "path": "/Resbyte/API_Integrations/FreedomPay/Configuration/Encryption_Keys" }
+                  ]
+                },
+                {
+                  "path": "/Resbyte/API_Integrations/FreedomPay/Test_Data",
+                  "children": [
+                    { "path": "/Resbyte/API_Integrations/FreedomPay/Test_Data/Sample_Transactions" },
+                    { "path": "/Resbyte/API_Integrations/FreedomPay/Test_Data/Response_Examples" },
+                    { "path": "/Resbyte/API_Integrations/FreedomPay/Test_Data/Test_Results" }
+                  ]
+                }
+              ]
+            },
+            { "path": "/Resbyte/API_Integrations/Zoom" },
+            { "path": "/Resbyte/API_Integrations/Jira" },
+            { "path": "/Resbyte/API_Integrations/Gmail" },
+            { "path": "/Resbyte/API_Integrations/WhatsApp" },
+            { "path": "/Resbyte/API_Integrations/FireFlies" }
+          ]
+        },
+        {
+          "path": "/Resbyte/System",
+          "children": [
+            {
+              "path": "/Resbyte/System/Backups",
+              "children": [
+                { "path": "/Resbyte/System/Backups/Daily" },
+                { "path": "/Resbyte/System/Backups/Weekly" },
+                { "path": "/Resbyte/System/Backups/Monthly" }
+              ]
+            },
+            {
+              "path": "/Resbyte/System/Logs",
+              "children": [
+                { "path": "/Resbyte/System/Logs/Access_Logs" },
+                { "path": "/Resbyte/System/Logs/Error_Logs" },
+                { "path": "/Resbyte/System/Logs/Audit_Logs" }
+              ]
+            },
+            {
+              "path": "/Resbyte/System/Configuration",
+              "children": [
+                { "path": "/Resbyte/System/Configuration/API_Keys" },
+                { "path": "/Resbyte/System/Configuration/Connection_Settings" },
+                { "path": "/Resbyte/System/Configuration/User_Preferences" }
+              ]
+            },
+            {
+              "path": "/Resbyte/System/Archive",
+              "children": [
+                { "path": "/Resbyte/System/Archive/Completed_Projects" },
+                { "path": "/Resbyte/System/Archive/Historical_Reports" },
+                { "path": "/Resbyte/System/Archive/Legacy_Documents" }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

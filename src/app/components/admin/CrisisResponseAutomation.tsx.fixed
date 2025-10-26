@@ -1,0 +1,26 @@
+import React, { useState, useEffect } from 'react';
+import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '../ui/card';
+import { Tabs, TabsList, TabsTrigger, TabsContent } from '../ui/tabs';
+import { Button } from '../ui/button';
+import { Input } from '../ui/input';
+import { Label } from '../ui/label';
+import { Switch } from '../ui/switch';
+import { Alert, AlertDescription, AlertTitle } from '../ui/alert';
+import { Badge } from '../ui/badge';
+import { Loader2, Play, Pause, RefreshCw, CheckCircle, AlertCircle, Clock, Send, ListChecks, CheckSquare, XSquare, FileCheck, BellRing } from 'lucide-react';
+import { format, formatDistanceToNow, addDays } from 'date-fns';
+import { 
+  CrisisResponseAutomation as CrisisResponseAutomationService, 
+  AutomationRun, 
+  CrisisResponseAutomationConfig,
+  createCrisisResponseAutomation 
+} from '../../services/crisisResponseAutomation';
+import { WhatsAppMessage } from '../../services/whatsappIntegration';
+import { TaskEstimate } from '../../services/crisisResponseAnalyzer';
+import { Progress } from '../ui/progress';
+import { Separator } from '../ui/separator';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../ui/select';
+import { Checkbox } from '../ui/checkbox';
+
+// Import the task template service
+import { CrisisTaskTemplateService, TaskTemplate, TaskInstance, createCrisisTaskTemplateService } from '../../services/crisisTaskTemplates';

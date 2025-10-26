@@ -1,0 +1,613 @@
+Audio Transcription
+==================================================
+File size: 40.81 MB
+Processing strategy: 10MB chunks
+Processing started: 2025-10-21 23:46:45
+==================================================
+
+--- Chunk 1 (chunk_001.mp3) ---
+00:00 - 00:06: Oh, yeah, I wanted you to record it. Yeah. Yeah, let's both do it in just in case because
+00:06 - 00:11: I got some recordings. I didn't get some recordings, but I'll keep sending you. Okay. Okay. So
+00:11 - 00:16: first thing I'm trying to do here is I've tried to set up like kind of like a dashboard
+00:16 - 00:21: of all the things we need to get handled to go live. Some of them are not urgent. I'll
+00:21 - 00:28: mark them. But I want to walk you walk you through the items and explain what each one
+00:28 - 00:33: means. Because I know, you know, we're having these calls, everybody's talking fast and
+00:33 - 00:37: like, you know, you're three days in, I'm sure you're wondering, you know, what what
+00:37 - 00:50: the hell is the story behind each part. So the most important part for us is data. And
+00:50 - 00:57: at a very simple level, we're ingesting data from multiple sources, we are then transforming
+00:57 - 01:04: that data into we're transferring the data making it useful. I mean, I'll talk about
+01:04 - 01:12: each point individually. And then we are presenting it to the client, or other stakeholders, right.
+01:12 - 01:20: So there are three kind of processes within data. The part that's the most important right
+01:21 - 01:28: now is data ingestion, it's coming from the NCR is the POS system, it gives us sales data,
+01:28 - 01:33: that's the heart of everything. Because it has all the transaction details, all the menu
+01:33 - 01:46: item details. They're currently, we are missing a connection between NCR and us, they have
+01:46 - 01:52: started giving us data, they authorized us approved us. But we are missing, the data
+01:52 - 01:59: is not flowing to us yet. The second, most important source is FreedomPay, which is their
+01:59 - 02:11: credit card processing company, because that gives us who the customers are. And customers,
+02:11 - 02:18: some of that data is used to enrich existing customer profiles. And some of that data
+02:18 - 02:28: is used to create first time customer profiles. But in either case, FreedomPay is the source
+02:28 - 02:38: of the customer, customer ID data, that's the place where it starts. Third party, third
+02:38 - 02:44: is Olo. Olo is basically everything to do with delivery, all the delivery orders, first
+02:44 - 03:00: party, third party all go through Olo. So Olo data is currently flowing. So Olo data
+03:00 - 03:09: is flowing into us. So that part is okay. So there's no action there. Thanks is there.
+03:09 - 03:18: Thanks does three things for La Madeline, it's their ecommerce, it's their loyalty,
+03:18 - 03:37: and it's their app. Thanks data is flowing to us, but it's flowing like on a daily basis,
+03:37 - 03:43: like there's a data dump that La Madeline gives to us. So for the moment, we are okay
+03:43 - 03:50: with it. But at some point, they do have a live API. And it would be smart to use that
+03:50 - 03:58: API because the more the smarter the data gets in real time, we are able to act on it,
+03:58 - 04:08: the more effective you're likely going to be. Canopy is the company that manages their
+04:08 - 04:12: front end website. So Thanks manages the back end of the website, Canopy manages the front
+04:12 - 04:20: end of the website. And the front end of the website, we are not getting any data from
+04:20 - 04:27: there yet. That's the project we have to talk about, which is the installation of the pixel.
+04:27 - 04:31: That will allow us to get that data. And the main data we are looking for from the front
+04:31 - 04:36: end of the website is that we know that out of every 100 people who are coming only six
+04:36 - 04:44: are converting into actual orders, 94 are returning or bouncing. And it's mostly because
+04:44 - 04:49: the websites were just they are very kind of dated, you have to go through eight or
+04:49 - 04:55: nine clicks before you can place an order. So but that data is important to us at the
+04:55 - 04:56: right time.
+04:57 - 05:07: Now, question for a second. So pixel is related to, don't tell me, Fishbowl.
+05:07 - 05:15: So this pixel is equity, and I'm writing notes. Equity, it's an it's a audience equity pixel.
+05:15 - 05:23: And it primarily does ID resolution on visitors. So it tells us, again, it'll have a 50 or
+05:23 - 05:29: 60% effective rate, wouldn't give us 100%. But for every, you know, 10,000 visitors,
+05:29 - 05:35: we should be able to get 5000 names. And then Jason wanted to write some other proprietary
+05:35 - 05:39: script that he thought he could write, which will give us additional information, but just
+05:39 - 05:46: getting the names would be a good start right now.
+05:46 - 05:53: So then from ingestion, we go into data transformation. Data transformation has two steps. One is
+05:53 - 05:58: ID resolution, which means we're getting all this raw data. And then we have to go through
+05:58 - 06:03: the data and say, okay, well, we've got this raw data. But who are these really people
+06:03 - 06:07: really are, right? So then it says, okay, here are those people that was the exercise
+06:07 - 06:12: we did yesterday with them, right? We were did when we did the match rates, etc. So audience
+06:12 - 06:17: equity has this 260 million, 280 million people database, we go in and we say, we have these
+06:17 - 06:23: touchpoints, tell us who they really are, they run their process, they give us the actual names.
+06:23 - 06:29: And that is the foundational block of our marketing. Then we say, oh, we do know there is a
+06:30 - 06:36: Brian S, but there could be 16 Brian S's. But now we know this is the one.
+06:37 - 06:41: You know, he's got a family, he lives in a house, he drives this car,
+06:42 - 06:47: all the other stuff. So after ID resolution comes ID enrichment,
+06:47 - 06:51: where we layer there are about 120 different touchpoints of data that we get.
+06:57 - 07:00: And this is an endless process. Right now, we are just using one vendor, I'm negotiating with
+07:00 - 07:05: two other vendors. So we want as much as data as possible on these IDs. And once these IDs
+07:05 - 07:10: are verified, then we start learning all sorts of third party data to build these profiles.
+07:10 - 07:13: So that's a long term process. But right now, if we did these two things, we're in good shape.
+07:14 - 07:17: And the third element in data is presentation.
+07:18 - 07:22: And in the presentation, right now, the way you're seeing dashboards,
+07:23 - 07:31: one issue is that half the dashboards are Sigma.
+07:35 - 07:42: And what that means is it's a third party BI tool. I don't know what the exact phrase is,
+07:42 - 07:48: but basically, it's a third party BI tool. And there are some dependencies in long term,
+07:48 - 07:53: we want to get out of it. It's also very expensive. So long term, not sure it's a good
+07:53 - 08:00: play for us. And then the second... Sorry, go ahead. The Sigma, is that embedded within Snowflake?
+08:03 - 08:07: They do have a Snowflake partnership. It's drawing data from Snowflake.
+08:08 - 08:14: So it's the presentation layer in our website, draws data from Snowflake and presents it.
+08:14 - 08:19: Okay. So it's not like a plugin or module that's in Snowflake,
+08:19 - 08:21: or anything like that. It's totally separate.
+08:22 - 08:30: It's a separate technology. You can buy through Snowflake, but we have a direct contract.
+08:31 - 08:32: Gotcha. Okay.
+08:36 - 08:41: And then the other issue with the presentation is that I'm just calling it presentation
+08:41 - 08:46: interruptions. There is some thinking that is required. I'm also not 100% clear what the hell
+08:46 - 08:53: is what, but there is some work to be done and discussed as far as presentation is concerned,
+08:55 - 08:59: presentation interruptions are concerned. And then the third project is store view. Right now,
+08:59 - 09:05: we only have corporate level data working. And we have to have a store view data working,
+09:05 - 09:08: because that's when we start to make money. Okay.
+09:12 - 09:19: Let's talk about that. I need to understand that more. Store, like the physical store.
+09:21 - 09:25: So the way the dashboards are designed is, we've got corporate sector working,
+09:26 - 09:31: that's six users. Next will be regional, because there are six states, seven states,
+09:31 - 09:37: I'm sure there's a state manager or a state level office. But ultimately, where we make money is
+09:37 - 09:41: when the store owners or the store managers are given access to the dashboards, because we charge
+09:41 - 09:50: $250 per store per month. And if we can get all the stores going, that gives us a very nice revenue
+09:50 - 09:58: stream. Right, so that store view will give us give them all the data points that we are showing
+09:58 - 10:04: the corporate office, but we give them all that just for their store. And at the core of it,
+10:04 - 10:08: what will be important to stores, why they will be willing to spend this money is,
+10:08 - 10:15: they will get to see a very clear view of their customers, high value customers, first time
+10:15 - 10:19: customers, customers who are, you know, they're losing the which customers they are losing.
+10:20 - 10:24: So all the segments, you know, when you go to the corporate store, there are million names,
+10:24 - 10:29: 2 million names. I mean, it's interesting, but not critical. But when you go to the store,
+10:29 - 10:35: and you say, here are your 300 top level customers, a store manager can actually get
+10:35 - 10:40: their head around the store owners and say, Oh, yes, there are people here, I can, I can,
+10:40 - 10:43: I can engage with these people now that I know who they are.
+10:47 - 10:52: Understand. Okay. Okay. Thank you. Yes. So that's the project. So this is the first layer,
+10:52 - 10:55: which is data. The second layer, I'm calling
+
+--- Chunk 2 (chunk_002.mp3) ---
+16:19 - 16:28: media, or you can call it media or publication. This is, we are still kind of, so the first part
+16:28 - 16:33: of media and publication is emailers, but Jason feels they are set up. Obviously, there's some
+16:33 - 16:37: action items, and I'm giving you the structure of the project first, then we'll go to action items
+16:37 - 16:43: second. The second one is MMS, where also Jason has said he's comfortable, it's all set up, we
+16:43 - 16:50: haven't tested it, emailers we have tested, MMS we have not yet tested. Then the next one is
+16:50 - 16:55: Meta and Google. So we just retained somebody last week, he's been researching,
+16:57 - 17:03: his name is Matias, he has been engaged to build the APIs from our system into
+17:04 - 17:10: Meta first and then Google, and these APIs will allow us to publish ads in real time
+17:11 - 17:16: without, like, you know, traditionally, not traditional, but there are two ways to do it,
+17:16 - 17:21: right? Once some media manager sits down, creates an audience, uploads an ad, and then publishes it,
+17:21 - 17:25: it's all manual, which in our case is useless because we are doing everything programmatically,
+17:25 - 17:32: there are millions of customers and thousands of ads, it can't be done manually. So this is a
+17:33 - 17:40: project about linking Respite with Meta and Google. And then lastly, there is Trade Desk,
+17:44 - 17:49: it's a platform which links you with digital publication, but what's important about Trade
+17:49 - 17:55: Desk is they have CTV integration, which means we can go into Trade Desk and say,
+17:55 - 18:00: we want to run TV ads, but we want to run them against these specific audiences.
+18:02 - 18:08: Our whole mantra is that we don't do broad based marketing, we do very targeted marketing.
+18:09 - 18:12: So this is a nice to have at some point in the future, it's not critical right now.
+18:14 - 18:15: Okay, but it's in the pipeline.
+18:18 - 18:22: The next element, sorry, any questions on the media side? Just want to pause here for a second.
+18:23 - 18:30: No. Okay. The next part is ecommerce. That's one place you have been involved in
+18:30 - 18:36: ecommerce. Right now, first thing is just setting up a code, which is Fishbowl,
+18:36 - 18:41: which we seem to have some handle on, that will allow us to at least send out that code.
+18:42 - 18:48: And basically, it'll allow us to send out messages and the consumer can, if he likes it,
+18:48 - 18:54: then go to the traditional website, place an order with that code and get the discount.
+18:54 - 19:01: Still very fragmented experience, low conversion rates, I don't think in the long run,
+19:01 - 19:05: it's gonna help us. But in the short term, if there's no alternative, we will take it.
+19:07 - 19:14: So the online is what you did yesterday with Jason, we now have to figure out in store,
+19:14 - 19:19: because we're also driving in store traffic. And I'm not sure we are not sure if it's Fishbowl or
+19:19 - 19:23: NCR. So that's the meeting we're going to be setting up. I'll talk about actions after explaining
+19:23 - 19:30: everything. And then beyond this is the landing page setup, which will integrate with Olo.
+19:33 - 19:36: So the landing page set up with Olo, Jason has been working on it for a month.
+19:37 - 19:43: He feels comfortable, it's working, we haven't seen it yet. Again, we'll talk about it. And then
+19:43 - 19:50: when the landing page is ready, we have to then integrate with Olo and get it approved. Because
+19:50 - 19:55: that was where we got stuck on Tuesday where the Olo guy said, I need to bring in some specialist.
+19:57 - 20:01: So we haven't heard back. But the CEO yesterday has written to Olo
+20:02 - 20:08: to expedite this and we have to keep driving this, we can't let it go. And the last part
+20:08 - 20:16: about ecommerce is the in store setup, which is if you're running these promotions or
+20:16 - 20:19: discounts, how do people avail of it when they go to the store?
+20:20 - 20:25: I'm sorry, how do people make a bet?
+20:25 - 20:29: Do people avail, which means if I send you an email saying, you know, you're a high value
+20:29 - 20:34: customer, and I'm going to give you a glass of wine free with your dinner tonight.
+20:38 - 20:40: And we want you to come back, we have a glass of wine waiting for you.
+20:41 - 20:43: So the customer shows up, you order the glass of wine, and they're like,
+20:44 - 20:46: so the customer shows up, you order the glass of wine, he orders dinner,
+20:46 - 20:48: but he's expecting a glass of wine for free.
+20:51 - 20:54: Right, so he's got to have some code that he can share with the
+20:54 - 20:58: at checkout, which will give him that glass of wine for free.
+21:01 - 21:02: Okay, I understand.
+21:03 - 21:05: So that's the in store ecommerce setup.
+21:08 - 21:12: And then last but not least is the Respite.ai, the website itself.
+21:12 - 21:15: Right, let me ask you one question.
+21:15 - 21:22: So the in store is that you have to do some type of integration with the POS system,
+21:22 - 21:30: like with NCR, or are you integrating with their, let's say there's a QR code, they scan it.
+21:31 - 21:36: Are we kind of involved in how that gets translated in their POS system?
+21:36 - 21:43: Or is that part of the in store setup is what I'm trying to say?
+21:44 - 21:48: Yeah, so the first and probably the fastest would be,
+21:49 - 21:52: if Fishbowl codes are accepted at the store level,
+21:53 - 21:55: that's what you and me were just talking about in the morning, right?
+21:55 - 21:58: So if that is the case, then that's a quick fix.
+21:59 - 22:04: Because we can pull codes from Fishbowl and run them in store.
+22:04 - 22:07: Now, if they come back and say, no, Fishbowl only works online and does not work in store,
+22:08 - 22:17: then we have to go into NCR, Aloha, and set up these codes there,
+22:19 - 22:20: these discounts or promotions there.
+22:21 - 22:24: And then there are two levels of work there.
+22:24 - 22:26: One is, in the short term, maybe we can ask
+22:27 - 22:30: La Medellin to go in and set up maybe four coupon codes.
+22:30 - 22:32: And then we run everything from the same coupon code.
+22:34 - 22:38: Or there is an NCR couponing API.
+22:40 - 22:43: And we must start work on it as soon as we can.
+22:43 - 22:46: Because ultimately, if we want to run thousands of coupons,
+22:46 - 22:48: the only way to successfully run is,
+22:48 - 22:52: if the NCR couponing mechanism is tied into our mechanism,
+22:52 - 22:57: and it's an API integration, and then we are pushing coupons into NCR.
+22:57 - 23:00: So it's automatically showing up at the store.
+23:00 - 23:02: So when a customer shows up with a code, it's already programmed.
+23:03 - 23:05: That's okay.
+23:05 - 23:11: So La Medellin has standardized on NCR POS?
+23:11 - 23:12: Correct, Aloha.
+23:12 - 23:14: NCR Aloha is everywhere.
+23:14 - 23:14: Yeah.
+23:14 - 23:15: Okay.
+23:15 - 23:15: Central system.
+23:17 - 23:17: Central system.
+23:18 - 23:19: See how this is working.
+23:19 - 23:20: Okay.
+23:20 - 23:20: Yeah.
+23:21 - 23:26: And the last part of the project is the REST API, the website itself.
+23:27 - 23:29: You know, we've been working on the backend,
+23:29 - 23:31: but we're getting close to as soon as we go live,
+23:31 - 23:33: the client's going to start asking for dashboards and other things.
+23:34 - 23:37: So, you know, most of the site is working,
+23:37 - 23:40: but we really aren't prepared to hand over to the client.
+23:40 - 23:42: For instance, I was looking at it.
+23:42 - 23:48: There are some, you know, bad or wrong site language pieces,
+23:48 - 23:49: text is wrong somewhere.
+23:50 - 23:54: Some pages are, you know, the test language has showed up on the live server.
+23:55 - 23:59: So the first project is just site language and text cleanup.
+24:02 - 24:02: So there is that.
+24:02 - 24:06: And then there is the second issue is the user permissions.
+24:07 - 24:10: So we've hard-coded the first four or five users,
+24:11 - 24:17: but we need to obviously set up a tool because the client has hundreds of users.
+24:18 - 24:23: And also right now, every user gets to see everything,
+24:24 - 24:25: including us.
+24:26 - 24:28: You know, we also have half a dozen admin users.
+24:29 - 24:35: So we have to figure out how the admin user view is different than the company view.
+24:35 - 24:36: And then within the company view,
+24:36 - 24:40: there will be corporate viewers, regional viewers, store viewers.
+24:41 - 24:43: So user permissions.
+24:43 - 24:45: Now, SunTech tells us that they have built a module.
+24:46 - 24:50: About two months back, we had given them an SOW to build a user permission module.
+24:51 - 24:55: They tell us that they have built it, but it's never been checked or tested.
+24:56 - 25:01: So, but this top level band will actually just is a description of all the projects.
+25:01 - 25:02: Okay.
+25:02 - 25:06: So if you can see this, this whole thing from line four to.
+25:09 - 25:09: Yeah.
+25:10 - 25:12: I'll highlight this.
+25:13 - 25:17: This is just your kind of, this is just describing all the projects
+25:18 - 25:20: and breaking them down into parts.
+25:20 - 25:23: The part, the work that I wanted to do with you,
+25:23 - 25:27: which I was saying to you earlier is only, you know, this is you and me.
+25:28 - 25:32: But we have to break down each piece and think through how will this actually get done?
+25:33 - 25:40: So for instance, NCR, there is a webhook issue from NCR to SFS Snowflake, by the way.
+25:41 - 25:44: Jason said he's working on it yesterday.
+25:44 - 25:45: He said it'll be done tomorrow.
+25:45 - 25:46: So the dates I have put are all tentative.
+25:47 - 25:51: I'm going to leave these to you after you kind of assess everything.
+25:51 - 25:52: We'll put dates on it.
+25:52 - 25:53: Who's doing what by when.
+25:55 - 26:03: But if he makes that connection today, data should start flowing right away into the system.
+26:03 - 26:09: That's the only task I'm aware of to begin moving NCR data into Snowflake.
+26:10 - 26:13: But it'll be good to check with him if he has any other, I mean,
+26:13 - 26:15: everything I'm giving you, I'm just assuming you'll run by him later.
+26:17 - 26:19: The second one is FreedomPay.
+26:20 - 26:23: This data transfer happens through Patrick.
+26:26 - 26:28: But as Jason said in the morning, it's been two days, there's no data.
+26:29 - 26:31: We got to email out Patrick.
+26:32 - 26:33: So that's the second piece.
+26:33 - 26:35: Now, who is Patrick?
+26:36 - 26:39: So Patrick is kind of the tech lead guy at La Madeline.
+26:42 - 26:43: He's kind of the handy guy.
+26:43 - 26:44: He does everything.
+26:45 - 26:45: You know, he's.
+26:54 - 26:54: OK.
+27:03 - 27:06: You'll hear me ask every now and again, who is that person?
+27:06 - 27:06: He's you.
+27:06 - 27:07: That's the whole purpose of this call.
+27:14 - 27:15: OK.
+
+--- Chunk 3 (chunk_003.mp3) ---
+32:39 - 32:49: That's the whole purpose of this call.
+32:49 - 32:51: I want to answer all the questions.
+32:51 - 32:54: And we'll do this two or three times till you get like, you know, comfortable with what
+32:54 - 32:59: the hell is what.
+32:59 - 33:03: Freedom pay is with data, Patrick, so that we have to set up.
+33:03 - 33:07: And then we should start with all of these sources.
+33:07 - 33:11: We have to move away from any manual processes, there's just too much at stake.
+33:11 - 33:17: We know FreedomPay has an API, somewhere that kind of conversation got lost or interrupted.
+33:17 - 33:24: So we need to go back to it and revive it and say, okay, we need a live API.
+33:24 - 33:26: We don't want a daily dump, we want a live API.
+33:26 - 33:30: So there is some work to be discussed there, and to be, you know, anticipated or figured
+33:30 - 33:32: out.
+33:32 - 33:43: Similarly, thanks is the same thing, we are getting daily data dumps from Patrick.
+33:43 - 33:46: Up till now, it has been coming in smoothly.
+33:46 - 33:51: But again, it's once a day, and we have to figure out a way to do an API setup.
+33:51 - 33:56: Thanks also does have an API.
+33:56 - 34:00: Now where we are getting, just so that you have a context here, where we are getting
+34:00 - 34:05: daily data, and we want to move to an API.
+34:05 - 34:09: That's a nice to have, we don't, like, you know, we can live with what we have for the
+34:09 - 34:12: next few weeks.
+34:12 - 34:21: It will become critical somewhere in late November, but we can live with it.
+34:21 - 34:28: The last one which is urgent is Kenopi, Kenopi manages their front end of their website.
+34:28 - 34:42: This is what I was telling you earlier, we need to track the people we are losing.
+34:42 - 34:43: This is the pixel.
+34:43 - 34:46: Now in this project, and this is what I was saying to you know, yesterday saying we need
+34:46 - 34:47: to think three.
+34:47 - 34:51: So pixel, the pixel project has four pieces.
+34:51 - 34:58: First is, we have to send a very specific format to audience equity to say, this is
+34:58 - 35:01: how we need the pixel structure.
+35:01 - 35:06: Jason has to write that.
+35:06 - 35:10: Because they said they can take up to 10 variables.
+35:10 - 35:15: But the, but what are the specifications have has to come from us.
+35:15 - 35:22: And then we have to give them an endpoint for that data, which Jason has created.
+35:22 - 35:29: But he has to send this in a particular format, so they can generate a pixel for us.
+35:29 - 35:32: That's the first action, which in the morning, he said he'll do today or tomorrow.
+35:32 - 35:35: I mean, that again, I'm leaving the action items to you.
+35:35 - 35:41: The second item is when the pixel once we go back, we're quick, you said, Jason has
+35:41 - 35:53: so send format to audience acuity, 10, they can take up to 10 variables.
+35:53 - 36:01: And ResByte has to provide the specs, Jason in, so Jason has to create the endpoint and
+36:01 - 36:04: send that to who.
+36:04 - 36:11: So what we're doing is we are sending a message to equity includes two things, the specifications
+36:12 - 36:20: the variables of data that are in that pixel, as well as the endpoint, where the data will land.
+36:30 - 36:31: Okay.
+36:31 - 36:32: Right.
+36:32 - 36:36: So, as I see it, and this is, this is kind of like I was talking to you about building
+36:36 - 36:38: the action plan.
+36:38 - 36:44: So Jason has to do this pixel, he has to write the spec, insert the endpoint, and he'll send
+36:44 - 36:46: it to equity.
+36:46 - 36:53: I will then follow up with them and get them to generate the pixel and send it back.
+36:53 - 36:59: Once we receive the pixel spec, this pixel is by the way, we have to use it for the next
+36:59 - 37:01: two years with all customers.
+37:01 - 37:04: So then we will store it somewhere for ourselves.
+37:04 - 37:12: And then we will send this to Patrick, who then in turn will send it to Kanopy.
+37:12 - 37:18: So Patrick will be in charge of installing this pixel.
+37:18 - 37:24: So there are four steps here.
+37:24 - 37:32: And then when Patrick confirms that this is installed, then we'll have to test it.
+37:32 - 37:38: And then we have to say yes, this is done.
+37:38 - 37:42: So while it's a one project, but there are like four different actions and it's like
+37:42 - 37:48: week 10 days worth of work.
+37:48 - 37:53: Yeah.
+37:53 - 37:57: So any question up to this point, this is the data section, these are all the actions
+37:57 - 37:58: for the data section.
+37:58 - 37:59: No, it's fine.
+37:59 - 38:00: I'm tracking.
+38:00 - 38:01: Okay.
+38:01 - 38:07: The next section is the data, sorry, it's not the end, there's data transformation left.
+38:07 - 38:09: This is the training we did yesterday.
+38:09 - 38:15: So I was asking Jason to do a test by Monday, so they can just take 10,000 IDs and run it
+38:15 - 38:17: and see they can work the system.
+38:17 - 38:21: If they come back on Monday that yes, we figured it out, we did 10,000, everything is good,
+38:21 - 38:23: everything is great, it's great to go.
+38:23 - 38:29: Then we asked him to run the entire two and a half million IDs.
+38:29 - 38:34: So there is a consumer ID resolution process test with Jason is running.
+38:34 - 38:40: Once Jason is successful, then Tuesday we will make the call.
+38:40 - 38:45: If we have to run that, if for some reason Jason's team is not able to do it, then we
+38:45 - 38:50: have to go back to LJ who was the original person who was doing it.
+38:50 - 38:52: And then we ask him.
+38:52 - 38:57: And similarly, once the ID resolution is done, then data enrichment has to be done.
+38:57 - 39:02: But we need to do this next week because I want you to understand the context that right
+39:02 - 39:09: now we only have 250,000 IDs to play with.
+39:09 - 39:12: And all of them are only one email address.
+39:12 - 39:17: We have 2.4 million IDs that we are, that's our universe, probably more now because they
+39:17 - 39:20: were adding about 10,000 a day data flow.
+39:20 - 39:24: If the data flow is working properly, we probably have about 3 million IDs.
+39:24 - 39:29: And as you saw from the process yesterday, audience equity can give us three to four
+39:29 - 39:32: emails per name.
+39:32 - 39:39: That improves our chances of hitting that person by about 300%.
+39:39 - 39:45: And the difference between 2% and 6% is huge when you talk about 2 million customers.
+39:45 - 39:50: The end effect is huge.
+39:50 - 39:55: And then comes the data presentation layer.
+39:55 - 39:59: What I mean by this is they've been doing all of this work in the background.
+39:59 - 40:08: But when we log in, what we see or the client will see, this is what deals with that layer.
+40:08 - 40:15: The biggest problem I've seen in the last six weeks is, just one second.
+40:18 - 40:19: Yeah, let me take it.
+40:19 - 40:20: I'll be right.
+40:20 - 40:21: All right.
+40:21 - 40:22: That's all right.
+41:38 - 42:02: All right.
+42:02 - 42:03: I'm back.
+42:09 - 42:12: So the first problem we have to solve, and this is urgent, because if you're going to
+42:12 - 42:15: give the username passwords to the client, this is an urgent problem.
+42:16 - 42:20: There have been repeatedly interruptions in the data flow.
+42:22 - 42:26: And even if one source interrupts, the whole thing obviously looks ugly.
+42:26 - 42:29: Like yesterday, I had a small argument with Jason.
+42:30 - 42:31: Delivery data was not showing up.
+42:31 - 42:33: Jason, this is an LJ problem.
+42:33 - 42:34: I said, no, the pipe is broken.
+42:35 - 42:37: Somehow he figured it out, fixed it today.
+42:38 - 42:39: But we have to find a better way.
+42:40 - 42:43: And there are two people involved in this discussion.
+42:43 - 42:46: Jason is one, and Prithpal.
+42:46 - 42:49: Prithpal is our infrastructure and security team lead.
+42:50 - 42:53: We have outsourced that function to a company called ProCopto.
+42:58 - 42:59: So they look after all of our security.
+42:59 - 43:02: They have a whole project of setting up the security mechanism in our,
+43:03 - 43:06: and we're working towards a SOC 1, SOC 2 audit and things like that.
+43:06 - 43:08: So security and infrastructure management is with them.
+43:10 - 43:14: So we got to have a three-way conversation as early as possible to see, okay, what can we do?
+43:15 - 43:20: Because right now, I am the only one who goes in and looks at data.
+43:20 - 43:23: And then I'm the only one who finds out something is broken.
+43:23 - 43:25: Then I send out emails.
+43:25 - 43:29: That whole cycle is two days or three days before we fix a problem.
+43:30 - 43:33: When we are live, we can't afford that, right?
+43:33 - 43:34: We can't afford to have a three-day.
+
+--- Chunk 4 (chunk_004.mp3) ---
+48:58 - 49:00: in a data pipeline.
+49:11 - 49:14: So the first issue is data flow.
+49:14 - 49:16: The second issue is we have to set up a store view
+49:16 - 49:18: because that's how we will make money.
+49:18 - 49:20: In this, there are three elements.
+49:20 - 49:21: One is the design.
+49:21 - 49:23: I'm working on the designs.
+49:23 - 49:26: I'll get the designs completed by Tuesday.
+49:26 - 49:27: Then there is the front end setup.
+49:27 - 49:29: The designs will go to Suntec.
+49:29 - 49:30: I have a question mark in front of Suntec
+49:30 - 49:35: because I think we should start looking for an onshore team.
+49:36 - 49:39: I'm not sure how much more work I want to send Suntec's way.
+49:39 - 49:42: And then the third element is the permissions module,
+49:42 - 49:44: which Suntec has already built,
+49:44 - 49:46: but we need somebody to check it and test it.
+49:57 - 50:18: I have started looking for an onshore team.
+50:18 - 50:21: Let's see what we can find over the next two, three days.
+50:21 - 50:23: So this will allow us to provide the store view.
+50:23 - 50:26: And again, Jason might have more items than this.
+50:26 - 50:28: This is what I could come up with.
+50:28 - 50:30: And then finally, this is a nice to have.
+50:30 - 50:32: Sigma is working right now,
+50:32 - 50:33: but we need to get out of Sigma
+50:33 - 50:35: and move over to our own design.
+50:35 - 50:42: So I will get the dashboards, Figma designs done.
+50:42 - 50:45: I'll get it done by the end of next week.
+50:45 - 50:49: We will then have to front code those dashboards.
+50:49 - 50:50: Suntec can do that.
+50:50 - 50:51: It's an easy job.
+50:51 - 50:54: They've done a decent job before.
+50:54 - 50:56: And then there'll be stored procedures, programming,
+50:56 - 51:00: data coming from Snowflake into the front end.
+51:00 - 51:02: That's Jason's job.
+51:02 - 51:05: So this is not...
+51:05 - 51:12: You have store, S-T-O-R, or is it stored procedures?
+51:12 - 51:15: I honestly don't know the answer to that.
+51:15 - 51:16: Is it stored procedures? I don't know.
+51:16 - 51:19: I always mispronounce it or misspell it.
+51:19 - 51:23: If it's in the database itself, it's stored.
+51:23 - 51:26: S-T-O-R-E-D, stored.
+51:26 - 51:28: Because I know you use the word stored.
+51:28 - 51:29: I'm like, okay, is that the same store?
+51:29 - 51:31: But yeah, there you go.
+51:31 - 51:33: Okay, stored procedures.
+51:33 - 51:36: That was my mistake, stored procedures.
+51:36 - 51:38: So this is a nice to have.
+51:38 - 51:39: It's not urgent, but somewhere over the next two,
+51:39 - 51:45: three, four weeks, we want to end our dependence on Sigma
+51:45 - 51:50: because whatever reason, 100 reasons.
+51:50 - 51:54: Then on the media front, the immediate project
+51:54 - 51:57: is that we got to start publishing.
+51:57 - 51:59: We talked about it in the morning.
+51:59 - 52:01: I already activated the creative team.
+52:01 - 52:04: So the first thing is set up and testing of the emailer.
+52:04 - 52:06: Jason says this is already done.
+52:06 - 52:08: He's already tested it.
+52:08 - 52:11: I'm leaving it for you to confirm with him.
+52:11 - 52:14: Second part is we got to design a whole series of emailers,
+52:14 - 52:15: which I am working on.
+52:15 - 52:18: We'll get the first designs done by Tuesday,
+52:18 - 52:19: approved by Tuesday.
+52:19 - 52:20: Designs will be done Monday,
+52:20 - 52:23: a day to get the client to approve it.
+52:23 - 52:26: So by Tuesday, I'll provide those designs.
+52:26 - 52:30: If we send the designs out on Tuesday evening,
+52:30 - 52:31: and we are lucky,
+52:31 - 52:36: Suntech can integrate the templates by Wednesday.
+52:36 - 52:42: So if Wednesday, the designs get set up
+52:42 - 52:45: and Jason can finish setting up his clusters,
+52:45 - 52:48: say by Tuesday,
+52:48 - 52:54: we can then expect to run emailers
+52:54 - 52:56: by Wednesday or Thursday morning.
+52:56 - 52:58: That's what we can expect.
+52:58 - 53:00: But these are all the different steps.
+53:00 - 53:02: There is Jason has to set up clusters.
+53:02 - 53:05: Suntech content library is working.
+53:05 - 53:06: Why am I putting 21st?
+53:06 - 53:09: They won't be back till 23rd.
+53:09 - 53:11: But again, these are the problems
+53:11 - 53:15: we were discussing in the morning.
+53:15 - 53:16: I'm just going to put a question mark.
+53:16 - 53:19: Should we be relying on Suntech for this?
+53:19 - 53:22: If we can find a front end team here to look into it,
+53:22 - 53:24: because the content library,
+53:24 - 53:28: the ad generator will pick content
+53:28 - 53:31: and run ads automatically.
+53:31 - 53:34: So if there's a wrong image, wrong price, bad image,
+53:34 - 53:37: bad copy in the asset manager,
+53:37 - 53:38: it'll automatically translate
+53:38 - 53:40: into building thousands of bad ads.
+53:46 - 53:49: The same process has to follow for MMS,
+53:49 - 53:51: exactly the same process.
+53:55 - 53:58: MMS has not been tested.
+53:58 - 54:00: I believe it has been set up,
+54:00 - 54:02: but it has not been tested yet.
+54:02 - 54:05: So Jason has to decide how and when to test it.
+54:05 - 54:09: I will provide the designs by Monday,
+54:09 - 54:12: Tuesday approved designs, Monday pre-approved designs.
+54:12 - 54:14: And then the rest of the cycle is the same.
+54:14 - 54:17: There's a template, there's a content library, all of that.
+54:18 - 54:23: So we will start our work with email and MMS.
+54:32 - 54:34: We will then move to,
+54:34 - 54:36: we have already hired a guy
+54:36 - 54:38: who's going to set up these APIs
+54:39 - 54:44: for Google and Meta.
+54:44 - 54:48: I'm following up with him this afternoon to get his view.
+54:48 - 54:50: He's been at it for three, four days.
+54:50 - 54:53: We just gave him access to Snowflake two days back.
+54:53 - 54:56: So depending on what he says,
+54:56 - 54:58: I'm going to ask him to see
+54:58 - 55:00: if we can't start sending out test ads
+55:00 - 55:01: by the end of the month.
+55:03 - 55:06: And then he has to come back with some timing.
+55:06 - 55:08: I know there's some documentation requirement
+55:08 - 55:10: which could take a little bit longer.
+55:10 - 55:15: So you're going to send out dynamic ads across Facebook,
+55:15 - 55:18: I mean, across the Meta platform and Google.
+55:18 - 55:19: Right.
+55:19 - 55:22: And what's dynamic about it is the ads,
+55:22 - 55:26: because we are creating ads specific to users.
+55:30 - 55:33: So like, you know, we have 4,700 versions of every ad.
+55:36 - 55:38: So when we send to Meta,
+55:38 - 55:39: so we do two things.
+55:39 - 55:41: First of all, these are personalized ads.
+55:41 - 55:45: And second thing is we will send specific IDs to Meta.
+55:45 - 55:48: We will say, we want these 50 people to see this ad,
+55:48 - 55:50: these 200 people to see this ad.
+55:53 - 55:56: And it's a specific content at a specific time.
+55:57 - 55:59: So this is the 9 a.m. campaign.
+55:59 - 56:00: This is the 9.30 campaign.
+56:00 - 56:02: This is the 10 a.m. campaign.
+56:02 - 56:04: So we'll run hundreds of campaigns in a day.
+56:04 - 56:06: That's why all of this has to work programmatically.
+56:07 - 56:08: Yeah.
+56:09 - 56:10: Okay.
+56:11 - 56:14: Then lastly, which will mostly be, you know,
+56:14 - 56:16: I'm kind of depending on you for a lot of this,
+56:16 - 56:18: is the e-commerce Fishbowl codes.
+56:18 - 56:21: You and Jason already set it up, in-store setup.
+56:22 - 56:24: We have to talk to Brian Patrick.
+56:24 - 56:28: I'll set up the, I will set up this call.
+56:35 - 56:41: So this, sorry, I missed a very important part here,
+56:43 - 56:49: which is Olo integration that we have to keep following up with Olo
+56:49 - 56:52: because without Olo, this thing won't work ultimately.
+56:53 - 56:59: So I will initiate, I think his name is Brian.
+56:59 - 57:01: I will copy you in it.
+57:05 - 57:06: Okay.
+57:18 - 57:22: So our goal should be that somewhere over the next two, three weeks,
+57:22 - 57:26: we get these, we get these Olo approvals
+57:26 - 57:29: and we can activate the landing pages that Jason has.
+57:30 - 57:33: Because sending people to the thanks e-commerce site,
+57:34 - 57:36: we are going to, we know we're going to lose nine out of 10.
+57:43 - 57:48: And then on the Respite AI side, the first few actions are for me.
+57:48 - 57:50: I have to clean up the text, provide the updated text.
+57:51 - 57:52: I'll do this by end of next week.
+57:53 - 57:55: Site management, we have to discuss with ProCopto.
+57:55 - 57:56: We'll have a call with them.
+57:56 - 57:59: And then there are a couple of things like we haven't decided how,
+57:59 - 58:03: which payment or invoicing module to use on the website.
+58:04 - 58:08: Because at some point the system has to work automatically.
+58:08 - 58:10: Right now we are doing everything manually,
+58:10 - 58:11: but sometime by late November,
+58:12 - 58:15: the customer should be able to go in and set up a campaign themselves.
+58:16 - 58:19: But those things we will see as it happens.
+58:19 - 58:22: User permissions, it is built.
+58:22 - 58:23: We have to test it.
+58:23 - 58:24: We will decide who will test it.
+58:28 - 58:30: So this is the extent to which I was able to build the lead,
+58:31 - 58:33: build the idea, but I hope this gives us enough framework
+58:33 - 58:38: to at least start building a work plan around it.
+58:38 - 58:40: And I know you might have more questions.
+58:40 - 58:43: So I'll send you this file.
+58:43 - 58:44: Look at the tab.
+58:44 - 58:45: That's it.
+58:45 - 58:48: And then we can shift to some other format as we move along.
+58:49 - 58:50: That you can decide.
+58:51 - 58:53: So any questions so far in this?
+58:54 - 58:55: No.
+58:55 - 58:56: All right.
+58:56 - 58:58: I think this has been good too.
+58:59 - 59:03: To be able to just kind of see it at a high level.
+59:03 - 59:06: Who the, you know, the buckets, the way you see them.
+59:06 - 59:07: And then.
+59:08 - 59:11: The way I look at it is I look at things in terms of, you know,
+59:11 - 59:13: buckets, people, vendors.
+59:13 - 59:16: And then what are the relationships across all of them.
+59:16 - 59:19: So I look, I can look at things like more of a graph kind of thing.
+59:19 - 59:20: So.
+59:20 - 59:21: Yeah, this is very helpful.
+59:21 - 59:23: Cause you put, you put that together.
+59:23 - 59:24: Here.
+59:24 - 59:25: I'll get this over to you.
+59:25 - 59:27: And then there are certain action items that I have to take.
+59:27 - 59:29: So you'll see emails to Patrick.
+59:29 - 59:30: You'll be CC.
+59:30 - 59:31: In it.
+59:31 - 59:32: Email's to OLO.
+59:32 - 59:35: The one group I'm requesting that you take over as early as possible.
+59:35 - 59:36: Is the data group.
+59:36 - 59:38: It's the HCR OLO.
+59:38 - 59:47: And then I'm going to give you a brief overview of the other.
+59:47 - 59:49: Action items to take and being able to kind of see it in terms of
+59:49 - 59:50: media routing.
+59:50 - 59:52: This might be a little bit more than you generally expected.
+59:52 - 59:55: But this is insight in terms of managing data,
+59:55 - 59:56: and dealing with conservation.
+59:56 - 59:57: So managing.
+59:57 - 59:58: Data.
+59:58 - 59:59: Okay.
+59:59 - 60:00: The overall together.
+
+--- Chunk 5 (chunk_005.mp3) ---
+65:18 - 65:24: all of these four or five guys, because they need daily pinging.
+65:25 - 65:30: We have to secure our data sources, that's the heart of everything.
+65:31 - 65:38: I'll send this to you, I'm available for questions anytime. We'll set up our usual
+65:38 - 65:44: call Monday morning with Jason and you have the task list here and you can set them up in whichever
+65:44 - 65:49: way you like, but we are aiming that emails should go live Wednesday, end of day,
+65:50 - 65:54: if everything goes as planned. These are plain emails, non-e-commerce emails,
+65:54 - 66:00: so hopefully this is not complicated. Thank you very much, Brian, for your time. I hope
+66:00 - 66:05: you enjoy your weekend. I hope you at least get some part of it the way you want it.
+66:05 - 66:11: Alright, thank you. You're welcome, bye.
+
+==================================================
+Processing completed: 2025-10-21 23:49:23
+Total chunks processed: 5
+Total segments transcribed: 591
+==================================================

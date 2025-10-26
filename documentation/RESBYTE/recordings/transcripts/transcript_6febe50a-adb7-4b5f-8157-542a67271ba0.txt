@@ -1,0 +1,628 @@
+Audio Transcription
+==================================================
+File size: 41.98 MB
+Processing strategy: 10MB chunks
+Processing started: 2025-10-21 20:53:15
+==================================================
+
+--- Chunk 1 (chunk_001.mp3) ---
+00:00 - 00:03: The promotional templates.
+00:03 - 00:05: No, we'll just run with one discount right now.
+00:05 - 00:09: We'll just take one discount and just run with that for a few days.
+00:09 - 00:15: I think one discount, we'll just take a 25% discount and run with that or various levels
+00:15 - 00:19: of discount based on whatever formulas we have implemented.
+00:19 - 00:24: And we just run with that for a few days till we see a few transactions happen.
+00:24 - 00:29: My expectation was on our own landing pages, we should have been able to convert 30, 40%.
+00:29 - 00:33: The existing website is converting about 6%.
+00:33 - 00:36: So we'll take that for the moment.
+00:36 - 00:41: And let's start one round of discounts and then we'll go to promotions next.
+00:41 - 00:46: Well, the only thing is, so content watch for the existing ones for discounts, they
+00:46 - 00:47: are done.
+00:47 - 00:50: The problem is if we're not using our own landing page, we need to issue some kind of
+00:50 - 00:55: promo code that is not included in the current design.
+00:56 - 00:59: No, so, all right, so.
+01:03 - 01:08: Because if we're going to use the NCR path to get around OLO for now, we've got to find
+01:08 - 01:10: a way to integrate that.
+01:10 - 01:11: Okay.
+01:11 - 01:20: But other than that, they've corrected everything on the day being SunTech has corrected everything
+01:20 - 01:24: in the discount static template.
+01:24 - 01:30: They have to do corrections on the calculations in the promotional template.
+01:30 - 01:31: That is still incorrect.
+01:31 - 01:34: The promotional template is still incorrect.
+01:34 - 01:37: So but for discounts, it's straightforward.
+01:37 - 01:38: You're satisfied that that is working?
+01:38 - 01:39: Yes.
+01:39 - 01:41: Other than we said the promo code, yes.
+01:41 - 01:51: One thing I just wanted to run by you here is, and maybe this is, like Brian says, I'm
+01:51 - 01:54: one of the few people using Safari.
+01:55 - 01:58: I know this is a Safari issue, but at least we had seen this last week, but it hasn't
+01:58 - 01:59: changed.
+01:59 - 02:00: Oh, the bottom.
+02:00 - 02:01: Yeah.
+02:01 - 02:02: Yeah.
+02:02 - 02:04: So it's still the same.
+02:04 - 02:05: I will look into that this morning.
+02:05 - 02:07: That's an easy fix.
+02:07 - 02:08: Whatever it might be.
+02:08 - 02:10: I hope it's an easy fix.
+02:10 - 02:15: Well, you get somebody to check it in other browsers.
+02:15 - 02:18: I mean, typically Safari is only 5-10% anyway.
+02:18 - 02:20: It works everywhere else.
+02:20 - 02:21: Okay.
+02:21 - 02:24: Yeah, it works everywhere else.
+02:25 - 02:26: I'm not exactly sure why.
+02:26 - 02:27: It's only that bottom piece.
+02:27 - 02:31: That bottom piece is kind of complex because it has all of their social links and things
+02:31 - 02:32: like that in there.
+02:32 - 02:34: We have to track all of that.
+02:34 - 02:37: It works everywhere else.
+02:37 - 02:39: I have not seen that issue anywhere.
+02:39 - 02:42: Are you in Outlook or are you in Safari?
+02:42 - 02:43: Outlook.
+02:43 - 02:44: You're in Outlook?
+02:44 - 02:45: Yeah.
+02:45 - 02:46: Okay.
+02:46 - 02:48: I'll take a look and see if it's something special with Outlook.
+02:48 - 02:50: Whatever it is, I'm sure it's small.
+02:50 - 02:53: I have to figure out a way to test it because I don't actually have Outlook, but I can send
+02:54 - 02:55: you a screenshot if it shows up.
+02:55 - 02:56: I understand.
+02:56 - 02:58: I can take a screenshot and send it to you.
+02:58 - 03:02: But in any case, I know that percentage is small.
+03:02 - 03:12: So other than the coupon code or whatever they will give us, other than adding that,
+03:12 - 03:20: then the next thing is in terms of tracking, you have tags that are in the email.
+03:20 - 03:27: So you'll be able to track who we have sent it to, who has clicked through, and then they
+03:27 - 03:34: will land at thanks and our pixel is not ready on thanks or rather thanks that they will
+03:34 - 03:37: not install our pixel.
+03:37 - 03:42: So the other thing we could do is we could install the pixel on the website and drive
+03:42 - 03:44: them to the homepage of the website.
+03:44 - 03:50: So we could at least say, if we drive so many people, we drove so many people to the
+03:50 - 03:51: website.
+03:51 - 03:52: Yeah.
+03:52 - 03:55: We'll know that they clicked.
+03:55 - 03:59: It's the user journey from there that we're trying to track.
+03:59 - 04:00: No.
+04:00 - 04:01: So that's what I'm saying.
+04:01 - 04:06: If we can click from the emails to the website, those two components, we can click and then
+04:06 - 04:11: we can track closed transactions because we can match a transaction with the consumer
+04:11 - 04:12: ID.
+04:12 - 04:16: The only thing we will not be able to track is what's happening inside thanks.
+04:16 - 04:17: Right.
+04:17 - 04:24: It doesn't take much for us to change the link to point to the homepage.
+04:24 - 04:26: We just take the slash order off.
+04:26 - 04:28: We can change that relatively easily.
+04:28 - 04:32: They have already coded that part in, but we could switch it up and test it.
+04:32 - 04:35: It wouldn't take us but a few minutes to test that.
+04:35 - 04:37: But we still need to install the pixel.
+04:37 - 04:40: I have two questions about the pixel.
+04:40 - 04:42: You sent me the last email.
+04:42 - 04:47: First of all, you sent me an endpoint, but that endpoint starts with a holo dot something.
+04:47 - 04:48: Yeah.
+04:48 - 04:51: I'm not sure if somebody is mixing up something or...
+04:51 - 04:52: No.
+04:52 - 04:53: It's because...
+04:53 - 04:54: Okay.
+04:54 - 04:55: So the data server is the server we use for all ingestion.
+04:55 - 05:00: And because it was later in the day, we didn't have a chance to go to Propal and ask him
+05:00 - 05:04: to create a new endpoint locations, the same server.
+05:04 - 05:07: We can create a new endpoint.
+05:07 - 05:08: Normally we would.
+05:08 - 05:11: Security.lm.data.res.
+05:11 - 05:12: Wouldn't that be better?
+05:12 - 05:13: Because this is...
+05:13 - 05:18: They're going to create one pixel for us that has to last us a year with all customers.
+05:18 - 05:19: With all, yeah.
+05:19 - 05:26: It would be odd sending out an olo pixel to brands because they're going to wonder what
+05:26 - 05:27: the...
+05:27 - 05:28: Yeah.
+05:28 - 05:34: I will go back to Propal and ask him to create another subdomain.
+05:34 - 05:41: Well, what I'll essentially do is just make sure that the data.resby.ai subdomain will
+05:41 - 05:43: pick up that endpoint.
+05:43 - 05:44: I can do that this morning.
+05:44 - 05:46: I can actually start that process right now.
+05:46 - 05:47: Okay.
+05:47 - 05:48: So that's one thing.
+05:48 - 05:54: And then the other thing is when I asked you, you sent me an email, you asked some questions
+05:54 - 06:01: about what data can go through.
+06:01 - 06:03: Now, you had a call with them last week.
+06:04 - 06:05: There was some discussion about it.
+06:05 - 06:06: Yeah.
+06:06 - 06:15: Do you know what exactly is...
+06:15 - 06:18: My question is, I mean, you had a discussion with them.
+06:18 - 06:20: Are you not clear about what data they can transfer or not?
+06:20 - 06:23: Because they are saying they can't do anything other than a maid ID.
+06:23 - 06:24: Yeah.
+06:24 - 06:25: Yeah.
+06:25 - 06:26: I was kind of pushing them to confirm that.
+06:26 - 06:27: Yeah.
+06:27 - 06:28: No, but they've said it multiple times.
+06:28 - 06:29: They've sent documentation around it.
+06:29 - 06:31: So do you want me to set up another call with them?
+06:31 - 06:32: No, no.
+06:32 - 06:33: No.
+06:33 - 06:34: I don't want to set up those variables.
+06:34 - 06:37: So when we spoke to them, I asked them about the refer ID.
+06:37 - 06:40: They said, we can pick it up if you pass it to us in the URL.
+06:40 - 06:48: And I was like, okay, that means that we have to give Madeline more than just the pixel.
+06:48 - 06:51: We would actually have to give them a JavaScript packet as well.
+06:51 - 06:55: And we'd really be building our own tracking pixel, but just using Acuity to send us the
+06:55 - 06:58: information back.
+06:58 - 07:00: That is essentially what they said in their confirmation.
+07:00 - 07:05: So I kind of let that go and was just like, well, then all we need is this part, these
+07:05 - 07:08: eight parameters and these two parameters.
+07:08 - 07:09: We will pass those to you.
+07:09 - 07:11: We'll pick up the refer in our own way.
+07:11 - 07:14: So that's why I didn't mention it again in the second email, because I was like, well,
+07:14 - 07:17: they have confirmed that they can't pick up any of this other information that is required
+07:17 - 07:20: for us.
+07:20 - 07:23: So what we're going to have to do is we're going to take their pixel.
+07:23 - 07:29: We're going to have to package that pixel with our own JavaScript package, right?
+07:29 - 07:32: It's either that or we have to go back to the distributor ID, which is going to be a
+07:32 - 07:34: real headache for the Madeline.
+07:34 - 07:35: I would not recommend that.
+07:35 - 07:40: What I would recommend is that we just hand them and say, hey, here's a JavaScript packet.
+07:40 - 07:43: It contains everything we need for tracking.
+07:43 - 07:46: It's a single line of code that they would just drop into their website, just like they
+07:46 - 07:50: would drop in the pixel, but it would contain the pixel in our JavaScript that feeds the
+07:50 - 07:51: pixel and they'd be fine.
+07:51 - 07:53: That's the strategy I'm going with now.
+07:53 - 07:54: No, that's fine.
+07:54 - 08:01: So you have to give me this, number one, this endpoint, and then number two, you have to
+08:01 - 08:07: give me these parameters that have to go to equity and equity will then create the pixel
+08:07 - 08:08: and send it back to us.
+08:08 - 08:09: Right.
+08:09 - 08:11: Did you not send them the endpoint that I sent you already?
+08:11 - 08:13: No, but that's incomplete, right?
+08:13 - 08:14: We have to send them the whole thing.
+08:14 - 08:18: What would be the, and I didn't want to send them an endpoint with Olo on it.
+08:18 - 08:20: I mean, that didn't make any sense to me.
+08:20 - 08:21: Let me make sure that the-
+08:21 - 08:22: They're going to do this.
+08:22 - 08:23: I want you to understand something.
+08:24 - 08:25: They're going to do it one time.
+08:25 - 08:26: They don't want to do this every week.
+08:26 - 08:27: I understand.
+08:27 - 08:28: I understand.
+08:28 - 08:29: They're going to do it one time.
+08:29 - 08:30: We're going to use it universally.
+08:30 - 08:31: That was the strategy.
+08:31 - 08:32: We're going to call clients on our own.
+08:32 - 08:33: Got it.
+08:33 - 08:34: Got it.
+08:34 - 08:37: It's, like I said, the data server is segmented.
+08:37 - 08:38: We do it.
+08:38 - 08:39: We're doing enclaves.
+08:39 - 08:46: I'm going to ask the team that's already built the endpoint, if we strip off the Olo.lm,
+08:46 - 08:51: if it'll still do the capture visitor part.
+08:51 - 08:55: I'm asking them right now.
+08:55 - 09:01: So yeah, but I mean, other than that, the question still remain the same, or that other
+09:01 - 09:09: segment still remains the same, where I was specifically specifying how we want the configuration
+09:09 - 09:10: done.
+09:10 - 09:11: That stays the same.
+09:11 - 09:14: No, but your last email has questions in it.
+09:14 - 09:18: My question is, again, I don't want to step on your toes.
+09:18 - 09:20: I mean, are you clear what they're asking?
+09:20 - 09:22: Do you need another call with them?
+09:22 - 09:25: I don't need another call with them.
+09:25 - 09:28: If you've passed that, essentially I was saying if there is any additional documentation,
+09:28 - 09:29: right?
+09:29 - 09:31: They have sent the documentation, right?
+09:31 - 09:32: They've given us the documentation for the paper.
+09:32 - 09:38: They sent us the information that we need to set up the endpoint itself.
+09:38 - 09:42: We know what we're going to receive.
+09:42 - 09:49: Essentially what I'm asking for, because it was very, it was pretty basic for a API endpoint.
+09:49 - 09:50: Okay.
+09:50 - 09:52: It gets you going.
+09:52 - 09:55: I was essentially saying if there's anything else that they could provide, we would appreciate
+09:55 - 09:56: it.
+09:56 - 09:58: But if there's not, then we'll just take what they give us.
+09:58 - 10:03: It's a similar scenario to what happened with the Olo endpoint when we did the webhook.
+10:03 - 10:04: There's not any real documentation.
+10:04 - 10:08: We kind of had to reverse engineer the data they were sending back to us.
+10:08 - 10:13: But once we did that, we had it, and now it runs smoothly.
+10:13 - 10:15: Actuity may be in the same situation, but we were just essentially saying if there's
+10:15 - 10:17: anything beyond this, please send it.
+10:17 - 10:23: I can, well, that's what, you know, that's what we were hoping to cover on the call.
+10:23 - 10:25: I mean, I can set up another call with them.
+10:25 - 10:30: I mean, we've got to get this done right.
+10:30 - 10:41: So I'll ask for another call so that we can get this done.
+10:41 - 10:43: But we are five days away from this.
+10:43 - 10:50: This is something we need to get done today because once we give it to them, they give
+10:50 - 10:51: us the pixel.
+10:51 - 10:52: That takes three days.
+10:52 - 10:53: The pixel comes back to us.
+10:53 - 10:55: We install it.
+10:55 - 10:55: That might...
+
+--- Chunk 2 (chunk_002.mp3) ---
+16:47 - 16:52: take a couple of days, then at every stage we get stepped behind. I don't think we will wait
+16:53 - 16:58: for this. Obviously without this, we are not tracking anything, right? We are only tracking
+16:58 - 17:04: emails out. Well, we can track because we can build our own tracking CDN, our own little
+17:04 - 17:08: tracking JavaScript that we can throw in there. What we won't have is the automatic attribution
+17:08 - 17:17: piece. Yeah. I mean, I think it'd be good to do it together because if we go to Canopy and
+17:17 - 17:21: say, here, put this, and then go a week later and say, now put this, that'll just create more.
+17:22 - 17:25: If it's a matter of three days, let's get this done internally today.
+17:27 - 17:33: I'll push equity if they can give it back to us by Friday. And then we hit Canopy by Monday.
+17:33 - 17:40: In the meantime, we'll at least get the emails going. So there is some work to be done on the
+17:40 - 17:55: data side. Now there is also the traffic dashboard. For sending out emails, NCR is not important.
+17:59 - 18:06: On the enrichment, who do you want trained for the enrichment process?
+18:06 - 18:18: We'll probably have everyone on the data science team who are leads. The two leads are Tanmay and
+18:18 - 18:26: Natisha. So we have them, both of them. So we'd have a backup. I'd probably be on that call as
+18:26 - 18:34: well. I'm sure Brian might want to be on that call as well. I will ask for that call, but the person
+18:34 - 18:40: who's going to people, person, persons, have to be familiar enough with the data.
+18:41 - 18:46: Because the training, I've seen this before, their systems are very well organized.
+18:48 - 18:54: But it's important that we are trained so that they can actually do the work while on the training,
+18:54 - 18:59: like the match rate. What would be ideal is that we'll ask them for a half an hour call.
+19:00 - 19:02: And we'll have their engineer show us all the different parameters
+19:03 - 19:09: on how this is done right there and then. Also, I'll ask if LJ will be there. I'm not sure LJ
+19:09 - 19:13: will want to share the work he has done before, because obviously he's going to feel a little bit
+19:13 - 19:21: insecure. He has put a lot of hours into this. He had figured out at Hardee's, he had done a good
+19:21 - 19:27: job. He had figured out some other different formula. I'm not sure he'll share it or he won't
+19:27 - 19:33: share it. The one thing that could be, if they can spend time in Snowflake, the Hardee's data,
+19:34 - 19:43: whatever work he has done is visible there on how to do match rates. If somebody can look at it,
+19:43 - 19:46: it's fine. If not, then we just go into training and we get this done. And the reason behind this
+19:46 - 19:52: is we have 2.5 million IDs, only 400,000 are actionable. And it's just a matter of doing
+19:52 - 19:58: that work. We should be bare minimum, we should be at 60-70%. And if we do a good job, we should
+19:58 - 20:06: be at 90% plus. So that's the next step that has to happen on the data front. So I'll set up the
+20:06 - 20:12: training. I'll ask how soon they can do this for us. We go from there.
+20:15 - 20:21: The next part on data is, I saw your message to LJ yesterday, I had spoken to LJ last week.
+20:22 - 20:26: And by the way, LJ has no clue where data is coming from. I mean, he has never done anything
+20:26 - 20:34: other than the front end. So one of the questions I had for you was that, I mean, the July 29 data
+20:34 - 20:41: is the dump that Patrick gave us on August 1st or whatever first week of August. After that,
+20:41 - 20:45: are you aware of any other data that has come from NCR that we are supposed to be seeing?
+20:46 - 20:47: No, no.
+20:47 - 20:52: So what are you expecting LJ to, I mean, I'm just wondering.
+20:53 - 20:58: We have other data, the system should be able to pick up the rest of the data. I'm a little
+20:58 - 21:01: concerned, his response, and I was going to talk to the data team about this this morning,
+21:01 - 21:06: our meeting is after this. It's a little strange that the data would just stop,
+21:07 - 21:14: because there's no NCR data. We have OLO data, we have FreedomPay data. So there are other data
+21:14 - 21:17: sources. Maybe the numbers would drop off because we don't have the NCR data,
+21:17 - 21:18: but they shouldn't stop.
+21:19 - 21:23: No, so if you see what's happening is the way the dashboards are set up,
+21:24 - 21:31: the primary sales dashboard is picking up data, I believe from NCR. And the segment data is
+21:31 - 21:34: picking up data from different segments. So the segment data you are getting,
+21:35 - 21:38: it stopped last week or something. Let me just open it right now.
+21:38 - 21:43: Yeah, because I've talked to LJ about this before, and I was like, well,
+21:45 - 21:53: he'll name things like warehouse OLO factual orders, thanks factual purchases. And I'm like,
+21:54 - 22:02: all of this should roll up into one normalized table, right? That is all transactions,
+22:02 - 22:06: right? The same way I'm doing it when I'm dumping the data in, right? Doing the staging.
+22:09 - 22:14: Instead, he still has that information segmented. We had talked about it about a month ago,
+22:14 - 22:18: or a little more than a month ago, probably, about normalizing that data. So there is one
+22:18 - 22:26: source that we can generate all of our other reports from. And it looks to me after seeing
+22:26 - 22:31: his response yesterday, he still has not done that. And for that reason, if we don't have NCR
+22:31 - 22:35: data, the data will stop. If we don't have specific OLO data, the data will essentially
+22:35 - 22:40: stop in some locations as well. POS is what he's calling NCR, point of sale.
+22:42 - 22:48: So I'm a little concerned about that. No, so look, we need to get very real about
+22:49 - 22:54: how we manage this project at this point. I don't want to wait one more day for LJ. I mean,
+22:54 - 22:58: he has not even completed 20% of his tasks in the last four weeks. So I can't wait.
+22:59 - 23:06: If you have somebody, if we can get on a call today, and Brian can be there, I can walk them
+23:06 - 23:10: through what the backend structure is, what's pulling from where, and then we can check it.
+23:10 - 23:17: And then we can spend an hour or two together and get this done. So we need somebody to go in there
+23:17 - 23:21: and check these pipes. Like right now, there is no point waiting for LJ anymore. I mean,
+23:21 - 23:25: I've said this to him for three weeks. He hasn't done it. I'm not waiting one more day. I have a
+23:25 - 23:32: couple of people I've interviewed. Obviously I prefer you do it your way. If you have the resource,
+23:32 - 23:36: then let's go today. And I'll explain kind of what he's doing. I know what he's doing in the
+23:36 - 23:41: background and they can check it and either confirm or they say, no, he's not, he's done
+23:41 - 23:45: something else. But for instance, there are also, there's some problem because we are not getting
+23:45 - 23:53: data beyond 10-8. So the direct delivery data, for instance, comes from Olo and this date is
+23:53 - 24:00: 10-11. The third party data comes from Olo, this date is 10-11. So managing the data pipes is
+24:00 - 24:04: clearly not LJ, right? It's somebody we have to allocate somebody to this job.
+24:04 - 24:10: Yeah. I know that Thanks and FreedomPay and Olo are all up to date today.
+24:10 - 24:14: Look at the dashboard, right? This is the dashboard. This is the live server.
+24:14 - 24:18: Yeah. I think whatever his process is might not have run, but I know that he has, the data is
+24:18 - 24:27: there. The raw data is there, is what I'm saying. So Jason, I understand that. I understand the raw
+24:27 - 24:34: data is there. So who's going to work on this today? We already have a team associated with
+24:34 - 24:38: it. So what time are we going to have this call? When are we going to get this done?
+24:39 - 24:44: We now want to get real about this project, right? I mean, we can't leave it and say somebody will do
+24:44 - 24:47: it at some point. I mean, what time are we going to have this meeting? When is this going to get
+24:47 - 24:51: fixed? Because we have to give this, we were supposed to give this to the client on 6th
+24:51 - 24:55: September. We are on 15th October. So we don't have any more time. We can't go another week
+24:56 - 25:01: for planning. So what time can we have this meeting today so we can check all of this?
+25:01 - 25:06: And I'll try to get equity to get on a phone with us today itself. And we can maybe finish the match
+25:06 - 25:14: rate and the data sources all in one afternoon. I may be able to, I can get everyone together,
+25:14 - 25:22: say around, we have a, I mean, I can either preempt my team standing meeting and we can do
+25:22 - 25:30: it almost immediately. Or if you can do maybe around 11, your time. I have investor meetings
+25:30 - 25:36: till about 1230. Okay. So it has to be this afternoon. So I can either do afternoon. Again,
+25:36 - 25:40: if we want equity, they will take at least a couple of hours organizing it. If you want equity
+25:40 - 25:45: on the same call, if you want to do it to separate calls, I'm okay. We can do it. We need an hour at
+25:45 - 25:49: least to finish our planning right now. So let's finish our planning at least so that we have a
+25:49 - 25:58: clear pathway. So we have to coordinate some timing. I'll ping equity right after this call,
+25:58 - 26:02: see how soon they can help us. You'll have to tell me what is the availability of the resources. If
+26:02 - 26:06: you have to stay late, we'll stay late. We'll get this done. The point is we have to get these
+26:06 - 26:11: dashboards. And then one of the key elements obviously is the NCR data and the web hook.
+26:11 - 26:17: So that you told me that Patrick can do it. So I have messaged Patrick for a time. And so the NCR
+26:17 - 26:30: will be Patrick. And I'll set that up with Patrick for today. Right. Okay. I will coordinate some
+26:30 - 26:36: time this afternoon between the two leads on the data team. They'll be ready for acuity.
+26:37 - 26:43: Well, I can actually probably Brian will actually probably do it, but we will have everyone set.
+26:43 - 26:51: We'll try to see when we can get everyone in this afternoon. Okay. Yeah. So, and I would,
+26:51 - 26:56: if you're okay with it, I'll ask Pritpal to also be there because he was supposed to set up something
+26:56 - 27:03: or again, it's your call because when these pipes break, we should have a way of knowing it.
+27:03 - 27:07: It's only when we go to the data and see, oh, there is no data coming. Then we find out. And
+27:07 - 27:13: then that's not because what is happening is if you see when data stops coming, it just shows
+27:13 - 27:18: a like a nose diving seals and nose diving. It doesn't say data stop coming. I bet you there's
+27:18 - 27:22: something going on here. There is a, there is some data connection that is missing. Those sales have
+27:22 - 27:29: not dropped. Right. No, the ECR data we, they, we didn't never, they, they're expecting to set
+27:29 - 27:36: up a web hook for live data. They've given us access to two locations to do testing. They just
+27:36 - 27:42: did that this week. Right. There was when we initially
+
+--- Chunk 3 (chunk_003.mp3) ---
+33:35 - 33:38: discussed it, we were supposed to be able to go in and access the data directly. That was the
+33:38 - 33:46: whole discussion we had with NCR several weeks ago. They were working with the Madeleine to sign
+33:46 - 33:52: paperwork between these three parties, NCR, the Madeleine, and us, to allow us to access the data
+33:52 - 33:57: directly. I'm not sure what happened there, but I don't have-
+33:57 - 34:01: So what happened there is very simple, Jason. This is why I requested that Brian is here.
+34:02 - 34:06: Patrick doesn't do anything until he's nudged, and he will take small actions,
+34:06 - 34:12: one action at a time. What happened was we signed the agreement on 10th September.
+34:12 - 34:18: They emailed us around the 14th September saying, this is all done. Now we are on 15th October,
+34:18 - 34:23: because we didn't follow up. And just unless we follow up with them, they are not going to do
+34:23 - 34:26: anything. I didn't see anything from Patrick that said anything was done.
+34:27 - 34:32: That's what I'm telling you. Patrick is not going to do something unless we go to Patrick and say,
+34:32 - 34:38: this is the next action we need you to take for us. NCR authorized it. They did the call. They
+34:38 - 34:43: sent the messages around middle September saying everything is done. It's authorized. It's done.
+34:43 - 34:48: Please do the next thing. But we never went to Patrick and said, hey, you need to do this next,
+34:48 - 34:56: so we can do this next. So that coordination, Patrick doesn't do anything by himself. You have
+34:56 - 35:00: to give him specific instructions saying this is your next step. Please do this. And then we if he
+35:00 - 35:06: doesn't do it, then we escalate to Chad. And if he doesn't do it, we escalate to Sarah and John. But
+35:08 - 35:13: he only acts on very specific actions. Like when you say I need you to do x, then he will do x.
+35:15 - 35:19: He doesn't take the initiative to do anything, right? That's why we have to manage it.
+35:19 - 35:22: He's not going to as far as he's concerned, he doesn't care. I mean, he's
+35:22 - 35:29: his. So, all right. So, we've got Patrick today. We've got to figure out the
+35:29 - 35:34: links, NCR link. Patrick has to do the next step. I'll try to get him on a call to explain to him
+35:34 - 35:39: what we need him to do. Then we'll give him the instructions, and then we'll follow through that
+35:39 - 35:44: he does it. So, this will be the data from NCR, and then the data links and Snowflake. We will
+35:45 - 35:50: you know, we will address that today. And if we do these two things, minus the pixel,
+35:51 - 35:55: anything else in terms of data connections for starting the email campaigns?
+35:57 - 36:02: We are not tracking well, okay, we're not using the one click purchase page right now. I mean,
+36:02 - 36:05: we're demoing, we're preparing a demo as if we are, but we're actually going to be sending them
+36:05 - 36:14: to them. So, the one click page demo, when are you comfortable with that? Obviously,
+36:14 - 36:19: that's connected to Olo. Yeah, we'll keep on pursuing Olo. Just so that you know, I will
+36:19 - 36:25: today draft an email, send it to Chad and have Chad send it to Olo. Yeah. About why they need
+36:25 - 36:31: this expedited. I'm going to follow up and then ask John, the CEO to call his contact at Olo.
+36:31 - 36:36: Yeah. And then worst case, Michael knows the CEO, then I'm having Michael send a message to the CEO
+36:36 - 36:41: saying, can you please get some help on this? Yeah. So, while this is going on, we are not sure
+36:41 - 36:46: this is going to take two days or two weeks. We'll start our email thing. So, let's get the email
+36:46 - 36:51: thing started. And then as soon as the landing pages become available, we will switch the traffic
+36:52 - 36:58: to the landing pages. But let's get the email started anyway. Yeah, I've seen all the tests.
+36:58 - 37:01: I had to stop one of the tests yesterday because they almost popped the cork yesterday.
+37:01 - 37:06: They almost sent out a hundred and some thousand emails. They almost accidentally sent them out.
+37:07 - 37:12: But I was able to stop them before, luckily. They are doing the clustering. They do have the
+37:12 - 37:17: lists in there. There was an issue with the tracking links that we addressed this morning
+37:17 - 37:23: already. Because I was like, hey, there's a couple of links that you added that you didn't
+37:23 - 37:28: add the tracking on. Let's add the tracking to those. It was just the ones that go to the
+37:30 - 37:35: landing page itself. They added the link, but they forgot to add the tracking part of the link.
+37:38 - 37:45: So, we've got good progress there. We were shooting for this afternoon. We have a conflict now
+37:45 - 37:49: because we have to get with Acuity and them, but we might still be able to get that in this
+37:49 - 37:56: afternoon. But if not, then we can do it sometime early tomorrow, but we were shooting for this
+37:56 - 38:00: afternoon. Let's do one thing. Let's do one thing. This is what I was requesting Brian yesterday.
+38:00 - 38:06: We have a lot of moving parts here. Let's do one plan so that we know what we are doing over the
+38:06 - 38:11: next five, six, seven days. We don't have to change the plan every day. We can set up expectations
+38:11 - 38:15: to the client side based on the plan. And then we can all manage from the same plan.
+38:16 - 38:24: Right. Hey, Puneet. I just wanted to jump in real quick. I do want a couple of things.
+38:24 - 38:32: Please send me those video transcriptions. That's what my blocker is for that.
+38:32 - 38:36: And then I'll go ahead and push everything once I've transcribed those.
+38:36 - 38:41: Brian, I am not sure. I am not getting these recordings because I didn't initiate them. I
+38:41 - 38:45: think they come to you directly. I'll check. I'll go into your account and if I can find them,
+38:45 - 38:51: I'll send them to you. But if I make a recording, I get an email alerting me with it, but I didn't
+38:51 - 38:56: get that. Okay. So worst case is, look, after this call, I'll look for the recording. I'll forward
+38:56 - 39:00: them to you. If I don't get it, I'm happy to get on a call with you and go through point by point.
+39:00 - 39:07: Yeah. I mean, I think I have one out of all the calls we've had so far. But if I can have maybe,
+39:07 - 39:09: if I can find like one or two more, that'll be great.
+39:10 - 39:11: I do have one.
+39:11 - 39:13: We'll get you the information you need today.
+39:13 - 39:14: Okay.
+39:15 - 39:20: So that's why I'm doing this. So we kind of all know what we are doing. And then you'll kind of
+39:20 - 39:27: get it organized. You'll give tasks to the SunTech team and then you're coordinating everything with
+39:27 - 39:36: Jason. So, all right. So let's just finish this. So the one click demo page is going to be,
+39:37 - 39:40: you'll tell me the timing based on whatever priorities.
+39:40 - 39:51: We've got a priority with acuity and this NCR issue today. So we would probably push the demo
+39:51 - 39:52: till tomorrow.
+39:52 - 39:59: We can push the demo to tomorrow. And then in any case, if OLO is going to take three days,
+39:59 - 40:03: we can't activate that page. It's only going to be something we show to the client and then hold
+40:03 - 40:13: off. But the equity data, the objective here is to get the 2.2 million IDs activated.
+40:15 - 40:21: Right. We're already working on the nearest neighbor model. We started on that last week.
+40:22 - 40:27: Nitisha will be on the call so we can talk to her about that if we need to.
+40:27 - 40:33: Hey, one last thing. Unfortunately, I have a hard stop at 9.30. I'm kind of five minutes over,
+40:33 - 40:43: but I'll be unavailable from now till about two o'clock. But I'll be available via text if needed.
+40:44 - 40:49: So Brian, I don't think it doesn't serve any of us. We don't want to scramble.
+40:49 - 40:54: So you finish what you're doing, but then let's set aside 90 minutes today to finish this plan.
+40:55 - 41:00: Whatever access you need, if you can get that from Jason, we can finish the plan. We know
+41:00 - 41:05: exactly who's doing what and who's delivering what by when time. That's important that we do
+41:05 - 41:11: that today. I'll be available. You ping me. We'll set up a time. We'll go through this
+41:11 - 41:15: and we'll finish this. And of course, any other meetings, I'll keep you informed. You join the
+41:15 - 41:25: ones that you can. Fantastic. Okay. Thank you. All right. So to clarify, the demo for the
+41:27 - 41:34: emails and the one-click purchase will be an internal demo. It'll be with you. We'll be
+41:34 - 41:41: essentially presenting it to you. Are you expecting us to present to the client also tomorrow?
+41:41 - 41:44: Yeah. Don't waste time presenting it to me. We have to present it to the client. So when you're
+41:44 - 41:52: ready, we present to the client. So we should plan accordingly. Okay. Let me get with the team
+41:52 - 41:55: and see when they feel comfortable. Because like I said, we were going to present it to you. If we're
+41:55 - 41:59: going to present the client, we have to train somebody, right? To present it. We have to show-
+41:59 - 42:03: Yeah. So one of the things is I have a lady I want to introduce you. Her name is
+42:04 - 42:12: God, Kristen. I have set her up to kind of start dealing with Sarah and Mattie because there's a
+42:12 - 42:16: whole stream of things they require. She did her first call with them yesterday if it lasted like,
+42:16 - 42:22: I don't know, hour and a half. So she's got account management background, product management
+42:22 - 42:30: background. So what I'd rather do, because these strings are going to be continuous,
+42:30 - 42:34: right? Because the client is anxious. So there is one question, second question, third question.
+42:34 - 42:40: So what I'd rather do is that whenever you are ready, first, we set up an internal training
+42:40 - 42:45: for Kristen and Michael. Michael does the relationship management, he won't really do
+42:45 - 42:51: the demo. But Kristen is the one who will do the demo. And then Kristen will set it up
+42:51 - 42:55: with the client. And then Kristen, if she's fully trained, she should be able to take care of it.
+42:55 - 43:00: She's not technical, but she's got product management experience. So she can do these
+43:00 - 43:05: simple things. And then she will get the feedback, she will get a document, give it back to your team.
+43:05 - 43:11: And then she will close the loop on getting a sign off from the client. So she did that with
+43:11 - 43:17: the ads and the MMS templates yesterday. So she's finishing up that and then landing page will just
+43:17 - 43:23: become part of that whole cycle. So I can introduce her today, tomorrow, whenever the team is ready,
+43:23 - 43:27: I can set up a call with her. Yeah. Yeah, we'll need to do that. Because the thing is that
+43:28 - 43:31: we'll send her the email. She'll be in the test email group. So she'll have the emails and she'll
+43:31 - 43:35: be able to click them and get to the one click purchase page. But if they have any questions
+43:35 - 43:41: about how that is actually set up or what they can expect or volume, we'll have to kind of train her
+43:41 - 43:46: on how that works behind the scenes. So they normally don't ask technical questions,
+43:46 - 43:49: just in the user experience. So there are a couple of different teams. So the client side,
+43:49 - 43:55: which is Sarah and Maddy, they normally look at the user experience side of things, brand side
+43:55 - 44:01: of things. So they're not going to ask how it works. And we can give her some basic data points.
+44:02 - 44:06: Enough to talk to. And if something else is there, then we can have, you know, so I got your point.
+44:06 - 44:10: I don't think we need to worry a lot on the technical question side. Yeah. It's the user
+44:10 - 44:15: experience side that the client is going to mostly worry about. She'll get the email. She'll get a
+44:15 - 44:19: couple of them because she's in the group. We'll all get them because we're all in the test group.
+44:19 - 44:25: Okay. Okay. And then we'll show her, you click here, the link is tracked. They're going to go
+44:25 - 44:30: the one click purchase page. You can show them that. And you can discuss how it.
+
+--- Chunk 4 (chunk_004.mp3) ---
+50:22 - 50:28: is, you know, you can see how it's selecting the item that was in the ad, plus their top
+50:28 - 50:33: other top three items beyond that. So the top, the second, third, fourth option.
+50:36 - 50:39: And she can discuss what would happen with the purchase process, even though we haven't
+50:39 - 50:44: completed that. We'll have to do it again once we have updated the process for the promo codes,
+50:45 - 50:50: because it'll be a little bit different. It'll be, that's still, yeah, they'll click on the link,
+50:50 - 50:55: but they don't go to the homepage or to the thanks page. And they'll have to enter in the
+50:55 - 51:00: promo code. They'll actually have to select the items and add the items to the cart themselves.
+51:00 - 51:06: Right. If it's a universal 25%, we can still track that they made a purchase using that code,
+51:07 - 51:11: but it might not be the items that we have sent them in the thing. Like essentially we're just
+51:11 - 51:19: getting, so just to be clear Jason, if you're running the standard 25% code from the email
+51:20 - 51:22: to the homepage, we won't take them to the landing page.
+51:22 - 51:27: Yeah. Right. Yeah. I'm saying if we sent them a chicken sandwich,
+51:29 - 51:32: if they land on the homepage or even if they landed on the thanks page, it doesn't matter
+51:32 - 51:36: where they land, they have to add the chicken sandwich to their cart. But the thing is,
+51:36 - 51:41: the promo code will be specific for the chicken sandwich. It'll be 25% for any product they
+51:41 - 51:45: choose. I do understand that. I'm in agreement with you as a short term fixed. I think this
+51:45 - 51:50: is the only thing we can do. Yeah. Obviously as the other implementation takes place,
+51:50 - 51:55: then it gets more refined. Right. Yeah. I just want to make sure,
+51:55 - 52:00: we still will be able to track that they used our promo code, but if we send them a chicken
+52:00 - 52:06: sandwich and they decide to order a catering- That doesn't matter. That doesn't matter. As
+52:06 - 52:11: long as we can track transactions right now, our immediate goal is to track a few transactions
+52:12 - 52:17: and be able to say, hey, we initiated marketing and we've closed the loop on transactions.
+52:17 - 52:22: And we can actually show you that this customer got this email, he went to the website,
+52:22 - 52:26: he did this purchase, and then in return, he got this next coupon.
+52:26 - 52:29: Well, I mean, if it's NCR, it's in store only. So-
+52:30 - 52:34: No, no, no, no, no, no, no. NCR is not in store. NCR coupon-
+52:34 - 52:37: That's right. They can make it. ... will work on delivery on thanks.
+52:37 - 52:41: Yeah. Yeah. So we are going to stick with delivery, but we're just going to dive the
+52:41 - 52:43: traffic through the thanks to their normal ordering site.
+52:43 - 52:50: Okay. Yeah. I mean, you're right because they can make it. But they can use in store,
+52:50 - 52:52: correct, as well. We will do the in-store program.
+52:53 - 52:58: In-store program is slightly different from a marketing point of view. So we start setting this
+52:58 - 53:04: up. So in the first instance, we have to, like I said, the first instance is we have to do a proof
+53:04 - 53:11: of concept on closing the loop. Once this is closed, then we will have to start campaigns on
+53:11 - 53:16: all segments. So I will make that plan. I'll share that with you by the end of the week.
+53:16 - 53:20: Let's just finish this one first thing, which is the delivery orders.
+53:20 - 53:22: All right. Fair enough.
+53:23 - 53:30: Okay. So right now, the key element here is that,
+53:32 - 53:40: anyway, so I'll share this, whatever I've created here with you and Brian. Our immediate step is I'm
+53:40 - 53:46: reaching out to Patrick and Equity. You let me know in terms of timing of us looking at data
+53:46 - 53:51: together. And we are straightening out the dashboard and we are straightening out the emails
+53:51 - 53:54: and we are straightening out the match rate and the lists.
+53:55 - 53:59: Yeah. The match rate, we've got good. We're good there. It's really just-
+53:59 - 54:04: No, but why do you... Sorry, slow down. When you say we are good on the match rate-
+54:04 - 54:11: Oh, I'm sorry. I was referring specifically to the delivery data, not the nearest neighbor.
+54:12 - 54:16: No, I'm not talking about nearest neighbor. There's an interim step. I want you to understand
+54:16 - 54:20: something. Let me just show you what I'm talking about. One second, so that you understand this.
+54:20 - 54:20: Okay.
+54:20 - 54:27: So if you see this, you see this, right? So this total sales-
+54:27 - 54:29: I can't see. I don't see your screen.
+54:29 - 54:36: Sorry. Sorry about that. My mistake. You see this 2.5 million customers here.
+54:36 - 54:37: Yes.
+54:38 - 54:40: And Actionable is 433,000.
+54:40 - 54:41: Right.
+54:42 - 54:48: If we run this through the match rate exercise properly, we should get to about 2 to 2.2 million.
+54:48 - 54:57: That is a separate exercise. This match rate will only give us names. It will not give us
+54:57 - 55:04: the transactions against those names. Then once we have those names, then we have to go and match
+55:04 - 55:12: the names with the NCR transactions. So that's the second step. The first step is the match rate
+55:12 - 55:15: within equity because equity has like, I think, 280 million IDs.
+55:16 - 55:17: Okay.
+55:17 - 55:22: So when we go in with 2 million IDs, it runs through it. First step is automated.
+55:23 - 55:31: Then second step is not automated. You have to do some work. Basically, the way Jason did it,
+55:31 - 55:34: sorry, the way LJ did it was he wrote his own script.
+55:35 - 55:35: Right.
+55:35 - 55:40: And he went in there and said, give me everybody who matches first name. Then give me everybody
+55:40 - 55:43: who matches the first name and the second name and give me everybody who matches the first name
+55:43 - 55:49: and the second name and who's within so many miles of this zip code. So he tried a few different
+55:49 - 55:56: things. But there are enough features which are ready built inside the equity app. And because
+55:56 - 56:03: equity operates inside Snowflake, it's supposed to be straightforward. We've not fully utilized
+56:03 - 56:06: their tools ever. So it's important that we do that.
+56:06 - 56:12: So I'll set up this training. And what we'll do is we'll ask his name is Chewy. We'll ask him to
+56:12 - 56:17: help us do the first match rate right there on the call. Right. And that's the best way to do it
+56:17 - 56:21: because he'll do it, he'll show us and we'll see what match rates we can get.
+56:23 - 56:23: Okay.
+56:23 - 56:28: And then the last step will be that your team can go in and tie in the transactions.
+56:28 - 56:31: And that's when the transactions will get populated.
+56:32 - 56:33: Okay.
+56:33 - 56:34: Okay. So
+56:37 - 56:40: all right. So this is what we're dealing with immediately. And then
+56:43 - 56:49: this is the sheet that Brian showed you yesterday. When Brian is available this afternoon,
+56:49 - 56:56: I'll go through this and set up the planning for the whole sheet with him. And then he can coordinate
+56:56 - 57:00: the rest of it with you. But today, this is kind of what's important. We're going to do a
+57:01 - 57:05: But today, this is kind of what's important. So this is what we focus on
+57:06 - 57:10: in the kind of like the immediate, like today, tomorrow, so that we can at least start the email
+57:10 - 57:16: campaign. Is there anything else in your mind that comes to your mind that could block us from
+57:16 - 57:17: starting the basic campaigns?
+57:18 - 57:24: At this time, no. We've cleared out all the technical hurdles, other than just
+57:24 - 57:30: sewing the two pieces together. We did make some updates to the API and some things like that,
+57:30 - 57:34: but those are things that we're doing to just make it even more optimized, right?
+57:37 - 57:45: But no, as of now, there are no real technical hurdles. It's really just a matter of just
+57:45 - 57:53: making sure that everything can run without any manual interaction seamlessly day in and day out.
+57:53 - 57:56: That's really, we're worried about scale at this point instead of functionality.
+57:56 - 58:05: Yeah. Okay, understood. All right. All right. So we'll wrap up this call. If you ping me,
+58:06 - 58:10: can you make sure that Praveenda sends the Zira permission to Brian?
+58:11 - 58:12: Yes.
+58:12 - 58:17: That he can do his work today. And then if you'll ping me with potential timings
+58:17 - 58:27: for the call with equity, I will take the time slots that you give me and try to coordinate a
+58:27 - 58:28: meeting with equity.
+58:29 - 58:36: Yeah. I've already sent the message out to the team and asked them to corral all the principles
+58:36 - 58:41: that would need to be on that call and to figure out when everybody's schedule aligns this afternoon.
+58:42 - 58:45: Okay. Let me know that. The last piece I have a question on,
+58:46 - 58:52: and we don't need to do this, handle this today. The AI agent you're working on,
+58:53 - 58:59: I sent out a sheet of the different logic points within the AI agent. We have never actually
+58:59 - 59:05: discussed it. And we saw the agent about five weeks back, and there were some question marks
+59:05 - 59:10: about it. And we said, okay, we're going to revisit this in two, three weeks. What is the
+59:10 - 59:17: point? When is the right point at which we can look at how the AI agent is creating the lists?
+59:19 - 59:23: We were going to do that at the same time we were demoing. Because like I said,
+59:23 - 59:27: we're going to demo that to you. That was our plan. We were going to show you all of that from
+59:28 - 59:36: the creating of the clustering with the time series and the matching to feeding into the
+59:36 - 59:42: email system to sending out the emails to like that whole process. So we were going to start
+59:42 - 59:47: with the clustering. If you're showing clustering, then that's definitely a call with me. So then you
+59:47 - 59:53: let me know when that all happens with me. So we will do the first call and then we can have
+59:53 - 59:57: Kristin on the call just to get trained for the user experience part. Because she would just pick
+59:57 - 60:03: it up once the emails arrived. That's all she needs. But yeah, the demo we're going to show
+60:03 - 60:07: is going to say here are the clusters in the time series. This is how we're logging that
+60:07 - 60:12: information that goes into the behavioral dashboards and goes into that behavioral
+60:13 - 60:19: screen on the individual profiles. And we were going to kind of walk through the entire
+60:19 - 60:26: process from start to finish. And like I said, she is more concerned, Kristin is more concerned with
+60:26 - 60:32: email comes in, click on link, link is tracked. You put in, you get your product and we track
+60:32 - 60:39: that. You get, we're trying to increase conversions and that the ad is very much
+60:39 - 60:45: targeted and directed. So yeah, we can arrange that. That was the demo that we were trying to
+60:45 - 60:52: arrange. We can do that tomorrow if Kristin is there. Kristin will be there. You just tell me
+60:52 - 60:58: when you can do it. You let me know when you can do it. I'll set things up and then we'll
+60:58 - 61:04: demo it to the client. But let's internally prepare so that other than the coupon code,
+61:04 - 61:07: if Patrick says, listen, I can give you a coupon code today or tomorrow,
+61:09 - 61:17: we can at least start the emails. I'm imagining that worst case, we can send the emails out.
+
+--- Chunk 5 (chunk_005.mp3) ---
+67:10 - 67:15: out. And when the transaction closes in Olo, we can at least close a crash and say, hey,
+67:15 - 67:22: this transaction went to this customer. At least it's not a full loop, but we can at
+67:22 - 67:27: least match those two data points to start. And then the pixel comes in and other things
+67:27 - 67:32: start to come in in the middle. Yeah. But we should be ready to start sending out emails.
+67:32 - 67:37: If he gives us a discount code today, you know, I would like to get that done as early
+67:37 - 67:40: as tomorrow so that we can at least start say to the client that, okay, we've started
+67:40 - 67:46: something. Right. Yeah. And I want to reiterate that there is a, with the pixel, there's an
+67:46 - 67:52: also an internal process that we have to do to add refer and stuff like that, that's necessary
+67:52 - 67:56: for us to that pixel, that JavaScript piece that I mentioned before, where they just drop
+67:56 - 68:02: in that one line. We do need to complete that as well. That's a new process based on the
+68:02 - 68:07: limitations of Acuity's pixel. We have to, we have to add that so that the pixel can
+68:07 - 68:10: pick it up and send it to us. And that's not something that Lamadily can do. We have to
+68:10 - 68:20: do that for them. Okay. Yeah. All right. All right. I'll share this sheet. I'll have, I'll
+68:20 - 68:26: update Brian when he's available after two. Yeah. And then let's, please let me know about
+68:26 - 68:30: the team availability. Let me start with Equity and Patrick this morning. Yeah. What time
+68:30 - 68:34: did you say you were available? I'll be available. I have an investor call that goes on
+68:34 - 68:41: until 1230. I'll be available after that. All right. So, and then Brian is after two. I'll,
+68:41 - 68:44: I'll make it happen. There's a couple of things in there. I'll see if I can't move them
+68:44 - 68:51: around. Okay. All right. So I'll ping Equity this morning and get availability from them
+68:51 - 68:59: after two and I'll keep you posted. Okay. Thank you. Thank you. I'm not, I have a, a
+68:59 - 69:03: conflict at three that I can't move. That's the only thing that I can't move. I'll try to
+69:03 - 69:08: put it at four. I'll see if they can do it at four. Okay. Yeah. That's the only thing I
+69:08 - 69:12: can't move today. That's fine. I don't have to, you know, I'll work around your conflict.
+69:12 - 69:17: I'll see if they can do it at, you know, either at two or at four. Okay. That works. Thank
+69:17 - 69:19: you. All right. Thank you. Thank you.
+
+==================================================
+Processing completed: 2025-10-21 20:56:11
+Total chunks processed: 5
+Total segments transcribed: 606
+==================================================

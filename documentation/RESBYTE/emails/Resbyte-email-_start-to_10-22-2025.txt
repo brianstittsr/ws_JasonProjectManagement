@@ -1,0 +1,4932 @@
+Jason Mosby <jason@resbyte.ai>
+Mon 13 Oct, 16:30 (9 days ago)
+to me
+
+Please review the thread and documentation liked below. If it is behind a wall, let me know.
+
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+
+
+-------- Forwarded Message --------
+Subject:	RE: DATA FLOW issues
+Date:	Fri, 10 Oct 2025 19:59:57 +0000
+From:	Cooper, Jeremy <Jeremy.Cooper@ncrvoyix.com>
+To:	puneet@byteready.co <puneet@byteready.co>
+CC:	Jason Mosby <jason@resbyte.ai>
+
+
+I heard from La Madeline about which stores to test/pilot in –
+
+ 
+
+01990 Build Lab:             Aloha POS Software Key #:  322435 / StoreID 1990
+
+01001 Mockingbird:      Aloha POS Software Key #:  335552 / StoreID 1001
+
+ 
+
+ 
+
+A black and purple letter v with dots
+
+Description automatically generated
+
+Jeremy Cooper
+
+Sr. Mgr, Platform Enablement Team
+Office: 562-283-4627
+
+Jeremy.Cooper@ncrvoyix.com | ncrvoyix.com
+
+A purple letter on a black background
+
+Description automatically generatedA purple circle with a letter f in it
+
+Description automatically generatedA purple x on a black background
+
+Description automatically generatedA purple square with a black background
+
+Description automatically generated
+
+ 
+
+ 
+
+From: puneet@byteready.co <puneet@byteready.co>
+Sent: Friday, October 10, 2025 12:20 PM
+To: Cooper, Jeremy <Jeremy.Cooper@ncrvoyix.com>
+Cc: Jason Mosby <jason@resbyte.ai>
+Subject: Re: DATA FLOW issues
+
+ 
+
+Thank you for sending this information . We ll process this and revert back . Puneet From: Cooper, Jeremy <Jeremy. Cooper@ ncrvoyix. com> Date: Friday, October 10, 2025 at 2: 18 PM To: puneet@ byteready. co <puneet@ byteready. co> Cc: Jason
+
+
+Thank you for sending this information . We ll process this and revert back .
+
+ 
+
+Puneet
+
+ 
+
+From: Cooper, Jeremy <Jeremy.Cooper@ncrvoyix.com>
+Date: Friday, October 10, 2025 at 2:18 PM
+To: puneet@byteready.co <puneet@byteready.co>
+Cc: Jason Mosby <jason@resbyte.ai>
+Subject: RE: DATA FLOW issues
+
+Puneet –
+
+ 
+
+Your first step would be to identify from La Madeline which store you should be testing with – currently all stores are enabled for TDM/LDM, but we will be limiting this to a single store shortly for testing (La Madeline will need to determine which site that would be).
+
+ 
+
+Once that site is determined – you can set up your webhooks – TDM is documented here : https://developer.ncrvoyix.com/portals/dev-portal/api-explorer/details/446/documentation
+
+ 
+
+And the specific endpoint to setup your webhook is here:
+
+https://developer.ncrvoyix.com/portals/dev-portal/api-explorer/details/446/documentation#/%2Fsubscriptions/createSubscription
+
+ 
+
+When using TDM – the correct method/path is to leverage Webhooks – once you successfully create your webhook – we will send you data as it comes in to NCRV.
+
+ 
+
+If you need assistance while building your integration – We would need to spin up a Consulting on Demand SOW to cover the PS resource effort – I’d suggest taking a look at the links above (and the documentation within those links) and if you have issues – then let me know so I can create a SOW to provide additional assistance.
+
+ 
+
+ 
+
+ 
+
+A black and purple letter v with dots
+
+Description automatically generated
+
+Jeremy Cooper
+
+Sr. Mgr, Platform Enablement Team
+Office: 562-283-4627
+
+Jeremy.Cooper@ncrvoyix.com | ncrvoyix.com
+
+A purple letter on a black background
+
+Description automatically generatedA purple circle with a letter f in it
+
+Description automatically generatedA purple x on a black background
+
+Description automatically generatedA purple square with a black background
+
+Description automatically generated
+
+ 
+
+ 
+
+From: puneet@byteready.co <puneet@byteready.co>
+Sent: Friday, October 10, 2025 10:20 AM
+To: Cooper, Jeremy <Jeremy.Cooper@ncrvoyix.com>
+Cc: Jason Mosby <jason@resbyte.ai>
+Subject: Re: DATA FLOW issues
+
+ 
+
+Dear Jeremy, I think we have missed a step here . We need some details on the site 1001 and the setup on Le-duff-america. We ll be happy to set up the web hook . Is it possible if you can share some documentation or get on a call ? Regards,
+
+Dear Jeremy,
+
+I think we have missed a step here .
+
+We need some details on the site 1001 and the setup on Le-duff-america.  
+
+We ll be happy to set up the web hook .
+
+Is it possible if you can share some documentation or get on a call ?
+
+ 
+
+ 
+
+Regards,
+
+Puneet
+
+ 
+
+ 
+
+Puneet –
+
+
+We do not have a “coupon” API available today – we are working on a new API that should include some coupon configuration data, but I don’t have specifics or release timing for it – (also note – it was not included as part of the scope of this project).
+
+ 
+
+Can you elaborate more on “data flow has stopped” – are you saying your webhooks are not receiving any data? I did check site 1001 and I see data in TDM – I don’t see any webhooks setup on Le-duff-america – can you try setting up a new webhook and letting me know if data starts flowing?
+
+ 
+
+A black and purple letter v with dots
+
+Description automatically generated
+
+Jeremy Cooper
+
+Sr. Mgr, Platform Enablement Team
+Office: 562-283-4627
+
+Jeremy.Cooper@ncrvoyix.com | ncrvoyix.com
+
+A purple letter on a black background
+
+Description automatically generatedA purple circle with a letter f in it
+
+Description automatically generatedA purple x on a black background
+
+Description automatically generatedA purple square with a black background
+
+Description automatically generated
+
+ 
+
+ 
+
+From: puneet@byteready.co <puneet@byteready.co>
+Sent: Thursday, October 9, 2025 11:36 AM
+To: Cooper, Jeremy <Jeremy.Cooper@ncrvoyix.com>
+Subject: Re: DATA FLOW issues
+
+ 
+
+Dear Jeremy The data is for la Madeleine - Aloha Puneet From: Cooper, Jeremy <Jeremy. Cooper@ ncrvoyix. com> Date: Thursday, October 9, 2025 at 1: 29 PM To: puneet@ byteready. co <puneet@ byteready. co> Subject: RE: DATA FLOW issues Hello
+
+Dear Jeremy
+
+ 
+
+The data is for
+
+ 
+
+la Madeleine  - Aloha
+
+ 
+
+ 
+
+Puneet
+
+ 
+
+From: Cooper, Jeremy <Jeremy.Cooper@ncrvoyix.com>
+Date: Thursday, October 9, 2025 at 1:29 PM
+To: puneet@byteready.co <puneet@byteready.co>
+Subject: RE: DATA FLOW issues
+
+Hello Puneet –
+
+ 
+
+Can you give me more detail on which integrator/integration this is for  - I don’t see anything for “ByteReady” (your email) within my project queue.  
+
+ 
+
+A black and purple letter v with dots
+
+Description automatically generated
+
+Jeremy Cooper
+
+Sr. Mgr, Platform Enablement Team
+Office: 562-283-4627
+
+Jeremy.Cooper@ncrvoyix.com | ncrvoyix.com
+
+A purple letter on a black background
+
+Description automatically generatedA purple circle with a letter f in it
+
+Description automatically generatedA purple x on a black background
+
+Description automatically generatedA purple square with a black background
+
+Description automatically generated
+
+ 
+
+ 
+
+From: puneet@byteready.co <puneet@byteready.co>
+Sent: Thursday, October 9, 2025 11:27 AM
+To: Cooper, Jeremy <Jeremy.Cooper@ncrvoyix.com>
+Subject: DATA FLOW issues
+
+ 
+
+Dear Jeremy Request some time to discuss how  we can get some assistance. I -  Need some help with managing our NCR API s . It seems that the data flow has stopped . II- We need to get documentation on the coupon API for the next phase Will
+
+Dear Jeremy
+
+ 
+
+Request some time to discuss how  we can get some assistance.
+
+ 
+
+I -  Need some help with managing our NCR API s . It seems that the data flow has stopped .
+
+II- We need to get documentation on the coupon API for the next phase
+
+ 
+
+Will appreciate if you could send some times for a call.
+
+ 
+
+Regards
+
+Puneet
+
+ 
+
+
+Jason Mosby
+Thu 16 Oct, 16:37 (6 days ago)
+to Jeremy, puneet@byteready.co, me
+
+Jeremy,
+
+Thank you. How do we access la Madeleine's menu, pricing, and historic transactions?
+
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+
+Cooper, Jeremy <Jeremy.Cooper@ncrvoyix.com>
+Thu 16 Oct, 16:41 (6 days ago)
+to Nikki, Jason, puneet@byteready.co, me
+
+ResByte was approved (based on your User Journey) for Site and TDM APIs.   Site will give you general site info, and TDM will give you check detail/info.
+
+ 
+
+TDM is not meant to be a historical source of checks, although I believe 90 days of historical is loaded – however, that would require direct API calls to retrieve.   For current day checks – you should setup a webhook and we will send check info to you as we get it.
+
+ 
+
+As far as menu/pricing – those APIs were not called out as part of your RUA agreement – did you have an updated user journey that outlines the need for this info?   I can work with partnerships to update your RUA to include additional APIs if needed -
+
+ 
+
+A black and purple letter v with dots
+
+Description automatically generated
+
+Jeremy Cooper
+
+Sr. Mgr, Platform Enablement Team
+Office: 562-283-4627
+
+Jeremy.Cooper@ncrvoyix.com | ncrvoyix.com
+
+A purple letter on a black background
+
+Description automatically generatedA purple circle with a letter f in it
+
+Description automatically generatedA purple x on a black background
+
+Description automatically generatedA purple square with a black background
+
+Description automatically generated
+
+ 
+
+OOO : I will be working on an off-site project from October 23rd – November 7th. 
+
+ 
+
+From: Jason Mosby <jason@resbyte.ai>
+Sent: Thursday, October 16, 2025 2:37 PM
+To: Cooper, Jeremy <Jeremy.Cooper@ncrvoyix.com>; puneet@byteready.co; brian@resbyte.ai
+Subject: Re: DATA FLOW issues
+
+ 
+
+Jeremy, Thank you. How do we access la Madeleine's menu, pricing, and historic transactions? Jason Mosby Chief Technology Officer jason@ resbyte. ai CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is
+
+
+puneet@byteready.co
+Tue 21 Oct, 17:42 (13 hours ago)
+to me
+
+ 
+
+ 
+
+From: Cooper, Jeremy <Jeremy.Cooper@ncrvoyix.com>
+Date: Thursday, October 16, 2025 at 4:41 PM
+To: Jason Mosby <jason@resbyte.ai>, puneet@byteready.co <puneet@byteready.co>, brian@resbyte.ai <brian@resbyte.ai>
+Cc: Cooney, Nikki <Nikki.Cooney@ncrvoyix.com>
+Subject: RE: DATA FLOW issues
+
+ResByte was approved (based on your User Journey) for Site and TDM APIs.   Site will give you general site info, and TDM will give you check detail/info.
+
+ 
+
+TDM is not meant to be a historical source of checks, although I believe 90 days of historical is loaded – however, that would require direct API calls to retrieve.   For current day checks – you should setup a webhook and we will send check info to you as we get it.
+
+ 
+
+As far as menu/pricing – those APIs were not called out as part of your RUA agreement – did you have an updated user journey that outlines the need for this info?   I can work with partnerships to update your RUA to include additional APIs if needed -
+
+ 
+
+A black and purple letter v with dots
+
+Description automatically generated
+
+Jeremy Cooper
+
+Sr. Mgr, Platform Enablement Team
+Office: 562-283-4627
+
+Jeremy.Cooper@ncrvoyix.com | ncrvoyix.com
+
+A purple letter on a black background
+
+Description automatically generatedA purple circle with a letter f in it
+
+Description automatically generatedA purple x on a black background
+
+Description automatically generatedA purple square with a black background
+
+Description automatically generated
+
+ 
+
+OOO : I will be working on an off-site project from October 23rd – November 7th. 
+
+ 
+
+From: Jason Mosby <jason@resbyte.ai>
+Sent: Thursday, October 16, 2025 2:37 PM
+To: Cooper, Jeremy <Jeremy.Cooper@ncrvoyix.com>; puneet@byteready.co; brian@resbyte.ai
+Subject: Re: DATA FLOW issues
+
+ 
+
+Jeremy, Thank you. How do we access la Madeleine's menu, pricing, and historic transactions? Jason Mosby Chief Technology Officer jason@ resbyte. ai CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is
+
+Jeremy,
+
+Thank you. How do we access la Madeleine's menu, pricing, and historic transactions?
+
+Image removed by sender. Resbyte
+
+Jason Mosby
+
+Chief Technology Officer
+
+jason@resbyte.ai
+
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+
+
+puneet@byteready.co
+Tue 21 Oct, 18:11 (12 hours ago)
+to me
+
+ 
+
+ 
+
+From: Cooper, Jeremy <Jeremy.Cooper@ncrvoyix.com>
+Date: Thursday, October 16, 2025 at 4:41 PM
+To: Jason Mosby <jason@resbyte.ai>, puneet@byteready.co <puneet@byteready.co>, brian@resbyte.ai <brian@resbyte.ai>
+Cc: Cooney, Nikki <Nikki.Cooney@ncrvoyix.com>
+Subject: RE: DATA FLOW issues
+
+ResByte was approved (based on your User Journey) for Site and TDM APIs.   Site will give you general site info, and TDM will give you check detail/info.
+
+ 
+
+TDM is not meant to be a historical source of checks, although I believe 90 days of historical is loaded – however, that would require direct API calls to retrieve.   For current day checks – you should setup a webhook and we will send check info to you as we get it.
+
+ 
+
+As far as menu/pricing – those APIs were not called out as part of your RUA agreement – did you have an updated user journey that outlines the need for this info?   I can work with partnerships to update your RUA to include additional APIs if needed -
+
+ 
+
+A black and purple letter v with dots
+
+Description automatically generated
+
+Jeremy Cooper
+
+Sr. Mgr, Platform Enablement Team
+Office: 562-283-4627
+
+Jeremy.Cooper@ncrvoyix.com | ncrvoyix.com
+
+A purple letter on a black background
+
+Description automatically generatedA purple circle with a letter f in it
+
+Description automatically generatedA purple x on a black background
+
+Description automatically generatedA purple square with a black background
+
+Description automatically generated
+
+ 
+
+OOO : I will be working on an off-site project from October 23rd – November 7th. 
+
+ 
+
+From: Jason Mosby <jason@resbyte.ai>
+Sent: Thursday, October 16, 2025 2:37 PM
+To: Cooper, Jeremy <Jeremy.Cooper@ncrvoyix.com>; puneet@byteready.co; brian@resbyte.ai
+Subject: Re: DATA FLOW issues
+
+ 
+
+Jeremy, Thank you. How do we access la Madeleine's menu, pricing, and historic transactions? Jason Mosby Chief Technology Officer jason@ resbyte. ai CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is
+
+Jeremy,
+
+Thank you. How do we access la Madeleine's menu, pricing, and historic transactions?
+
+Image removed by sender. Resbyte
+
+Jason Mosby
+
+Chief Technology Officer
+
+jason@resbyte.ai
+
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+
+On 10/10/2025 1:59 PM, Cooper, Jeremy wrote:
+
+I heard from La Madeline about which stores to test/pilot in –
+
+ 
+
+01990 Build Lab:             Aloha POS Software Key #:  322435 / StoreID 1990
+
+01001 Mockingbird:      Aloha POS Software Key #:  335552 / StoreID 1001
+
+ 
+
+ 
+
+A black and purple letter v with dots
+
+Description automatically generated
+
+Jeremy Cooper
+
+Sr. Mgr, Platform Enablement Team
+Office: 562-283-4627
+
+Jeremy.Cooper@ncrvoyix.com | ncrvoyix.com
+
+A purple letter on a black background
+
+Description automatically generatedA purple circle with a letter f in it
+
+Description automatically generatedA purple x on a black background
+
+Description automatically generatedA purple square with a black background
+
+Description automatically generated
+
+ 
+
+ 
+
+From: puneet@byteready.co <puneet@byteready.co>
+Sent: Friday, October 10, 2025 12:20 PM
+To: Cooper, Jeremy <Jeremy.Cooper@ncrvoyix.com>
+Cc: Jason Mosby <jason@resbyte.ai>
+Subject: Re: DATA FLOW issues
+
+ 
+
+Thank you for sending this information . We ll process this and revert back . Puneet From: Cooper, Jeremy <Jeremy. Cooper@ ncrvoyix. com> Date: Friday, October 10, 2025 at 2: 18 PM To: puneet@ byteready. co <puneet@ byteready. co> Cc: Jason
+
+Thank you for sending this information . We ll process this and revert back .
+
+ 
+
+Puneet
+
+ 
+
+From: Cooper, Jeremy <Jeremy.Cooper@ncrvoyix.com>
+Date: Friday, October 10, 2025 at 2:18 PM
+To: puneet@byteready.co <puneet@byteready.co>
+Cc: Jason Mosby <jason@resbyte.ai>
+Subject: RE: DATA FLOW issues
+
+Puneet –
+
+ 
+
+Your first step would be to identify from La Madeline which store you should be testing with – currently all stores are enabled for TDM/LDM, but we will be limiting this to a single store shortly for testing (La Madeline will need to determine which site that would be).
+
+ 
+
+Once that site is determined – you can set up your webhooks – TDM is documented here : https://developer.ncrvoyix.com/portals/dev-portal/api-explorer/details/446/documentation
+
+ 
+
+And the specific endpoint to setup your webhook is here:
+
+https://developer.ncrvoyix.com/portals/dev-portal/api-explorer/details/446/documentation#/%2Fsubscriptions/createSubscription
+
+ 
+
+When using TDM – the correct method/path is to leverage Webhooks – once you successfully create your webhook – we will send you data as it comes in to NCRV.
+
+ 
+
+If you need assistance while building your integration – We would need to spin up a Consulting on Demand SOW to cover the PS resource effort – I’d suggest taking a look at the links above (and the documentation within those links) and if you have issues – then let me know so I can create a SOW to provide additional assistance.
+
+ 
+
+ 
+
+ 
+
+A black and purple letter v with dots
+
+Description automatically generated
+
+Jeremy Cooper
+
+Sr. Mgr, Platform Enablement Team
+Office: 562-283-4627
+
+Jeremy.Cooper@ncrvoyix.com | ncrvoyix.com
+
+A purple letter on a black background
+
+Description automatically generatedA purple circle with a letter f in it
+
+Description automatically generatedA purple x on a black background
+
+Description automatically generatedA purple square with a black background
+
+Description automatically generated
+
+ 
+
+ 
+
+From: puneet@byteready.co <puneet@byteready.co>
+Sent: Friday, October 10, 2025 10:20 AM
+To: Cooper, Jeremy <Jeremy.Cooper@ncrvoyix.com>
+Cc: Jason Mosby <jason@resbyte.ai>
+Subject: Re: DATA FLOW issues
+
+ 
+
+Dear Jeremy, I think we have missed a step here . We need some details on the site 1001 and the setup on Le-duff-america. We ll be happy to set up the web hook . Is it possible if you can share some documentation or get on a call ? Regards,
+
+Dear Jeremy,
+
+I think we have missed a step here .
+
+We need some details on the site 1001 and the setup on Le-duff-america.  
+
+We ll be happy to set up the web hook .
+
+Is it possible if you can share some documentation or get on a call ?
+
+ 
+
+ 
+
+Regards,
+
+Puneet
+
+ 
+
+ 
+
+Puneet –
+
+
+We do not have a “coupon” API available today – we are working on a new API that should include some coupon configuration data, but I don’t have specifics or release timing for it – (also note – it was not included as part of the scope of this project).
+
+ 
+
+Can you elaborate more on “data flow has stopped” – are you saying your webhooks are not receiving any data? I did check site 1001 and I see data in TDM – I don’t see any webhooks setup on Le-duff-america – can you try setting up a new webhook and letting me know if data starts flowing?
+
+ 
+
+A black and purple letter v with dots
+
+Description automatically generated
+
+Jeremy Cooper
+
+Sr. Mgr, Platform Enablement Team
+Office: 562-283-4627
+
+Jeremy.Cooper@ncrvoyix.com | ncrvoyix.com
+
+A purple letter on a black background
+
+Description automatically generatedA purple circle with a letter f in it
+
+Description automatically generatedA purple x on a black background
+
+Description automatically generatedA purple square with a black background
+
+Description automatically generated
+
+ 
+
+ 
+
+From: puneet@byteready.co <puneet@byteready.co>
+Sent: Thursday, October 9, 2025 11:36 AM
+To: Cooper, Jeremy <Jeremy.Cooper@ncrvoyix.com>
+Subject: Re: DATA FLOW issues
+
+ 
+
+Dear Jeremy The data is for la Madeleine - Aloha Puneet From: Cooper, Jeremy <Jeremy. Cooper@ ncrvoyix. com> Date: Thursday, October 9, 2025 at 1: 29 PM To: puneet@ byteready. co <puneet@ byteready. co> Subject: RE: DATA FLOW issues Hello
+
+Dear Jeremy
+
+ 
+
+The data is for
+
+ 
+
+la Madeleine  - Aloha
+
+ 
+
+ 
+
+Puneet
+
+ 
+
+From: Cooper, Jeremy <Jeremy.Cooper@ncrvoyix.com>
+Date: Thursday, October 9, 2025 at 1:29 PM
+To: puneet@byteready.co <puneet@byteready.co>
+Subject: RE: DATA FLOW issues
+
+Hello Puneet –
+
+ 
+
+Can you give me more detail on which integrator/integration this is for  - I don’t see anything for “ByteReady” (your email) within my project queue.  
+
+ 
+
+A black and purple letter v with dots
+
+Description automatically generated
+
+Jeremy Cooper
+
+Sr. Mgr, Platform Enablement Team
+Office: 562-283-4627
+
+Jeremy.Cooper@ncrvoyix.com | ncrvoyix.com
+
+A purple letter on a black background
+
+Description automatically generatedA purple circle with a letter f in it
+
+Description automatically generatedA purple x on a black background
+
+Description automatically generatedA purple square with a black background
+
+Description automatically generated
+
+ 
+
+ 
+
+From: puneet@byteready.co <puneet@byteready.co>
+Sent: Thursday, October 9, 2025 11:27 AM
+To: Cooper, Jeremy <Jeremy.Cooper@ncrvoyix.com>
+Subject: DATA FLOW issues
+
+ 
+
+Dear Jeremy Request some time to discuss how  we can get some assistance. I -  Need some help with managing our NCR API s . It seems that the data flow has stopped . II- We need to get documentation on the coupon API for the next phase Will
+
+Dear Jeremy
+
+ 
+
+Request some time to discuss how  we can get some assistance.
+
+ 
+
+I -  Need some help with managing our NCR API s . It seems that the data flow has stopped .
+
+II- We need to get documentation on the coupon API for the next phase
+
+ 
+
+Will appreciate if you could send some times for a call.
+
+ 
+
+Regards
+
+Puneet
+
+ 
+
+------------
+
+
+pt@resbyte.ai
+Attachments
+13 Oct 2025, 16:46 (9 days ago)
+to Olo, Jason, me
+
+Dear Pam,
+
+ 
+
+Here s the short description you had requested about Resbyte.
+
+ 
+
+I have an additional request- we are working for last few weeks to onboard a mutual client- LA Madeleine.
+
+ 
+
+We are at the last stage and need to integrate a ‘landing page’ into their order taking system .   We need to get this done within this week . Their stores, payments systems and POS systems are all in place already.
+
+ 
+
+Can you please help me connect to some one who can help us with this process; WE are currently exchanging emails with Brady Delahanty and I am not sure he s able to understand what we are trying to accomplish.
+
+ 
+
+This is an important client for both of us and so I ll appreciate if you can support us in closing this loop.
+
+ 
+
+ 
+
+Regards
+
+Puneet Talwar
+
+ 
+
+ 
+
+ 
+
+From: Olo Partnerships <pam@olo.com>
+Date: Wednesday, September 10, 2025 at 11:24 AM
+To: pt@resbyte.ai <pt@resbyte.ai>
+Cc: Jason Mosby <jason@resbyte.ai>, Staci Broxman <staci.broxman@olo.com>
+Subject: Re: FW: Olo + Resbyte
+
+Hi Puneet,
+
+Sounds great! Thank you.
+
+Looking forward to hearing from you soon.
+
+Kindly,
+Pam
+
+ 
+
+On Wed, Sep 10, 2025 at 8:06 AM 'pt@resbyte.ai' via Olo Partnerships <pam@olo.com> wrote:
+
+Dear Pam,
+
+ 
+
+Working on this
+
+ 
+
+Will get this to you this week
+
+ 
+
+Puneet
+
+ 
+
+Get Outlook for Mac
+
+ 
+
+From: Olo Partnerships <pam@olo.com>
+Date: Monday, September 8, 2025 at 6:45 PM
+To: pt@resbyte.ai <pt@resbyte.ai>
+Cc: Jason Mosby <jason@resbyte.ai>, Staci Broxman <staci.broxman@olo.com>
+Subject: Re: FW: Olo + Resbyte
+
+Hi Puneet,
+
+Just wanted to check in and see if you're still interested in being included in our Partner Directory. We’re planning an update this week and would love to highlight your listing if you'd like to be part of it.
+If so, the only items I’ll need are:
+
+A short description (300 characters max)
+A long description for your directory listing
+You can find both fields under the General Partner Information tab in the Security and Privacy Assessment. Once I receive those, I’ll be able to get your listing posted.
+
+No pressure, just let me know if you have any questions!
+
+ 
+
+Kindly, 
+
+Pam
+
+ 
+
+On Tue, Jul 15, 2025 at 2:16 PM Olo Partnerships <pam@olo.com> wrote:
+
+Hi Puneet,
+
+I’ve set you and Jason up on the Developer Portal. As mentioned, if you have any questions while reviewing the documentation, please don’t hesitate to reach out to our Developer Support team via the Dev Portal Help Form. 
+
+The final item I’ll need is a short description (300 characters max) and a long description for your listing in our Partner Directory. You can find this under the General Partner Information tab within the Security and Privacy Assessment. Once I receive those, I’ll be able to get your listing posted.
+
+Looking forward to hearing back, and feel free to reach out if you have any questions. 
+
+Kindly,
+Pam
+
+ 
+
+On Tue, Jul 15, 2025 at 12:47 PM 'pt@resbyte.ai' via Olo Partnerships <pam@olo.com> wrote:
+
+Dear Staci,
+
+ 
+
+Please send all agreements to me .
+
+ 
+
+Here are the first set of users
+
+ 
+
+Puneet Talwar
+
+pt@resbyte.ai
+
+T – 646 338 8838
+
+ 
+
+Jason Mosby
+
+Jason@resbyte.ai
+
+310 437 8014
+
+ 
+
+Thanks for all your support.
+
+ 
+
+ 
+
+Regards
+
+Puneet  
+
+ 
+
+Get Outlook for Mac
+
+ 
+
+From: Olo Partnerships <pam@olo.com>
+Date: Tuesday, July 15, 2025 at 12:42 PM
+To: Staci Broxman <staci.broxman@olo.com>
+Cc: Jason Mosby <jason@resbyte.ai>, pt@resbyte.ai <pt@resbyte.ai>
+Subject: Re: FW: Olo + Resbyte
+
+Hi Staci,
+Thanks so much for looping us back in!
+
+
+Resbyte Team,
+A few of next steps on our end before completing partner onboarding: We'll be sending over the API Usage Agreement for signature, and we'd also like to get you set up in our Developer Portal, which provides access to our full API documentation. To get started, I'll just need the email and mobile phone (for 2FA) of each user requiring access, and our team will share invites ASAP. Should you have any questions after reviewing the documentation, please don’t hesitate to reach out to our dedicated Developer Support team via their Dev Portal Help Form.
+
+
+Should the API Usage Agreement be sent to Puneet?
+
+Looking forward to getting things underway, let me know if you have any questions! 
+
+Kindly,
+
+Pam
+
+ 
+
+ 
+
+ 
+
+On Mon, Jul 7, 2025 at 7:56 AM Staci Broxman <staci.broxman@olo.com> wrote:
+
+Hi Jason,
+
+ 
+
+Great to connect with you! I've looped our Partnerships team back into this thread so they can continue the discussion.
+
+ 
+
+ 
+
+On Wed, Jul 2, 2025 at 12:44 PM Jason Mosby <jason@resbyte.ai> wrote:
+
+Hi Staci,
+
+My name is Jason Mosby, and I’ve recently stepped into the role of Chief Technology Officer at Resbyte. I’m reaching out to introduce myself and to let you know that I’m available as a point of contact for the ongoing security assessment, as well as any technology related questions or needs you may have.
+
+For the MNDA:
+
+Puneet Talwar
+Chief Executive Officer - Resbyte
+1325 Avenue of the Americas, Ste 2736, New York, NY 10019
+
+If the NDA does not include a blanket provision, please include me as well
+Jason Mosby
+Chief Technology Officer - Resbyte
+1325 Avenue of the Americas, Ste 2736, New York, NY 10019
+
+Thank you, and I'm looking forward to working together.
+
+ 
+
+Hi Puneet, 
+
+ 
+
+I wanted to reach out to see how things were progressing with our security assessment? I'd also like to send out our MNDA so that we can work to get you onboarded in the interim. Could you send me the following information?
+
+Signer First and Last Name
+Signer Title
+Company Address
+ 
+
+On Mon, Jun 9, 2025 at 3:10 PM 'pt@resbyte.ai' via Olo Partnerships <pam@olo.com> wrote:
+
+Dear Pam,
+
+ 
+
+Thank you for your message
+
+ 
+
+We are in the process of completing the form you had sent and will return the updated information to you within this week.
+
+ 
+
+I look forward to working with you.
+
+ 
+
+Regards,
+
+Puneet Talwar
+
+ 
+
+ 
+
+ 
+
+Get Outlook for Mac
+
+ 
+
+From: Olo Partnerships <pam@olo.com>
+Date: Friday, June 6, 2025 at 7:55 AM
+To: pt@resbyte.ai <pt@resbyte.ai>
+Cc: Staci Broxman <staci.broxman@olo.com>
+Subject: Re: Olo + Resbyte
+
+Hi Puneet, 
+
+ 
+
+I haven't heard back from you, so I wanted to send a quick follow up so that we can move forward with your partner onboarding process. 
+
+ 
+
+As mentioned, we'll need to get an MNDA in place. Could you please send me the following information:
+
+·  Signer First and Last Name
+
+·  Signer Title
+
+·  Company Address
+
+Thanks,
+
+Pam
+
+ 
+
+On Tue, May 27, 2025 at 5:26 PM Olo Partnerships <pam@olo.com> wrote:
+
+Hi Puneet, 
+
+ 
+
+We are thrilled to support this new integrationfor la Madeleine.
+
+
+
+
+To kick things off, we would be happy to provide your team with access to our Developer Portal and API Documentation to review the docs on our API and Webhooks. I am going to send over an MNDA for you to sign. In order to send, please share with me the following:
+
+Signer First and Last Name
+Signer Title
+Company Address
+Then we can proceed with adding your team as a Developer Partner so that you will be available in the drop down for your brand to set you up with Webhooks (if applicable).
+
+ 
+
+I can set you up as the Partner Administrator to manage your users. To do so, please provide your mobile phone (for 2FA), and I will share invites ASAP. Should you have any questions upon review of the documentation, please don’t hesitate to reach out to our dedicated developersupport@olo.com team.
+
+
+
+
+We also ask that you complete our Security and Privacy Assessment (attached below). This assessment captures relevant information required by our Security team and is required across all partners within our ecosystem ahead of any brand projects. Once completed, I will share our API Usage Agreement for signature, which will enable you placement in our Partner Directory.
+
+
+
+
+Please don’t hesitate to reach out if you have any questions.
+
+ 
+
+Warmly,
+
+Pam 
+
+Error! Filename not specified.
+
+Error! Filename not specified.
+
+
+
+ 
+
+--
+
+All the best, 
+
+Image removed by sender.
+
+Staci Broxman (she/her)
+
+Customer Success, Sr. Manager | 646-360-0569 | LinkedIn
+
+olo.com · Help Center · Release Notes
+
+Upcoming OOO: 7/4/25
+
+ 
+
+Image removed by sender.
+
+One attachment
+  • Scanned by Gmail
+
+Olo Partnerships <pam@olo.com>
+13 Oct 2025, 17:12 (9 days ago)
+to Brady, pt@resbyte.ai, Jason, me
+
++Brady Delahanty so we are all aligned. 
+
+Hi Pruneet,
+
+As I understand it you are looking to expand how you currently work with Olo, today for La Madeleine you are only reading Order Exports from our platform to analyze their data. Now you are looking to launch an integration with our Ordering API to push/create orders to be sent into the store. Let me know if that does not capture what you are trying to do. 
+
+If that is correct then it expands your integration considerably and it will be a longer process to complete. You would not be able to complete an Ordering integration with us in a week and we wouldn't be able to certify it into Production in that time frame either. The typical Order integration is measured in months not weeks and begins with a project kick off with our API specialist team after which we provision you credentials to the brand's sandbox environment, once you complete your build in sandbox you will submit for certification, after passing we would grant you access to the brand's production environment.   
+
+
+Kindly,
+Pam
+
+Sean Marrero <sean.marrero@olo.com>
+13 Oct 2025, 17:18 (9 days ago)
+to pt@resbyte.ai, Jason, me
+
+Separately, the short description you provided is over 300 characters. Would you like this to be your long description? If so, do you have a short (under 300 character) version you would like included? Here is an example of a listing in our Partner Directory, for your reference.
+--
+
+
+Sean J. Marrero 
+
+Sr Director, Partner Ecosystem | LinkedIn
+
+olo.com · Help Center · Partner Directory
+
+
+pt@resbyte.ai
+21 Oct 2025, 17:37 (13 hours ago)
+to me
+
+ 
+
+ 
+
+Get Outlook for Mac
+
+ 
+
+From: Sean Marrero <sean.marrero@olo.com>
+Date: Monday, October 13, 2025 at 5:18 PM
+To: pt@resbyte.ai <pt@resbyte.ai>
+Cc: Jason Mosby <jason@resbyte.ai>, brian@resbyte.ai <brian@resbyte.ai>
+Subject: Re: FW: Olo + Resbyte
+
+Separately, the short description you provided is over 300 characters. Would you like this to be your long description? If so, do you have a short (under 300 character) version you would like included? Here is an example of a listing in our Partner Directory, for your reference.
+
+ 
+
+On Mon, Oct 13, 2025 at 2:46 PM 'pt@resbyte.ai' via Olo Partnerships <pam@olo.com> wrote:
+
+Dear Pam,
+
+ 
+
+Here s the short description you had requested about Resbyte.
+
+ 
+
+I have an additional request- we are working for last few weeks to onboard a mutual client- LA Madeleine.
+
+ 
+
+We are at the last stage and need to integrate a ‘landing page’ into their order taking system .   We need to get this done within this week . Their stores, payments systems and POS systems are all in place already.
+
+ 
+
+Can you please help me connect to some one who can help us with this process; WE are currently exchanging emails with Brady Delahanty and I am not sure he s able to understand what we are trying to accomplish.
+
+ 
+
+This is an important client for both of us and so I ll appreciate if you can support us in closing this loop.
+
+ 
+
+ 
+
+Regards
+
+Puneet Talwar
+
+ 
+
+ 
+
+ 
+
+From: Olo Partnerships <pam@olo.com>
+Date: Wednesday, September 10, 2025 at 11:24 AM
+To: pt@resbyte.ai <pt@resbyte.ai>
+Cc: Jason Mosby <jason@resbyte.ai>, Staci Broxman <staci.broxman@olo.com>
+Subject: Re: FW: Olo + Resbyte
+
+Hi Puneet,
+
+Sounds great! Thank you.
+
+Looking forward to hearing from you soon.
+
+Kindly,
+Pam
+
+ 
+
+On Wed, Sep 10, 2025 at 8:06 AM 'pt@resbyte.ai' via Olo Partnerships <pam@olo.com> wrote:
+
+Dear Pam,
+
+ 
+
+Working on this
+
+ 
+
+Will get this to you this week
+
+ 
+
+Puneet
+
+ 
+
+Get Outlook for Mac
+
+ 
+
+From: Olo Partnerships <pam@olo.com>
+Date: Monday, September 8, 2025 at 6:45 PM
+To: pt@resbyte.ai <pt@resbyte.ai>
+Cc: Jason Mosby <jason@resbyte.ai>, Staci Broxman <staci.broxman@olo.com>
+Subject: Re: FW: Olo + Resbyte
+
+Hi Puneet,
+
+Just wanted to check in and see if you're still interested in being included in our Partner Directory. We’re planning an update this week and would love to highlight your listing if you'd like to be part of it.
+If so, the only items I’ll need are:
+
+A short description (300 characters max)
+A long description for your directory listing
+You can find both fields under the General Partner Information tab in the Security and Privacy Assessment. Once I receive those, I’ll be able to get your listing posted.
+
+No pressure, just let me know if you have any questions!
+
+ 
+
+Kindly, 
+
+Pam
+
+ 
+
+On Tue, Jul 15, 2025 at 2:16 PM Olo Partnerships <pam@olo.com> wrote:
+
+Hi Puneet,
+
+I’ve set you and Jason up on the Developer Portal. As mentioned, if you have any questions while reviewing the documentation, please don’t hesitate to reach out to our Developer Support team via the Dev Portal Help Form. 
+
+The final item I’ll need is a short description (300 characters max) and a long description for your listing in our Partner Directory. You can find this under the General Partner Information tab within the Security and Privacy Assessment. Once I receive those, I’ll be able to get your listing posted.
+
+Looking forward to hearing back, and feel free to reach out if you have any questions. 
+
+Kindly,
+Pam
+
+ 
+
+On Tue, Jul 15, 2025 at 12:47 PM 'pt@resbyte.ai' via Olo Partnerships <pam@olo.com> wrote:
+
+Dear Staci,
+
+ 
+
+Please send all agreements to me .
+
+ 
+
+Here are the first set of users
+
+ 
+
+Puneet Talwar
+
+pt@resbyte.ai
+
+T – 646 338 8838
+
+ 
+
+Jason Mosby
+
+Jason@resbyte.ai
+
+310 437 8014
+
+ 
+
+Thanks for all your support.
+
+ 
+
+ 
+
+Regards
+
+Puneet  
+
+ 
+
+Get Outlook for Mac
+
+ 
+
+From: Olo Partnerships <pam@olo.com>
+Date: Tuesday, July 15, 2025 at 12:42 PM
+To: Staci Broxman <staci.broxman@olo.com>
+Cc: Jason Mosby <jason@resbyte.ai>, pt@resbyte.ai <pt@resbyte.ai>
+Subject: Re: FW: Olo + Resbyte
+
+Hi Staci,
+Thanks so much for looping us back in!
+
+
+Resbyte Team,
+A few of next steps on our end before completing partner onboarding: We'll be sending over the API Usage Agreement for signature, and we'd also like to get you set up in our Developer Portal, which provides access to our full API documentation. To get started, I'll just need the email and mobile phone (for 2FA) of each user requiring access, and our team will share invites ASAP. Should you have any questions after reviewing the documentation, please don’t hesitate to reach out to our dedicated Developer Support team via their Dev Portal Help Form.
+
+
+Should the API Usage Agreement be sent to Puneet?
+
+Looking forward to getting things underway, let me know if you have any questions! 
+
+Kindly,
+
+Pam
+
+ 
+
+ 
+
+ 
+
+On Mon, Jul 7, 2025 at 7:56 AM Staci Broxman <staci.broxman@olo.com> wrote:
+
+Hi Jason,
+
+ 
+
+Great to connect with you! I've looped our Partnerships team back into this thread so they can continue the discussion.
+
+ 
+
+ 
+
+On Wed, Jul 2, 2025 at 12:44 PM Jason Mosby <jason@resbyte.ai> wrote:
+
+Hi Staci,
+
+My name is Jason Mosby, and I’ve recently stepped into the role of Chief Technology Officer at Resbyte. I’m reaching out to introduce myself and to let you know that I’m available as a point of contact for the ongoing security assessment, as well as any technology related questions or needs you may have.
+
+For the MNDA:
+
+Puneet Talwar
+Chief Executive Officer - Resbyte
+1325 Avenue of the Americas, Ste 2736, New York, NY 10019
+
+If the NDA does not include a blanket provision, please include me as well
+Jason Mosby
+Chief Technology Officer - Resbyte
+1325 Avenue of the Americas, Ste 2736, New York, NY 10019
+
+Thank you, and I'm looking forward to working together.
+
+ 
+
+Hi Puneet, 
+
+ 
+
+I wanted to reach out to see how things were progressing with our security assessment? I'd also like to send out our MNDA so that we can work to get you onboarded in the interim. Could you send me the following information?
+
+Signer First and Last Name
+Signer Title
+Company Address
+ 
+
+On Mon, Jun 9, 2025 at 3:10 PM 'pt@resbyte.ai' via Olo Partnerships <pam@olo.com> wrote:
+
+Dear Pam,
+
+ 
+
+Thank you for your message
+
+ 
+
+We are in the process of completing the form you had sent and will return the updated information to you within this week.
+
+ 
+
+I look forward to working with you.
+
+ 
+
+Regards,
+
+Puneet Talwar
+
+ 
+
+ 
+
+ 
+
+Get Outlook for Mac
+
+ 
+
+From: Olo Partnerships <pam@olo.com>
+Date: Friday, June 6, 2025 at 7:55 AM
+To: pt@resbyte.ai <pt@resbyte.ai>
+Cc: Staci Broxman <staci.broxman@olo.com>
+Subject: Re: Olo + Resbyte
+
+Hi Puneet, 
+
+ 
+
+I haven't heard back from you, so I wanted to send a quick follow up so that we can move forward with your partner onboarding process. 
+
+ 
+
+As mentioned, we'll need to get an MNDA in place. Could you please send me the following information:
+
+·  Signer First and Last Name
+
+·  Signer Title
+
+·  Company Address
+
+Thanks,
+
+Pam
+
+ 
+
+On Tue, May 27, 2025 at 5:26 PM Olo Partnerships <pam@olo.com> wrote:
+
+Hi Puneet, 
+
+ 
+
+We are thrilled to support this new integrationfor la Madeleine.
+
+
+
+
+To kick things off, we would be happy to provide your team with access to our Developer Portal and API Documentation to review the docs on our API and Webhooks. I am going to send over an MNDA for you to sign. In order to send, please share with me the following:
+
+Signer First and Last Name
+Signer Title
+Company Address
+Then we can proceed with adding your team as a Developer Partner so that you will be available in the drop down for your brand to set you up with Webhooks (if applicable).
+
+ 
+
+I can set you up as the Partner Administrator to manage your users. To do so, please provide your mobile phone (for 2FA), and I will share invites ASAP. Should you have any questions upon review of the documentation, please don’t hesitate to reach out to our dedicated developersupport@olo.com team.
+
+
+
+
+We also ask that you complete our Security and Privacy Assessment (attached below). This assessment captures relevant information required by our Security team and is required across all partners within our ecosystem ahead of any brand projects. Once completed, I will share our API Usage Agreement for signature, which will enable you placement in our Partner Directory.
+
+
+
+
+Please don’t hesitate to reach out if you have any questions.
+
+ 
+
+Warmly,
+
+Pam 
+
+Error! Filename not specified.
+
+Error! Filename not specified.
+
+
+
+ 
+
+--
+
+All the best, 
+
+Error! Filename not specified.
+
+Staci Broxman (she/her)
+
+Customer Success, Sr. Manager | 646-360-0569 | LinkedIn
+
+olo.com · Help Center · Release Notes
+
+Upcoming OOO: 7/4/25
+
+ 
+
+Error! Filename not specified.
+
+
+
+ 
+
+--
+
+Image removed by sender.
+
+Sean J. Marrero 
+
+Sr Director, Partner Ecosystem | LinkedIn
+
+olo.com · Help Center · Partner Directory
+
+ 
+
+-------------
+
+Fwd: Resbyte - Integration Inquiry: Olo Pay and Olo Dispatch
+External
+Inbox
+Summary
+Brady is waiting for an API specialist assignment and asked Jason for information on the urgency of the integration.
+Jason confirmed they are using the Ordering API for a custom order flow and will be available for a call today at 4 PM EDT.
+By Gemini; there may be mistakes. Learn more
+
+Jason Mosby <jason@resbyte.ai>
+Mon 13 Oct, 16:31 (9 days ago)
+to me
+
+This is where we are with Olo.
+
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+
+
+-------- Forwarded Message --------
+Subject:	Re: Resbyte - Integration Inquiry: Olo Pay and Olo Dispatch
+Date:	Mon, 13 Oct 2025 12:58:41 -0400
+From:	Brady Delahanty <brady.delahanty@olo.com>
+To:	Jason Mosby <jason@resbyte.ai>
+CC:	Patrick Gilchrist <pgilchrist@leduffamerica.com>, pt@resbyte.ai <pt@resbyte.ai>, Michael <michael@resbyte.ai>, Sarah Morris <smorris@lamadeleine.com>, Maddy Beveridge <mbeveridge@lamadeleine.com>, Chad Hawkes <chawkes@lamadeleine.com>, Matthew Brown <matthew.a.g.brown@gmail.com>, Rick <rick@resbyte.ai>, Mitchell Donat <mitchell.donat@olo.com>
+
+
+Thanks, Jason. Because you'll be submitting orders through our Ordering API then this will be standard/full Ordering API Project. I'm waiting on an API specialist assignment. API projects with new partners can sometimes take months, just to set expectations. I told our team we want to move asap on this, but if there's any information you can share in regards to a need for utmost urgency, I can pass that along to the team as I work to expedite the project.  
+
+
+
+Brady Delahanty
+
+Customer Success, Sr. Manager | LinkedIn
+
+olo.com · Help Center · Release Notes
+
+
+
+
+On Mon, Oct 13, 2025 at 9:22 AM Jason Mosby <jason@resbyte.ai> wrote:
+Brady,
+
+
+A custom front-end is not required for our implementation. We are planning to submit payments utilizing the Single Payment workflow as defined in the documentation here:
+
+https://developer.olo.com/docs/load/ordering-api#operation/SubmitOrderwithSinglePayment
+
+We are constructing a custom order flow and plan to use Olo as a headless gateway.
+
+
+
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+On 10/10/2025 10:30 AM, Brady Delahanty wrote:
+Sandbox menu transfer has been completed. I have a case open with our GE team for a custom front end; lead times for these cases are usually at least a few weeks. I've asked the team for an update. 
+
+If all that's needed is API documentation at this time, the API documentation can be found here: https://developer.olo.com/docs/load/ordering-api. I see Puneet has access to our dev portal and should be able to access that documentation. 
+
+I'll provide more info on the GE team API specialist assignment when I can. In the meantime, let me know if there are any material changes
+
+
+
+Brady Delahanty
+
+Customer Success, Sr. Manager | LinkedIn
+
+olo.com · Help Center · Release Notes
+
+
+
+
+On Fri, Oct 10, 2025 at 12:18 PM Jason Mosby <jason@resbyte.ai> wrote:
+Brady,
+
+Can we confirm that status of the transfer and readiness of the Sandbox? Resbyte is prepared to integrate the APIs into the One-Click-Purchase workflow immediately upon receiving credentials.
+
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+On 10/8/2025 3:37 PM, Patrick Gilchrist wrote:
+Should be good to go.
+
+ 
+
+
+
+ 
+
+ 
+
+Merci,
+
+Patrick
+
+ 
+
+ 
+
+ 
+
+Patrick Gilchrist
+Sr. Director of Enterprise & Information, IT
+
+la Madeleine Bakery & Café
+
+ 
+
+
+
+We Spark Joy Every Day.
+
+__________________________________________________________________
+
+12201 Merit Drive, Suite 900 Dallas, TX 75251
+
+O: 469.660.2305
+
+C: 469.583.9804
+
+ 
+
+This email contains confidential information. If you are not the intended recipient, please notify the sender and delete this message.
+
+ 
+
+From: Brady Delahanty <brady.delahanty@olo.com>
+Sent: Wednesday, October 8, 2025 3:46 PM
+To: Patrick Gilchrist <pgilchrist@leduffamerica.com>
+Cc: pt@resbyte.ai; Michael <michael@resbyte.ai>; Sarah Morris <smorris@lamadeleine.com>; Maddy Beveridge <mbeveridge@lamadeleine.com>; Chad Hawkes <chawkes@lamadeleine.com>; Matthew Brown <matthew.a.g.brown@gmail.com>; Rick <rick@resbyte.ai>; Mitchell Donat <mitchell.donat@olo.com>; Jason Mosby <jason@resbyte.ai>
+Subject: Re: Resbyte - Integration Inquiry: Olo Pay and Olo Dispatch
+
+ 
+
+I moved forward with the menu transfer. Patrick, while waiting for that, can you please ensure the POS is connected and ready in your Sandbox account? 
+
+
+
+ 
+
+
+
+Brady Delahanty
+
+Customer Success, Sr. Manager | LinkedIn
+
+olo.com · Help Center · Release Notes
+
+ 
+
+ 
+
+ 
+
+On Wed, Oct 8, 2025 at 2:33 PM Jason Mosby <jason@resbyte.ai> wrote:
+
+We are not currently integrating SSO.
+
+Resbyte
+
+Jason Mosby
+
+Chief Technology Officer
+
+jason@resbyte.ai
+
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+
+On 10/8/2025 12:30 PM, Patrick Gilchrist wrote:
+
+ 
+
+We reviewed menus in our Sandbox environment. 
+
+Mealtime has been removed. We didn’t find a menu under Catering.
+
+ 
+
+
+
+ 
+
+ 
+
+Merci,
+
+Patrick
+
+ 
+
+ 
+
+ 
+
+Patrick Gilchrist
+Sr. Director of Enterprise & Information, IT
+
+la Madeleine Bakery & Café
+
+ 
+
+
+
+We Spark Joy Every Day.
+
+__________________________________________________________________
+
+12201 Merit Drive, Suite 900 Dallas, TX 75251
+
+O: 469.660.2305
+
+C: 469.583.9804
+
+ 
+
+This email contains confidential information. If you are not the intended recipient, please notify the sender and delete this message.
+
+ 
+
+From: Brady Delahanty <brady.delahanty@olo.com>
+Sent: Wednesday, October 8, 2025 1:02 PM
+To: Jason Mosby <jason@resbyte.ai>
+Cc: Patrick Gilchrist <pgilchrist@leduffamerica.com>; pt@resbyte.ai; Michael <michael@resbyte.ai>; Sarah Morris <smorris@lamadeleine.com>; Maddy Beveridge <mbeveridge@lamadeleine.com>; Chad Hawkes <chawkes@lamadeleine.com>; Matthew Brown <matthew.a.g.brown@gmail.com>; Rick <rick@resbyte.ai>; Mitchell Donat <mitchell.donat@olo.com>
+Subject: Re: Resbyte - Integration Inquiry: Olo Pay and Olo Dispatch
+
+ 
+
+Almost there guys-- I appreciate your patience. You skipped the SSO provider as well. Can you let me know?
+
+ 
+
+I'll also copy your menu from production to sandbox. We'll work out of your la Madeleine Sandbox Demo Vendor (OLO) in Sandbox. Please let me know if a different Sandbox should be used. I'm pasting the acknowledgements for this process below. I'm guessing you've gone through this before, but if not, it's pretty straightforward especially since we're just going to Sandbox. Please send you confirm the acknowledgements and I'll move forward. 
+
+ 
+
+·  [IMPORTANT] The brand needs to remove any active categories and items from each vendor within Store Menu Admin in the brand's Sandbox menu. The Olo menu team will not begin transferring the menu to Sandbox until this step has been completed.
+
+·  Partner Acknowledgement: Brands are responsible for making partners (Payment Provider, Loyalty Partner, API Partner, Marketplace) aware of the transfer prior to it being completed.
+
+·  If category restrictions were applied to the categories within the environment we are transferring from, the categories would need to be unrestricted from the menu in Sandbox once the transfer is complete. Make sure to either remove the restrictions from the Sandbox menu once the menu is transferred over, or adjust the restrictions to the appropriate stores within Sandbox. If not, you will not be able to add the items to the store menus within Sandbox.
+
+·  Once the menu is transferred over, the brand is responsible for adding the newly transferred items and modifiers to the store menus within Sandbox.
+
+·  All store level settings (e.g. taxability, hours of availability, acceptable handoff modes, etc.) will be reset within the Sandbox store menu. The brand is responsible for adding this data back, if desired.
+
+·  The menu transfer will wipe out all existing menu data that is currently in Sandbox and replace it with menu data from the transfer. If something is active on the menu in Sandbox, but not active on the environment we are transferring from, it will be deleted and not be available on the Company Menu in Sandbox once the transfer has been completed.
+
+·  All metadata within the Company Menu will be copied upon transfer.
+
+·  If any menu filters have been applied to the menu in the environment we are transferring from, they will not get transferred over to Sandbox.
+
+·  Please make sure that any internal parties or third parties (e.g. design agencies, API partners, etc.) are aware of the request if they are actively working with and/or using data from Sandbox.
+
+·  Any category/product image assignments will be overwritten and none of the new categories/items will have images assigned within Sandbox. Images will still be available within Sandbox Dashboard, if the brand is using Olo's Menu Image Management (MIM) tool and images have already been uploaded to MIM within Sandbox. The brand is responsible for reassigning category/product images, if desired.
+
+·  If you have a POS connection within Sandbox, all POS mappings will be transferred but the brand will need to run the price updater in Sandbox Dashboard once the store menus have been populated, so that updated pricing can be pulled.
+
+·  Once your menu is transferred, any product-specific coupons that were created within Olo's Coupon Manager will lose their product association within Sandbox. If there are active or upcoming coupons that target specific categories, products, and/or modifiers in your menu, you will need to edit those coupons after the transfer to add in the correct qualifying items based on your new menu setup.
+
+ 
+
+
+
+Brady Delahanty
+
+Customer Success, Sr. Manager | LinkedIn
+
+olo.com · Help Center · Release Notes
+
+ 
+
+ 
+
+ 
+
+On Wed, Oct 8, 2025 at 1:45 PM Jason Mosby <jason@resbyte.ai> wrote:
+
+1a: Custom web
+
+Resbyte
+
+Jason Mosby
+
+Chief Technology Officer
+
+jason@resbyte.ai
+
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+
+On 10/8/2025 11:27 AM, Brady Delahanty wrote:
+
+One question was skipped, 1a: If so, what kind of integration are you looking to build? Custom web/ App (iOS and/or Android)/ Kiosk/ Voice Ordering/ SMS Ordering/ etc.
+
+ 
+
+
+
+Brady Delahanty
+
+Customer Success, Sr. Manager | LinkedIn
+
+olo.com · Help Center · Release Notes
+
+ 
+
+ 
+
+ 
+
+On Tue, Oct 7, 2025 at 7:17 PM Patrick Gilchrist <pgilchrist@leduffamerica.com> wrote:
+
+On item #6, they would want to utilize Olo Pay for payment processing.
+
+ 
+
+Merci,
+
+Patrick
+
+ 
+
+ 
+
+ 
+
+Patrick Gilchrist
+Sr. Director of Enterprise & Information, IT
+
+la Madeleine Bakery & Café
+
+ 
+
+
+
+We Spark Joy Every Day.
+
+__________________________________________________________________
+
+12201 Merit Drive, Suite 900 Dallas, TX 75251
+
+O: 469.660.2305
+
+C: 469.583.9804
+
+ 
+
+This email contains confidential information. If you are not the intended recipient, please notify the sender and delete this message.
+
+ 
+
+From: pt@resbyte.ai <pt@resbyte.ai>
+Sent: Tuesday, October 7, 2025 4:36 PM
+To: Michael <michael@resbyte.ai>; Brady Delahanty <brady.delahanty@olo.com>
+Cc: Patrick Gilchrist <pgilchrist@leduffamerica.com>; Jason Mosby <jason@resbyte.ai>; Sarah Morris <smorris@lamadeleine.com>; Maddy Beveridge <mbeveridge@lamadeleine.com>; Chad Hawkes <chawkes@lamadeleine.com>; Matthew Brown <matthew.a.g.brown@gmail.com>; Rick <rick@resbyte.ai>; Mitchell Donat <mitchell.donat@olo.com>
+Subject: Re: Resbyte - Integration Inquiry: Olo Pay and Olo Dispatch
+
+ 
+
+﻿Dear Brady,
+
+ 
+
+ 
+
+Here are the responses you requested .
+
+ 
+
+ 
+
+Are you looking to be able to place an order through Olo's Ordering API?
+If so, what kind of integration are you looking to build? Custom web/ App (iOS and/or Android)/ Kiosk/ Voice Ordering/ SMS Ordering/ etc.?
+ 
+
+YES
+
+ 
+
+ 
+
+Are you working with an internal team, or working with a third-party partner?-
+ 
+
+LA Madelein is working with REsbyte.ai- We are an approved partner and have an internal team.
+
+ 
+
+ 
+
+
+...
+
+[Message clipped]  View entire message
+
+Jason Mosby <jason@resbyte.ai>
+Tue 14 Oct, 10:01 (8 days ago)
+to Brady, Patrick, pt@resbyte.ai, Michael, Sarah, Maddy, Chad, Matthew, Rick, Mitchell, me
+
+Brady,
+
+Thank you. I will be available today at 4PM EDT today. I have sent you an invitation to a Google Meet at the link below:
+
+Resbyte <> Olo: Payment & Dispatch
+Video call link: https://meet.google.com/fcz-tghh-rmc
+
+Talk soon.
+
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+On 10/13/2025 4:57 PM, Brady Delahanty wrote:
+Does tomorrow at 4pm ET work? 
+
+
+
+Brady Delahanty
+
+Customer Success, Sr. Manager | LinkedIn
+
+olo.com · Help Center · Release Notes
+
+
+
+
+On Mon, Oct 13, 2025 at 4:54 PM Jason Mosby <jason@resbyte.ai> wrote:
+Brady,
+
+Let's schedule a brief meeting to align on requirements and expectations. We will make ourselves available at your earliest convenience. What times best work for you?
+
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+...
+
+[Message clipped]  View entire message
+
+pt@resbyte.ai
+Tue 21 Oct, 17:37 (13 hours ago)
+to me
+
+ 
+
+On Tue, Oct 7, 2025 at 7:17 PM Patrick Gilchrist <pgilchrist@leduffamerica.com> wrote:
+
+On item #6, they would want to utilize Olo Pay for payment processing.
+
+ 
+
+Merci,
+
+Patrick
+
+ 
+
+ 
+
+ 
+
+Patrick Gilchrist
+Sr. Director of Enterprise & Information, IT
+
+la Madeleine Bakery & Café
+
+ 
+
+
+
+We Spark Joy Every Day.
+
+__________________________________________________________________
+
+12201 Merit Drive, Suite 900 Dallas, TX 75251
+
+O: 469.660.2305
+
+C: 469.583.9804
+
+ 
+
+This email contains confidential information. If you are not the intended recipient, please notify the sender and delete this message.
+
+ 
+
+From: pt@resbyte.ai <pt@resbyte.ai>
+Sent: Tuesday, October 7, 2025 4:36 PM
+To: Michael <michael@resbyte.ai>; Brady Delahanty <brady.delahanty@olo.com>
+Cc: Patrick Gilchrist <pgilchrist@leduffamerica.com>; Jason Mosby <jason@resbyte.ai>; Sarah Morris <smorris@lamadeleine.com>; Maddy Beveridge <mbeveridge@lamadeleine.com>; Chad Hawkes <chawkes@lamadeleine.com>; Matthew Brown <matthew.a.g.brown@gmail.com>; Rick <rick@resbyte.ai>; Mitchell Donat <mitchell.donat@olo.com>
+Subject: Re: Resbyte - Integration Inquiry: Olo Pay and Olo Dispatch
+
+ 
+
+﻿Dear Brady,
+
+ 
+
+ 
+
+Here are the responses you requested .
+
+ 
+
+ 
+
+Are you looking to be able to place an order through Olo's Ordering API?
+If so, what kind of integration are you looking to build? Custom web/ App (iOS and/or Android)/ Kiosk/ Voice Ordering/ SMS Ordering/ etc.?
+ 
+
+YES
+
+ 
+
+ 
+
+Are you working with an internal team, or working with a third-party partner?-
+ 
+
+LA Madelein is working with REsbyte.ai- We are an approved partner and have an internal team.
+
+ 
+
+ 
+
+ 
+
+Who will be the Developer Portal Project Owner from the Partner side? Puneet Talwar - RESBYTE.AI
+ 
+
+ 
+
+“Is Loyalty in scope for this project? If so, who is the Loyalty provider?- NO
+ 
+
+“Is SSO in scope for this project? If so, who is the SSO provider?”- YES
+ 
+
+ 
+
+What payment methods do you plan on using? (credit card, Apple Pay, Google Pay, etc.)- Existing Payment gateway from LA Madeleine -
+ 
+
+ 
+
+What hand-off modes do you plan on using? (pick-up, curbside, drive-thru, Dispatch, etc.). – All of the above
+ 
+
+ 
+
+What are your goal timelines for this project?  Yesterday.
+ 
+
+ 
+
+ 
+
+Please let us know how soon can we get started.
+
+ 
+
+ 
+
+Regards
+
+Puneet
+
+ 
+
+ 
+
+
+
+Brady Delahanty
+
+Customer Success, Sr. Manager | LinkedIn
+
+olo.com · Help Center · Release Notes
+
+ 
+
+ 
+
+ 
+
+On Tue, Oct 7, 2025 at 11:33 AM pt@resbyte.ai <pt@resbyte.ai> wrote:
+
+There s an update in the information – MFA phone no is updated .
+
+ 
+
+Partner name: Resbyte AI Inc ( Byte Ready Inc)
+
+Partner Contact First & Last Name: Puneet Talwar
+Partner Contact Email Address: pt@resbyte.ai
+Developer Portal Project owner email address: jason@resbyte.ai
+Developer Portal Project owner phone number (for 2FA:  747.333.6474
+
+Historical data needed (we can go back up to two years)? -  
+
+If so, is the integration ready to ingest the historical data?- Yes
+Enable access to 86ing endpoint?- Yes
+
+ 
+
+ 
+
+Get Outlook for Mac
+
+ 
+
+From: pt@resbyte.ai <pt@resbyte.ai>
+Date: Tuesday, October 7, 2025 at 11:28 AM
+To: Brady Delahanty <brady.delahanty@olo.com>, Patrick Gilchrist <pgilchrist@leduffamerica.com>
+Cc: Jason Mosby <jason@resbyte.ai>, Sarah Morris <smorris@lamadeleine.com>, Michael <michael@resbyte.ai>, Maddy Beveridge <mbeveridge@lamadeleine.com>, Chad Hawkes <chawkes@lamadeleine.com>, Matthew Brown <matthew.a.g.brown@gmail.com>, Rick . <rick@resbyte.ai>
+Subject: Re: Resbyte - Integration Inquiry: Olo Pay and Olo Dispatch
+
+Dear Brady,
+
+ 
+
+Here s the information you requested ;
+
+ 
+
+ 
+
+Partner name: Resbyte AI Inc ( Byte Ready Inc)
+
+Partner Contact First & Last Name: Puneet Talwar
+Partner Contact Email Address: pt@resbyte.ai
+Developer Portal Project owner email address: jason@resbyte.ai
+Developer Portal Project owner phone number (for 2FA: 310.437.8014
+
+Historical data needed (we can go back up to two years)? -  
+
+If so, is the integration ready to ingest the historical data?- Yes
+Enable access to 86ing endpoint?- Yes
+
+ 
+
+We are an approved OLO partner and are getting transactional data for LA madeleine.
+
+We are now looking to integrate into the OLO ordering portal.
+
+ 
+
+ 
+
+Request if we can get on a call to discuss this and explain what we need to accomplish it might be faster
+
+ 
+
+ 
+
+Regards,
+
+Puneet
+
+ 
+
+ 
+
+ 
+
+From: Brady Delahanty <brady.delahanty@olo.com>
+Date: Monday, October 6, 2025 at 5:08 PM
+To: Patrick Gilchrist <pgilchrist@leduffamerica.com>
+Cc: Jason Mosby <jason@resbyte.ai>, Sarah Morris <smorris@lamadeleine.com>, Michael <michael@resbyte.ai>, pt@resbyte.ai <pt@resbyte.ai>, Maddy Beveridge <mbeveridge@lamadeleine.com>, Chad Hawkes <chawkes@lamadeleine.com>, Matthew Brown <matthew.a.g.brown@gmail.com>, Rick . <rick@resbyte.ai>
+Subject: Re: Resbyte - Integration Inquiry: Olo Pay and Olo Dispatch
+
+Hey team! Thanks for your patience. I can help spin up an Ordering API project for this. Can you please address the following: 
+
+ 
+
+Partner name: Resbyte
+
+Partner Contact First & Last Name:
+Partner Contact Email Address:
+Developer Portal Project owner email address:
+Developer Portal Project owner phone number (for 2FA:
+
+Historical data needed (we can go back up to two years)? 
+
+If so, is the integration ready to ingest the historical data?
+Enable access to 86ing endpoint?
+
+ 
+
+Error! Filename not specified.
+
+Brady Delahanty
+
+Customer Success, Sr. Manager | LinkedIn
+
+olo.com · Help Center · Release Notes
+
+ 
+
+ 
+
+ 
+
+On Fri, Oct 3, 2025 at 11:09 AM Patrick Gilchrist <pgilchrist@leduffamerica.com> wrote:
+
+Adding our new CSM Brady Delahanty.
+
+Removing Staci as she is no longer on our account. 
+
+ 
+
+Merci,
+
+Patrick
+
+ 
+
+ 
+
+ 
+
+Patrick Gilchrist
+Sr. Director of Enterprise & Information, IT
+
+la Madeleine Bakery & Café
+
+ 
+
+<image001.png>
+
+We Spark Joy Every Day.
+
+__________________________________________________________________
+
+12201 Merit Drive, Suite 900 Dallas, TX 75251
+
+O: 469.660.2305
+
+C: 469.583.9804
+
+ 
+
+This email contains confidential information. If you are not the intended recipient, please notify the sender and delete this message.
+
+ 
+
+From: Jason Mosby <jason@resbyte.ai>
+Sent: Friday, October 3, 2025 9:18 AM
+To: Olo Partnerships <pam@olo.com>; Staci Broxman <staci.broxman@olo.com>
+Cc: Sarah Morris <smorris@lamadeleine.com>; Patrick Gilchrist <pgilchrist@leduffamerica.com>; Michael <michael@resbyte.ai>; pt@resbyte.ai; Maddy Beveridge <mbeveridge@lamadeleine.com>; Chad Hawkes <chawkes@lamadeleine.com>; Matthew Brown <matthew.a.g.brown@gmail.com>; Rick . <rick@resbyte.ai>
+Subject: Resbyte - Integration Inquiry: Olo Pay and Olo Dispatch
+
+ 
+
+Pam & Staci,
+
+We at Resbyte wish to integrate Olo Pay and Olo Dispatch into the Resbyte platform to serve our mutual clients. Our goal is to act as a seamless extension of the client's existing Olo environment. Resbyte will collect the customer, order, and payment information, then transmit it directly to Olo via your APIs for processing and fulfillment. We wish to provide our clients with the following end-to-end process:
+
+Programmatic cart population with applicable items at a dynamically set promotional price
+Collection of fulfillment details (pick-up or delivery)
+Collection of payment information
+Payment processing
+Order transfer to the delivery service
+Customer order confirmation
+Could you please direct us to the relevant documentation for implementing this "pass-through" model with Olo Pay and Olo Dispatch? We are available for a call to respond to any questions or concerns and to ensure our approach aligns with Olo's best practices.
+
+Thank you.
+
+--
+
+Error! Filename not specified.
+
+Jason Mosby
+
+Chief Technology Officer
+
+jason@resbyte.ai
+
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+
+ 
+
+----------
+
+Resbyte - la Madeleine Menu Items
+Inbox
+
+
+Jason Mosby
+Tue 21 Oct, 16:05 (14 hours ago)
+to me, pt@resbyte.ai
+
+Pam & Staci,
+
+
+When we sign into the Olo Developer Platform, we see a project named "Resbyte.AI (la Madeleine Mealtime) - Restaurant Info + Order Export". Though we are able to access the historic dumps, it appears that we are unable to access the la Madeleine menu items using the credentials in this project. Please advise.
+Thank you.
+
+--
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+
+
+------
+
+Asset Manager - Description
+Inbox
+
+
+puneet@byteready.co
+Tue 21 Oct, 09:45 (21 hours ago)
+to Jason, me
+
+Here s an outline of the asset manager
+
+ 
+
+ 
+
+This is an Asset library/ Asset manager built for the purpose of maintaining restaurant s menus , descriptions , images all in one place. These assets are in turn utilized by an ad generator .  Also would be a tool to turn products on and off in the future .
+
+ 
+
+Kindly add to this ;
+
+ 
+
+ 
+
+Asset repository in Snowflake f Product Descriptions , images , prices
+Incoming feed from 3rd party Data sources – i.e. POS
+Ability for users to edit descriptions , prices , images
+Sessions log of each user
+Version control of each session – repository of previous images , descriptions
+Ability to ‘pause’ products – byt location _ Phase-II
+ 
+
+ 
+
+PLEASE add to this description and I ll appreciate if we can get this back by this afternoon .
+
+ 
+
+ 
+
+Regards
+
+Puneet
+
+ 
+
+-----------
+
+Re: ResByte MMS ad designs
+Inbox
+Summary
+Michael proposed an update call to recap pricing issues, master doc discrepancies, and strategy shifts.
+Kristin confirmed availability for a Noon PDT call and will schedule it, noting Rick's unavailability at a conflicting time.
+Jason stated he has a conflict if the meeting is occurring now.
+Michael requested the Zoom link for the call.
+By Gemini; there may be mistakes. Learn more
+
+Kristin . <kristin@resbyte.ai>
+16 Oct 2025, 13:36 (6 days ago)
+to puneet@byteready.co, Michael, Rick, Jason, me
+
+Added Brian 
+
+On Thu, 16 Oct 2025 at 11:20, Kristin . <kristin@resbyte.ai> wrote:
+Hi guys,
+Can we do a call today to discuss how to respond to Sarah regarding her questions? 
+
+Kristin
+
+---------- Forwarded message ---------
+From: Sarah Morris <smorris@lamadeleine.com>
+Date: Thu, 16 Oct 2025 at 11:07
+Subject: Re: ResByte MMS ad designs
+To: Kristin . <kristin@resbyte.ai>, Maddy Beveridge <mbeveridge@lamadeleine.com>, Chad Hawkes <chawkes@lamadeleine.com>, Patrick Gilchrist <pgilchrist@leduffamerica.com>, John Dillon <jdillon@lamadeleine.com>
+Cc: Michael . <michael@resbyte.ai>, Rick . <rick@resbyte.ai>, puneet@byteready.co <puneet@byteready.co>
+
+
+Thanks, couple questions. 
+
+Did we get any confirmation on OLO next steps and timing. 
+These products in your attached creative are products that we do not carry. Maddy went in a few weeks ago and updated to reflect all existing products and pricing, was that ever found on your end? 
+Was the pricing issue we saw on Tuesday get resolved? Patrick had sent you all the updated pricing document with all accurate pricing for the full menu a couple of weeks ago (9/29)
+What is the POV on focusing on dine in acquisition vs. mobile given the issue with OLO? 
+
+This is a very critical project for us, but at this point, I need to really understand the timing for launch so I can set expectations, and our teams can prioritize other work in the meantime.  We are here for you and need your help on the current status. Our teams are standing by. 
+
+Please advise, 
+Sarah 
+From: Kristin . <kristin@resbyte.ai>
+Sent: Thursday, October 16, 2025 11:59 AM
+To: Maddy Beveridge <mbeveridge@lamadeleine.com>; Sarah Morris <smorris@lamadeleine.com>
+Cc: Michael . <michael@resbyte.ai>; Rick . <rick@resbyte.ai>; puneet@byteready.co <puneet@byteready.co>
+Subject: ResByte MMS ad designs
+ 
+Hi Maddy and Sarah,
+
+Attached is a PowerPoint with final designs for the MMS ad template. These incorporate feedback from Maddy given during our last call. 
+
+Please let me know which one of these you would like ResByte to use.
+
+Thanks,
+Kristin Bromm
+ Instagram Ad Template Designs.- Interation 2.pptx
+One attachment
+  • Scanned by Gmail
+
+Jason Mosby
+16 Oct 2025, 14:02 (6 days ago)
+to Kristin, puneet@byteready.co, Michael, Rick, me
+
+Olo has asked for justification of our request to expedite the process. I do not have an update on the status of this correspondence. I am also unclear if Resbyte or la Madeleine is the point on this. For now, we are still on their protracted timeline. See item 4 below for more.
+We met this morning to determine the source of the asset manager disparities and to create a strategy to prevent issues such as these in the future. The overnight team will address as many of these issues as possible. When they are ready, they will appear in the Live Environment (https://live.resbyte.ai). We will be provided with confirmation once the required updates have been made.
+See item 2. We are applying additional layers of quality assurance to ensure accuracy.
+We are moving forward with delivery at this time. We are transitioning payment processing and fulfillment to Fishbowl while we navigate Olo's process. We will be creating global promo codes with Fishbowl that correspond with the discount tiers supported by the Resbyte platform. We need to update the MMS ad designs to include the text of these promo codes. Our strategy for the email channel is to add them as HTML below the generated image to allow for easy copy and paste. We have not completed this update to the template, but we will do this in a way that does not violate the la Madeleine brand guide. I will send a sample once one is ready. Dine-in and Mobile will begin in the coming weeks.
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+
+Kristin . <kristin@resbyte.ai>
+16 Oct 2025, 14:16 (6 days ago)
+to Jason, puneet@byteready.co, Michael, Rick, me
+
+Hi Jason, thanks.
+IMO someone (me or Michael on the thread) needs to reply to each of Sarah's questions. We should provide a succinct explanation regarding what happened with the data (what was the identified cause ) and what we are doing to ensure it doesn't happen again, in the appropriate level of detail, in order to preserve trust with the client. 
+Also once we know for sure what the phases are we should communicate that clearly. My understanding is Phase 1 will use Fishbowl and Phase 2 (hopefully) will switch to Olo. 
+
+Rick . <rick@resbyte.ai>
+16 Oct 2025, 14:31 (6 days ago)
+to Kristin, Jason, puneet@byteready.co, Michael, me
+
+One other reminder I asked about last week, how are we generating subject lines for email? 
+That is the first barrier, opening the email.
+Are we able to generate compelling subject lines based on day part or offer in the email or do we need to generate a bunch that can be applied?
+
+On Thu, 16 Oct 2025 at 13:16, Kristin . <kristin@resbyte.ai> wrote:
+Hi Jason, thanks.
+IMO someone (me or Michael on the thread) needs to reply to each of Sarah's questions. We should provide a succinct explanation regarding what happened with the data (what was the identified cause ) and what we are doing to ensure it doesn't happen again, in the appropriate level of detail, in order to preserve trust with the client. 
+Also once we know for sure what the phases are we should communicate that clearly. My understanding is Phase 1 will use Fishbowl and Phase 2 (hopefully) will switch to Olo. 
+
+Michael . <michael@resbyte.ai>
+16 Oct 2025, 14:31 (6 days ago)
+to Kristin, Jason, puneet@byteready.co, Rick, me
+
+Thanks Kristn,
+
+I will respond to Sarah with her questions and I agree - we need a better explanation as to why this happened with the elements.
+
+Jason - can you provide us with a more detailed explanation as to why this happened and what we are doing to fix this? 
+Preferably before the 3pm CT call
+
+Kristin - FYI Puneet and I are on another email string with Sarah and John discussing this and set a call at 3pm CT to provide live updates on all the questions...
+
+Thanks everyone!
+-Michael 
+
+
+On Thu, 16 Oct 2025 at 11:16, Kristin . <kristin@resbyte.ai> wrote:
+Hi Jason, thanks.
+IMO someone (me or Michael on the thread) needs to reply to each of Sarah's questions. We should provide a succinct explanation regarding what happened with the data (what was the identified cause ) and what we are doing to ensure it doesn't happen again, in the appropriate level of detail, in order to preserve trust with the client. 
+Also once we know for sure what the phases are we should communicate that clearly. My understanding is Phase 1 will use Fishbowl and Phase 2 (hopefully) will switch to Olo. 
+
+Jason Mosby
+16 Oct 2025, 14:32 (6 days ago)
+to Kristin, puneet@byteready.co, Michael, Rick, me
+
+I did not reply to Sarah. I replied to this group.
+
+
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+On 10/16/2025 12:16 PM, Kristin . wrote:
+Hi Jason, thanks.
+IMO someone (me or Michael on the thread) needs to reply to each of Sarah's questions. We should provide a succinct explanation regarding what happened with the data (what was the identified cause ) and what we are doing to ensure it doesn't happen again, in the appropriate level of detail, in order to preserve trust with the client. 
+Also once we know for sure what the phases are we should communicate that clearly. My understanding is Phase 1 will use Fishbowl and Phase 2 (hopefully) will switch to Olo. 
+
+Michael . <michael@resbyte.ai>
+16 Oct 2025, 14:39 (6 days ago)
+to Jason, Kristin, puneet@byteready.co, Rick, me
+
+Understood, I am fine with responding to Sarah (already had a text string going to day with her).
+
+I am looking to provide more details to her than just we are looking at it - we know what caused it and any specific action items to correct that we can drill down on?
+
+"We met this morning to determine the source of the asset manager disparities and to create a strategy to prevent issues such as these in the future."
+
+Any more details/insights are appreciated!
+
+Thx
+-Michael 
+
+
+On Thu, 16 Oct 2025 at 11:32, Jason Mosby <jason@resbyte.ai> wrote:
+I did not reply to Sarah. I replied to this group.
+
+
+
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+On 10/16/2025 12:16 PM, Kristin . wrote:
+Hi Jason, thanks.
+IMO someone (me or Michael on the thread) needs to reply to each of Sarah's questions. We should provide a succinct explanation regarding what happened with the data (what was the identified cause ) and what we are doing to ensure it doesn't happen again, in the appropriate level of detail, in order to preserve trust with the client. 
+Also once we know for sure what the phases are we should communicate that clearly. My understanding is Phase 1 will use Fishbowl and Phase 2 (hopefully) will switch to Olo. 
+
+Michael <michael@resbyte.ai>
+16 Oct 2025, 14:44 (6 days ago)
+to Jason, Kristin, puneet, Rick, me
+
+
+Jason/Puneet,
+
+Also verify that we are only using the “Master Product”file from Patrick in our system?
+
+And to Rick’s question of subject lines off of that same product sheet?
+Thx 
+
+On Oct 16, 2025, at 11:32 AM, Jason Mosby <jason@resbyte.ai> wrote:
+
+
+﻿
+I did not reply to Sarah. I replied to this group.
+
+
+
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+On 10/16/2025 12:16 PM, Kristin . wrote:
+Hi Jason, thanks.
+IMO someone (me or Michael on the thread) needs to reply to each of Sarah's questions. We should provide a succinct explanation regarding what happened with the data (what was the identified cause ) and what we are doing to ensure it doesn't happen again, in the appropriate level of detail, in order to preserve trust with the client. 
+Also once we know for sure what the phases are we should communicate that clearly. My understanding is Phase 1 will use Fishbowl and Phase 2 (hopefully) will switch to Olo. 
+
+Jason Mosby
+16 Oct 2025, 15:09 (6 days ago)
+to Kristin, puneet@byteready.co, Michael, Rick, me
+
+The overnight team had been promoting code from staging to live without notifying the other teams and completing a QA process.
+They have also been making updates directly in the live environment.
+There was confusion about how they should apply la Madeleine's Master Price List to the Asset Manager as the formats are not directly compatible. This is a manually process, and QA was not being applied consistently.
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+On 10/16/2025 12:16 PM, Kristin . wrote:
+
+Hi Jason, thanks.
+IMO someone (me or Michael on the thread) needs to reply to each of Sarah's questions. We should provide a succinct explanation regarding what happened with the data (what was the identified cause ) and what we are doing to ensure it doesn't happen again, in the appropriate level of detail, in order to preserve trust with the client. 
+Also once we know for sure what the phases are we should communicate that clearly. My understanding is Phase 1 will use Fishbowl and Phase 2 (hopefully) will switch to Olo. 
+
+Michael <michael@resbyte.ai>
+16 Oct 2025, 15:10 (6 days ago)
+to Jason, Kristin, puneet, Rick, me
+
+
+Got it - thanks man!!!
+
+On Oct 16, 2025, at 12:09 PM, Jason Mosby <jason@resbyte.ai> wrote:
+
+
+﻿
+The overnight team had been promoting code from staging to live without notifying the other teams and completing a QA process.
+They have also been making updates directly in the live environment.
+There was confusion about how they should apply la Madeleine's Master Price List to the Asset Manager as the formats are not directly compatible. This is a manually process, and QA was not being applied consistently.
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+On 10/16/2025 12:16 PM, Kristin . wrote:
+Hi Jason, thanks.
+IMO someone (me or Michael on the thread) needs to reply to each of Sarah's questions. We should provide a succinct explanation regarding what happened with the data (what was the identified cause ) and what we are doing to ensure it doesn't happen again, in the appropriate level of detail, in order to preserve trust with the client. 
+Also once we know for sure what the phases are we should communicate that clearly. My understanding is Phase 1 will use Fishbowl and Phase 2 (hopefully) will switch to Olo. 
+
+Michael <michael@resbyte.ai>
+16 Oct 2025, 15:17 (6 days ago)
+to Jason, Kristin, puneet, Rick, me
+
+
+PS - GET RID Of BEEF MEAL IMAGE ON THE SLIDE WE KEEP ASKING THEM TO APPROVE!
+It’s discontinued and horrible looking!
+Create a new slide with Chicken Cordon Blue or something…
+
+THX!!!
+
+On Oct 16, 2025, at 12:09 PM, Jason Mosby <jason@resbyte.ai> wrote:
+
+
+﻿
+The overnight team had been promoting code from staging to live without notifying the other teams and completing a QA process.
+They have also been making updates directly in the live environment.
+There was confusion about how they should apply la Madeleine's Master Price List to the Asset Manager as the formats are not directly compatible. This is a manually process, and QA was not being applied consistently.
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+On 10/16/2025 12:16 PM, Kristin . wrote:
+Hi Jason, thanks.
+IMO someone (me or Michael on the thread) needs to reply to each of Sarah's questions. We should provide a succinct explanation regarding what happened with the data (what was the identified cause ) and what we are doing to ensure it doesn't happen again, in the appropriate level of detail, in order to preserve trust with the client. 
+Also once we know for sure what the phases are we should communicate that clearly. My understanding is Phase 1 will use Fishbowl and Phase 2 (hopefully) will switch to Olo. 
+
+Kristin . <kristin@resbyte.ai>
+16 Oct 2025, 15:36 (6 days ago)
+to Michael, Jason, puneet, Rick, me
+
+Hi Michael,
+The templates are based on images provided to me in a PowerPoint for the approved email ad templates. It should not matter what image is shown in the ad templates as food item, as the system is supposed to dynamically pass the correct product data through and the generated assets that appear in Resbyte will have the correct images.  That is my understanding.
+If you would like all the Ad template designs that are shown to the client to include an example food image that is actually included in the Master products data file, that will take additional time for the templates to be updated. I'll need to know where to get the food image photo associated to the food item to pass along to the designer. If you would like me to do that, please let me know. This would add additional days to completion of the first set of ad templates (MMS, Insta/FB, Google). And we till need to get the promos to add to all of them given that the strategy has changed to using discount codes from Fishbowl.
+
+Kristin
+
+On Thu, 16 Oct 2025 at 13:17, Michael <michael@resbyte.ai> wrote:
+
+PS - GET RID Of BEEF MEAL IMAGE ON THE SLIDE WE KEEP ASKING THEM TO APPROVE!
+It’s discontinued and horrible looking!
+Create a new slide with Chicken Cordon Blue or something…
+
+THX!!!
+
+On Oct 16, 2025, at 12:09 PM, Jason Mosby <jason@resbyte.ai> wrote:
+
+﻿
+The overnight team had been promoting code from staging to live without notifying the other teams and completing a QA process.
+They have also been making updates directly in the live environment.
+There was confusion about how they should apply la Madeleine's Master Price List to the Asset Manager as the formats are not directly compatible. This is a manually process, and QA was not being applied consistently.
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+On 10/16/2025 12:16 PM, Kristin . wrote:
+Hi Jason, thanks.
+IMO someone (me or Michael on the thread) needs to reply to each of Sarah's questions. We should provide a succinct explanation regarding what happened with the data (what was the identified cause ) and what we are doing to ensure it doesn't happen again, in the appropriate level of detail, in order to preserve trust with the client. 
+Also once we know for sure what the phases are we should communicate that clearly. My understanding is Phase 1 will use Fishbowl and Phase 2 (hopefully) will switch to Olo. 
+
+Michael <michael@resbyte.ai>
+16 Oct 2025, 16:55 (6 days ago)
+to Kristin, Jason, puneet, Rick, me
+
+
+Thanks Kristin - I know the process but I have been asking for a couple weeks now to swap that image 
+1) it looks awful 
+2) they don’t make it any more
+Brought it up to Puneet on the after action call right now 
+Talk in 10 mins?
+
+On Oct 16, 2025, at 12:36 PM, Kristin . <kristin@resbyte.ai> wrote:
+
+
+﻿
+Hi Michael,
+The templates are based on images provided to me in a PowerPoint for the approved email ad templates. It should not matter what image is shown in the ad templates as food item, as the system is supposed to dynamically pass the correct product data through and the generated assets that appear in Resbyte will have the correct images.  That is my understanding.
+If you would like all the Ad template designs that are shown to the client to include an example food image that is actually included in the Master products data file, that will take additional time for the templates to be updated. I'll need to know where to get the food image photo associated to the food item to pass along to the designer. If you would like me to do that, please let me know. This would add additional days to completion of the first set of ad templates (MMS, Insta/FB, Google). And we till need to get the promos to add to all of them given that the strategy has changed to using discount codes from Fishbowl.
+
+Kristin
+
+On Thu, 16 Oct 2025 at 13:17, Michael <michael@resbyte.ai> wrote:
+
+PS - GET RID Of BEEF MEAL IMAGE ON THE SLIDE WE KEEP ASKING THEM TO APPROVE!
+It’s discontinued and horrible looking!
+Create a new slide with Chicken Cordon Blue or something…
+
+THX!!!
+
+On Oct 16, 2025, at 12:09 PM, Jason Mosby <jason@resbyte.ai> wrote:
+
+﻿
+The overnight team had been promoting code from staging to live without notifying the other teams and completing a QA process.
+They have also been making updates directly in the live environment.
+There was confusion about how they should apply la Madeleine's Master Price List to the Asset Manager as the formats are not directly compatible. This is a manually process, and QA was not being applied consistently.
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+On 10/16/2025 12:16 PM, Kristin . wrote:
+Hi Jason, thanks.
+IMO someone (me or Michael on the thread) needs to reply to each of Sarah's questions. We should provide a succinct explanation regarding what happened with the data (what was the identified cause ) and what we are doing to ensure it doesn't happen again, in the appropriate level of detail, in order to preserve trust with the client. 
+Also once we know for sure what the phases are we should communicate that clearly. My understanding is Phase 1 will use Fishbowl and Phase 2 (hopefully) will switch to Olo. 
+
+Kristin . <kristin@resbyte.ai>
+16 Oct 2025, 18:42 (6 days ago)
+to Michael, Jason, puneet, Rick, me
+
+Hi Michael, 
+My plan is to ask the designer to replace the current product image for the one for Crêpe la Madeleine. This is in the asset library in Resbyte.ai and in the Master Product sheet (you can find it if you don't use the accented letter e). But how do I determine the original price and the sales price from the Master Products sheet?
+Here's what I see for that row:
+image.png
+
+
+On Thu, 16 Oct 2025 at 14:55, Michael <michael@resbyte.ai> wrote:
+
+Thanks Kristin - I know the process but I have been asking for a couple weeks now to swap that image 
+1) it looks awful 
+2) they don’t make it any more
+Brought it up to Puneet on the after action call right now 
+Talk in 10 mins?
+
+On Oct 16, 2025, at 12:36 PM, Kristin . <kristin@resbyte.ai> wrote:
+
+﻿
+Hi Michael,
+The templates are based on images provided to me in a PowerPoint for the approved email ad templates. It should not matter what image is shown in the ad templates as food item, as the system is supposed to dynamically pass the correct product data through and the generated assets that appear in Resbyte will have the correct images.  That is my understanding.
+If you would like all the Ad template designs that are shown to the client to include an example food image that is actually included in the Master products data file, that will take additional time for the templates to be updated. I'll need to know where to get the food image photo associated to the food item to pass along to the designer. If you would like me to do that, please let me know. This would add additional days to completion of the first set of ad templates (MMS, Insta/FB, Google). And we till need to get the promos to add to all of them given that the strategy has changed to using discount codes from Fishbowl.
+
+Kristin
+
+On Thu, 16 Oct 2025 at 13:17, Michael <michael@resbyte.ai> wrote:
+
+PS - GET RID Of BEEF MEAL IMAGE ON THE SLIDE WE KEEP ASKING THEM TO APPROVE!
+It’s discontinued and horrible looking!
+Create a new slide with Chicken Cordon Blue or something…
+
+THX!!!
+
+On Oct 16, 2025, at 12:09 PM, Jason Mosby <jason@resbyte.ai> wrote:
+
+﻿
+The overnight team had been promoting code from staging to live without notifying the other teams and completing a QA process.
+They have also been making updates directly in the live environment.
+There was confusion about how they should apply la Madeleine's Master Price List to the Asset Manager as the formats are not directly compatible. This is a manually process, and QA was not being applied consistently.
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+On 10/16/2025 12:16 PM, Kristin . wrote:
+Hi Jason, thanks.
+IMO someone (me or Michael on the thread) needs to reply to each of Sarah's questions. We should provide a succinct explanation regarding what happened with the data (what was the identified cause ) and what we are doing to ensure it doesn't happen again, in the appropriate level of detail, in order to preserve trust with the client. 
+Also once we know for sure what the phases are we should communicate that clearly. My understanding is Phase 1 will use Fishbowl and Phase 2 (hopefully) will switch to Olo. 
+
+Michael . <michael@resbyte.ai>
+20 Oct 2025, 11:42 (2 days ago)
+to Kristin, Jason, puneet, Rick, me
+
+
+Hi All,
+
+Do we want to set an update call this afternoon to recap the pricing issues, Master Doc vs older images in Asset library and shift to brand vs transnational (discount coupon) strategy?
+
+Lots to unpack and focus on with a tight timeline.  Proposing 12pm Pacific (or other times) what works?
+
+Thanks,
+-Michal 
+
+On Thu, 16 Oct 2025 at 15:42, Kristin . <kristin@resbyte.ai> wrote:
+Hi Michael, 
+My plan is to ask the designer to replace the current product image for the one for Crêpe la Madeleine. This is in the asset library in Resbyte.ai and in the Master Product sheet (you can find it if you don't use the accented letter e). But how do I determine the original price and the sales price from the Master Products sheet?
+Here's what I see for that row:
+image.png
+
+On Thu, 16 Oct 2025 at 14:55, Michael <michael@resbyte.ai> wrote:
+
+Thanks Kristin - I know the process but I have been asking for a couple weeks now to swap that image 
+1) it looks awful 
+2) they don’t make it any more
+Brought it up to Puneet on the after action call right now 
+Talk in 10 mins?
+
+On Oct 16, 2025, at 12:36 PM, Kristin . <kristin@resbyte.ai> wrote:
+
+﻿
+Hi Michael,
+The templates are based on images provided to me in a PowerPoint for the approved email ad templates. It should not matter what image is shown in the ad templates as food item, as the system is supposed to dynamically pass the correct product data through and the generated assets that appear in Resbyte will have the correct images.  That is my understanding.
+If you would like all the Ad template designs that are shown to the client to include an example food image that is actually included in the Master products data file, that will take additional time for the templates to be updated. I'll need to know where to get the food image photo associated to the food item to pass along to the designer. If you would like me to do that, please let me know. This would add additional days to completion of the first set of ad templates (MMS, Insta/FB, Google). And we till need to get the promos to add to all of them given that the strategy has changed to using discount codes from Fishbowl.
+
+Kristin
+
+On Thu, 16 Oct 2025 at 13:17, Michael <michael@resbyte.ai> wrote:
+
+PS - GET RID Of BEEF MEAL IMAGE ON THE SLIDE WE KEEP ASKING THEM TO APPROVE!
+It’s discontinued and horrible looking!
+Create a new slide with Chicken Cordon Blue or something…
+
+THX!!!
+
+On Oct 16, 2025, at 12:09 PM, Jason Mosby <jason@resbyte.ai> wrote:
+
+﻿
+The overnight team had been promoting code from staging to live without notifying the other teams and completing a QA process.
+They have also been making updates directly in the live environment.
+There was confusion about how they should apply la Madeleine's Master Price List to the Asset Manager as the formats are not directly compatible. This is a manually process, and QA was not being applied consistently.
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+On 10/16/2025 12:16 PM, Kristin . wrote:
+Hi Jason, thanks.
+IMO someone (me or Michael on the thread) needs to reply to each of Sarah's questions. We should provide a succinct explanation regarding what happened with the data (what was the identified cause ) and what we are doing to ensure it doesn't happen again, in the appropriate level of detail, in order to preserve trust with the client. 
+Also once we know for sure what the phases are we should communicate that clearly. My understanding is Phase 1 will use Fishbowl and Phase 2 (hopefully) will switch to Olo. 
+
+Kristin . <kristin@resbyte.ai>
+20 Oct 2025, 12:09 (2 days ago)
+to Michael, Jason, puneet, Rick, me
+
+12:00 PDT works for me.
+
+On Mon, 20 Oct 2025 at 09:42, Michael . <michael@resbyte.ai> wrote:
+
+Hi All,
+
+Do we want to set an update call this afternoon to recap the pricing issues, Master Doc vs older images in Asset library and shift to brand vs transnational (discount coupon) strategy?
+
+Lots to unpack and focus on with a tight timeline.  Proposing 12pm Pacific (or other times) what works?
+
+Thanks,
+-Michal 
+
+On Thu, 16 Oct 2025 at 15:42, Kristin . <kristin@resbyte.ai> wrote:
+Hi Michael, 
+My plan is to ask the designer to replace the current product image for the one for Crêpe la Madeleine. This is in the asset library in Resbyte.ai and in the Master Product sheet (you can find it if you don't use the accented letter e). But how do I determine the original price and the sales price from the Master Products sheet?
+Here's what I see for that row:
+image.png
+
+On Thu, 16 Oct 2025 at 14:55, Michael <michael@resbyte.ai> wrote:
+
+Thanks Kristin - I know the process but I have been asking for a couple weeks now to swap that image 
+1) it looks awful 
+2) they don’t make it any more
+Brought it up to Puneet on the after action call right now 
+Talk in 10 mins?
+
+On Oct 16, 2025, at 12:36 PM, Kristin . <kristin@resbyte.ai> wrote:
+
+﻿
+Hi Michael,
+The templates are based on images provided to me in a PowerPoint for the approved email ad templates. It should not matter what image is shown in the ad templates as food item, as the system is supposed to dynamically pass the correct product data through and the generated assets that appear in Resbyte will have the correct images.  That is my understanding.
+If you would like all the Ad template designs that are shown to the client to include an example food image that is actually included in the Master products data file, that will take additional time for the templates to be updated. I'll need to know where to get the food image photo associated to the food item to pass along to the designer. If you would like me to do that, please let me know. This would add additional days to completion of the first set of ad templates (MMS, Insta/FB, Google). And we till need to get the promos to add to all of them given that the strategy has changed to using discount codes from Fishbowl.
+
+Kristin
+
+On Thu, 16 Oct 2025 at 13:17, Michael <michael@resbyte.ai> wrote:
+
+PS - GET RID Of BEEF MEAL IMAGE ON THE SLIDE WE KEEP ASKING THEM TO APPROVE!
+It’s discontinued and horrible looking!
+Create a new slide with Chicken Cordon Blue or something…
+
+THX!!!
+
+On Oct 16, 2025, at 12:09 PM, Jason Mosby <jason@resbyte.ai> wrote:
+
+﻿
+The overnight team had been promoting code from staging to live without notifying the other teams and completing a QA process.
+They have also been making updates directly in the live environment.
+There was confusion about how they should apply la Madeleine's Master Price List to the Asset Manager as the formats are not directly compatible. This is a manually process, and QA was not being applied consistently.
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+On 10/16/2025 12:16 PM, Kristin . wrote:
+Hi Jason, thanks.
+IMO someone (me or Michael on the thread) needs to reply to each of Sarah's questions. We should provide a succinct explanation regarding what happened with the data (what was the identified cause ) and what we are doing to ensure it doesn't happen again, in the appropriate level of detail, in order to preserve trust with the client. 
+Also once we know for sure what the phases are we should communicate that clearly. My understanding is Phase 1 will use Fishbowl and Phase 2 (hopefully) will switch to Olo. 
+
+Jason Mosby
+20 Oct 2025, 12:15 (2 days ago)
+to Kristin, Michael, puneet, Rick, me
+
+I have an opening at 1pm EDT.
+
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+On 10/20/2025 10:09 AM, Kristin . wrote:
+12:00 PDT works for me.
+
+On Mon, 20 Oct 2025 at 09:42, Michael . <michael@resbyte.ai> wrote:
+
+Hi All,
+
+Do we want to set an update call this afternoon to recap the pricing issues, Master Doc vs older images in Asset library and shift to brand vs transnational (discount coupon) strategy?
+
+Lots to unpack and focus on with a tight timeline.  Proposing 12pm Pacific (or other times) what works?
+
+Thanks,
+-Michal 
+
+On Thu, 16 Oct 2025 at 15:42, Kristin . <kristin@resbyte.ai> wrote:
+Hi Michael, 
+My plan is to ask the designer to replace the current product image for the one for Crêpe la Madeleine. This is in the asset library in Resbyte.ai and in the Master Product sheet (you can find it if you don't use the accented letter e). But how do I determine the original price and the sales price from the Master Products sheet?
+Here's what I see for that row:
+image.png
+
+On Thu, 16 Oct 2025 at 14:55, Michael <michael@resbyte.ai> wrote:
+
+Thanks Kristin - I know the process but I have been asking for a couple weeks now to swap that image 
+1) it looks awful 
+2) they don’t make it any more
+Brought it up to Puneet on the after action call right now 
+Talk in 10 mins?
+
+On Oct 16, 2025, at 12:36 PM, Kristin . <kristin@resbyte.ai> wrote:
+
+﻿
+Hi Michael,
+The templates are based on images provided to me in a PowerPoint for the approved email ad templates. It should not matter what image is shown in the ad templates as food item, as the system is supposed to dynamically pass the correct product data through and the generated assets that appear in Resbyte will have the correct images.  That is my understanding.
+If you would like all the Ad template designs that are shown to the client to include an example food image that is actually included in the Master products data file, that will take additional time for the templates to be updated. I'll need to know where to get the food image photo associated to the food item to pass along to the designer. If you would like me to do that, please let me know. This would add additional days to completion of the first set of ad templates (MMS, Insta/FB, Google). And we till need to get the promos to add to all of them given that the strategy has changed to using discount codes from Fishbowl.
+
+Kristin
+
+On Thu, 16 Oct 2025 at 13:17, Michael <michael@resbyte.ai> wrote:
+
+PS - GET RID Of BEEF MEAL IMAGE ON THE SLIDE WE KEEP ASKING THEM TO APPROVE!
+It’s discontinued and horrible looking!
+Create a new slide with Chicken Cordon Blue or something…
+
+THX!!!
+
+On Oct 16, 2025, at 12:09 PM, Jason Mosby <jason@resbyte.ai> wrote:
+
+﻿
+The overnight team had been promoting code from staging to live without notifying the other teams and completing a QA process.
+They have also been making updates directly in the live environment.
+There was confusion about how they should apply la Madeleine's Master Price List to the Asset Manager as the formats are not directly compatible. This is a manually process, and QA was not being applied consistently.
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+On 10/16/2025 12:16 PM, Kristin . wrote:
+Hi Jason, thanks.
+IMO someone (me or Michael on the thread) needs to reply to each of Sarah's questions. We should provide a succinct explanation regarding what happened with the data (what was the identified cause ) and what we are doing to ensure it doesn't happen again, in the appropriate level of detail, in order to preserve trust with the client. 
+Also once we know for sure what the phases are we should communicate that clearly. My understanding is Phase 1 will use Fishbowl and Phase 2 (hopefully) will switch to Olo. 
+
+Michael . <michael@resbyte.ai>
+20 Oct 2025, 12:38 (2 days ago)
+to Jason, Kristin, puneet, Rick, me
+
+
+Thanks!  I talked to Puneet this morning - I suggest We let Jason work with Puneet today on the tech issues.
+
+Kristin, Rick and I can review and work on the "Brand Awareness" emails/MMS at Noon PT today and get those moving as LM top priority.  
+
+Kristin - do you have access to the zoom to set a Noon PT call with Rick and I?
+
+Let me know - Thx!
+-Michael 
+
+On Mon, 20 Oct 2025 at 09:15, Jason Mosby <jason@resbyte.ai> wrote:
+I have an opening at 1pm EDT.
+
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+On 10/20/2025 10:09 AM, Kristin . wrote:
+12:00 PDT works for me.
+
+On Mon, 20 Oct 2025 at 09:42, Michael . <michael@resbyte.ai> wrote:
+
+Hi All,
+
+Do we want to set an update call this afternoon to recap the pricing issues, Master Doc vs older images in Asset library and shift to brand vs transnational (discount coupon) strategy?
+
+Lots to unpack and focus on with a tight timeline.  Proposing 12pm Pacific (or other times) what works?
+
+Thanks,
+-Michal 
+
+On Thu, 16 Oct 2025 at 15:42, Kristin . <kristin@resbyte.ai> wrote:
+Hi Michael, 
+My plan is to ask the designer to replace the current product image for the one for Crêpe la Madeleine. This is in the asset library in Resbyte.ai and in the Master Product sheet (you can find it if you don't use the accented letter e). But how do I determine the original price and the sales price from the Master Products sheet?
+Here's what I see for that row:
+image.png
+
+On Thu, 16 Oct 2025 at 14:55, Michael <michael@resbyte.ai> wrote:
+
+Thanks Kristin - I know the process but I have been asking for a couple weeks now to swap that image 
+1) it looks awful 
+2) they don’t make it any more
+Brought it up to Puneet on the after action call right now 
+Talk in 10 mins?
+
+On Oct 16, 2025, at 12:36 PM, Kristin . <kristin@resbyte.ai> wrote:
+
+﻿
+Hi Michael,
+The templates are based on images provided to me in a PowerPoint for the approved email ad templates. It should not matter what image is shown in the ad templates as food item, as the system is supposed to dynamically pass the correct product data through and the generated assets that appear in Resbyte will have the correct images.  That is my understanding.
+If you would like all the Ad template designs that are shown to the client to include an example food image that is actually included in the Master products data file, that will take additional time for the templates to be updated. I'll need to know where to get the food image photo associated to the food item to pass along to the designer. If you would like me to do that, please let me know. This would add additional days to completion of the first set of ad templates (MMS, Insta/FB, Google). And we till need to get the promos to add to all of them given that the strategy has changed to using discount codes from Fishbowl.
+
+Kristin
+
+On Thu, 16 Oct 2025 at 13:17, Michael <michael@resbyte.ai> wrote:
+
+PS - GET RID Of BEEF MEAL IMAGE ON THE SLIDE WE KEEP ASKING THEM TO APPROVE!
+It’s discontinued and horrible looking!
+Create a new slide with Chicken Cordon Blue or something…
+
+THX!!!
+
+On Oct 16, 2025, at 12:09 PM, Jason Mosby <jason@resbyte.ai> wrote:
+
+﻿
+The overnight team had been promoting code from staging to live without notifying the other teams and completing a QA process.
+They have also been making updates directly in the live environment.
+There was confusion about how they should apply la Madeleine's Master Price List to the Asset Manager as the formats are not directly compatible. This is a manually process, and QA was not being applied consistently.
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+On 10/16/2025 12:16 PM, Kristin . wrote:
+Hi Jason, thanks.
+IMO someone (me or Michael on the thread) needs to reply to each of Sarah's questions. We should provide a succinct explanation regarding what happened with the data (what was the identified cause ) and what we are doing to ensure it doesn't happen again, in the appropriate level of detail, in order to preserve trust with the client. 
+Also once we know for sure what the phases are we should communicate that clearly. My understanding is Phase 1 will use Fishbowl and Phase 2 (hopefully) will switch to Olo. 
+
+Kristin . <kristin@resbyte.ai>
+20 Oct 2025, 12:47 (2 days ago)
+to Michael, Jason, puneet, Rick, me
+
+I had a call with Rick just now and he mentioned he is not available at 11 MDT, 12 Central.
+
+On Mon, 20 Oct 2025 at 10:38, Michael . <michael@resbyte.ai> wrote:
+
+Thanks!  I talked to Puneet this morning - I suggest We let Jason work with Puneet today on the tech issues.
+
+Kristin, Rick and I can review and work on the "Brand Awareness" emails/MMS at Noon PT today and get those moving as LM top priority.  
+
+Kristin - do you have access to the zoom to set a Noon PT call with Rick and I?
+
+Let me know - Thx!
+-Michael 
+
+On Mon, 20 Oct 2025 at 09:15, Jason Mosby <jason@resbyte.ai> wrote:
+I have an opening at 1pm EDT.
+
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+On 10/20/2025 10:09 AM, Kristin . wrote:
+12:00 PDT works for me.
+
+On Mon, 20 Oct 2025 at 09:42, Michael . <michael@resbyte.ai> wrote:
+
+Hi All,
+
+Do we want to set an update call this afternoon to recap the pricing issues, Master Doc vs older images in Asset library and shift to brand vs transnational (discount coupon) strategy?
+
+Lots to unpack and focus on with a tight timeline.  Proposing 12pm Pacific (or other times) what works?
+
+Thanks,
+-Michal 
+
+On Thu, 16 Oct 2025 at 15:42, Kristin . <kristin@resbyte.ai> wrote:
+Hi Michael, 
+My plan is to ask the designer to replace the current product image for the one for Crêpe la Madeleine. This is in the asset library in Resbyte.ai and in the Master Product sheet (you can find it if you don't use the accented letter e). But how do I determine the original price and the sales price from the Master Products sheet?
+Here's what I see for that row:
+image.png
+
+On Thu, 16 Oct 2025 at 14:55, Michael <michael@resbyte.ai> wrote:
+
+Thanks Kristin - I know the process but I have been asking for a couple weeks now to swap that image 
+1) it looks awful 
+2) they don’t make it any more
+Brought it up to Puneet on the after action call right now 
+Talk in 10 mins?
+
+On Oct 16, 2025, at 12:36 PM, Kristin . <kristin@resbyte.ai> wrote:
+
+﻿
+Hi Michael,
+The templates are based on images provided to me in a PowerPoint for the approved email ad templates. It should not matter what image is shown in the ad templates as food item, as the system is supposed to dynamically pass the correct product data through and the generated assets that appear in Resbyte will have the correct images.  That is my understanding.
+If you would like all the Ad template designs that are shown to the client to include an example food image that is actually included in the Master products data file, that will take additional time for the templates to be updated. I'll need to know where to get the food image photo associated to the food item to pass along to the designer. If you would like me to do that, please let me know. This would add additional days to completion of the first set of ad templates (MMS, Insta/FB, Google). And we till need to get the promos to add to all of them given that the strategy has changed to using discount codes from Fishbowl.
+
+Kristin
+
+On Thu, 16 Oct 2025 at 13:17, Michael <michael@resbyte.ai> wrote:
+
+PS - GET RID Of BEEF MEAL IMAGE ON THE SLIDE WE KEEP ASKING THEM TO APPROVE!
+It’s discontinued and horrible looking!
+Create a new slide with Chicken Cordon Blue or something…
+
+THX!!!
+
+On Oct 16, 2025, at 12:09 PM, Jason Mosby <jason@resbyte.ai> wrote:
+
+﻿
+The overnight team had been promoting code from staging to live without notifying the other teams and completing a QA process.
+They have also been making updates directly in the live environment.
+There was confusion about how they should apply la Madeleine's Master Price List to the Asset Manager as the formats are not directly compatible. This is a manually process, and QA was not being applied consistently.
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+On 10/16/2025 12:16 PM, Kristin . wrote:
+Hi Jason, thanks.
+IMO someone (me or Michael on the thread) needs to reply to each of Sarah's questions. We should provide a succinct explanation regarding what happened with the data (what was the identified cause ) and what we are doing to ensure it doesn't happen again, in the appropriate level of detail, in order to preserve trust with the client. 
+Also once we know for sure what the phases are we should communicate that clearly. My understanding is Phase 1 will use Fishbowl and Phase 2 (hopefully) will switch to Olo. 
+
+Kristin . <kristin@resbyte.ai>
+20 Oct 2025, 12:51 (2 days ago)
+to Michael, Jason, puneet, Rick, me
+
+Sorry, I had the wrong time and timezone. 
+Noon PDT is 1 PM MDT, and 2 PM Central.
+Yes I can schedule a zoom call with you guys
+
+On Mon, 20 Oct 2025 at 10:47, Kristin . <kristin@resbyte.ai> wrote:
+I had a call with Rick just now and he mentioned he is not available at 11 MDT, 12 Central.
+
+On Mon, 20 Oct 2025 at 10:38, Michael . <michael@resbyte.ai> wrote:
+
+Thanks!  I talked to Puneet this morning - I suggest We let Jason work with Puneet today on the tech issues.
+
+Kristin, Rick and I can review and work on the "Brand Awareness" emails/MMS at Noon PT today and get those moving as LM top priority.  
+
+Kristin - do you have access to the zoom to set a Noon PT call with Rick and I?
+
+Let me know - Thx!
+-Michael 
+
+On Mon, 20 Oct 2025 at 09:15, Jason Mosby <jason@resbyte.ai> wrote:
+I have an opening at 1pm EDT.
+
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+On 10/20/2025 10:09 AM, Kristin . wrote:
+12:00 PDT works for me.
+
+On Mon, 20 Oct 2025 at 09:42, Michael . <michael@resbyte.ai> wrote:
+
+Hi All,
+
+Do we want to set an update call this afternoon to recap the pricing issues, Master Doc vs older images in Asset library and shift to brand vs transnational (discount coupon) strategy?
+
+Lots to unpack and focus on with a tight timeline.  Proposing 12pm Pacific (or other times) what works?
+
+Thanks,
+-Michal 
+
+On Thu, 16 Oct 2025 at 15:42, Kristin . <kristin@resbyte.ai> wrote:
+Hi Michael, 
+My plan is to ask the designer to replace the current product image for the one for Crêpe la Madeleine. This is in the asset library in Resbyte.ai and in the Master Product sheet (you can find it if you don't use the accented letter e). But how do I determine the original price and the sales price from the Master Products sheet?
+Here's what I see for that row:
+image.png
+
+On Thu, 16 Oct 2025 at 14:55, Michael <michael@resbyte.ai> wrote:
+
+Thanks Kristin - I know the process but I have been asking for a couple weeks now to swap that image 
+1) it looks awful 
+2) they don’t make it any more
+Brought it up to Puneet on the after action call right now 
+Talk in 10 mins?
+
+On Oct 16, 2025, at 12:36 PM, Kristin . <kristin@resbyte.ai> wrote:
+
+﻿
+Hi Michael,
+The templates are based on images provided to me in a PowerPoint for the approved email ad templates. It should not matter what image is shown in the ad templates as food item, as the system is supposed to dynamically pass the correct product data through and the generated assets that appear in Resbyte will have the correct images.  That is my understanding.
+If you would like all the Ad template designs that are shown to the client to include an example food image that is actually included in the Master products data file, that will take additional time for the templates to be updated. I'll need to know where to get the food image photo associated to the food item to pass along to the designer. If you would like me to do that, please let me know. This would add additional days to completion of the first set of ad templates (MMS, Insta/FB, Google). And we till need to get the promos to add to all of them given that the strategy has changed to using discount codes from Fishbowl.
+
+Kristin
+
+On Thu, 16 Oct 2025 at 13:17, Michael <michael@resbyte.ai> wrote:
+
+PS - GET RID Of BEEF MEAL IMAGE ON THE SLIDE WE KEEP ASKING THEM TO APPROVE!
+It’s discontinued and horrible looking!
+Create a new slide with Chicken Cordon Blue or something…
+
+THX!!!
+
+On Oct 16, 2025, at 12:09 PM, Jason Mosby <jason@resbyte.ai> wrote:
+
+﻿
+The overnight team had been promoting code from staging to live without notifying the other teams and completing a QA process.
+They have also been making updates directly in the live environment.
+There was confusion about how they should apply la Madeleine's Master Price List to the Asset Manager as the formats are not directly compatible. This is a manually process, and QA was not being applied consistently.
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+On 10/16/2025 12:16 PM, Kristin . wrote:
+Hi Jason, thanks.
+IMO someone (me or Michael on the thread) needs to reply to each of Sarah's questions. We should provide a succinct explanation regarding what happened with the data (what was the identified cause ) and what we are doing to ensure it doesn't happen again, in the appropriate level of detail, in order to preserve trust with the client. 
+Also once we know for sure what the phases are we should communicate that clearly. My understanding is Phase 1 will use Fishbowl and Phase 2 (hopefully) will switch to Olo. 
+
+Michael <michael@resbyte.ai>
+20 Oct 2025, 13:32 (2 days ago)
+to Kristin, Jason, puneet, Rick, me
+
+
+Thanks!!!
+
+On Oct 20, 2025, at 9:51 AM, Kristin . <kristin@resbyte.ai> wrote:
+
+﻿
+Sorry, I had the wrong time and timezone. 
+Noon PDT is 1 PM MDT, and 2 PM Central.
+Yes I can schedule a zoom call with you guys
+
+On Mon, 20 Oct 2025 at 10:47, Kristin . <kristin@resbyte.ai> wrote:
+I had a call with Rick just now and he mentioned he is not available at 11 MDT, 12 Central.
+
+On Mon, 20 Oct 2025 at 10:38, Michael . <michael@resbyte.ai> wrote:
+
+Thanks!  I talked to Puneet this morning - I suggest We let Jason work with Puneet today on the tech issues.
+
+Kristin, Rick and I can review and work on the "Brand Awareness" emails/MMS at Noon PT today and get those moving as LM top priority.  
+
+Kristin - do you have access to the zoom to set a Noon PT call with Rick and I?
+
+Let me know - Thx!
+-Michael 
+
+On Mon, 20 Oct 2025 at 09:15, Jason Mosby <jason@resbyte.ai> wrote:
+I have an opening at 1pm EDT.
+
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+On 10/20/2025 10:09 AM, Kristin . wrote:
+12:00 PDT works for me.
+
+On Mon, 20 Oct 2025 at 09:42, Michael . <michael@resbyte.ai> wrote:
+
+Hi All,
+
+Do we want to set an update call this afternoon to recap the pricing issues, Master Doc vs older images in Asset library and shift to brand vs transnational (discount coupon) strategy?
+
+Lots to unpack and focus on with a tight timeline.  Proposing 12pm Pacific (or other times) what works?
+
+Thanks,
+-Michal 
+
+On Thu, 16 Oct 2025 at 15:42, Kristin . <kristin@resbyte.ai> wrote:
+Hi Michael, 
+My plan is to ask the designer to replace the current product image for the one for Crêpe la Madeleine. This is in the asset library in Resbyte.ai and in the Master Product sheet (you can find it if you don't use the accented letter e). But how do I determine the original price and the sales price from the Master Products sheet?
+Here's what I see for that row:
+<image.png>
+
+
+On Thu, 16 Oct 2025 at 14:55, Michael <michael@resbyte.ai> wrote:
+
+Thanks Kristin - I know the process but I have been asking for a couple weeks now to swap that image 
+1) it looks awful 
+2) they don’t make it any more
+Brought it up to Puneet on the after action call right now 
+Talk in 10 mins?
+
+On Oct 16, 2025, at 12:36 PM, Kristin . <kristin@resbyte.ai> wrote:
+
+﻿
+Hi Michael,
+The templates are based on images provided to me in a PowerPoint for the approved email ad templates. It should not matter what image is shown in the ad templates as food item, as the system is supposed to dynamically pass the correct product data through and the generated assets that appear in Resbyte will have the correct images.  That is my understanding.
+If you would like all the Ad template designs that are shown to the client to include an example food image that is actually included in the Master products data file, that will take additional time for the templates to be updated. I'll need to know where to get the food image photo associated to the food item to pass along to the designer. If you would like me to do that, please let me know. This would add additional days to completion of the first set of ad templates (MMS, Insta/FB, Google). And we till need to get the promos to add to all of them given that the strategy has changed to using discount codes from Fishbowl.
+
+Kristin
+
+On Thu, 16 Oct 2025 at 13:17, Michael <michael@resbyte.ai> wrote:
+
+PS - GET RID Of BEEF MEAL IMAGE ON THE SLIDE WE KEEP ASKING THEM TO APPROVE!
+It’s discontinued and horrible looking!
+Create a new slide with Chicken Cordon Blue or something…
+
+THX!!!
+
+On Oct 16, 2025, at 12:09 PM, Jason Mosby <jason@resbyte.ai> wrote:
+
+﻿
+The overnight team had been promoting code from staging to live without notifying the other teams and completing a QA process.
+They have also been making updates directly in the live environment.
+There was confusion about how they should apply la Madeleine's Master Price List to the Asset Manager as the formats are not directly compatible. This is a manually process, and QA was not being applied consistently.
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+On 10/16/2025 12:16 PM, Kristin . wrote:
+Hi Jason, thanks.
+IMO someone (me or Michael on the thread) needs to reply to each of Sarah's questions. We should provide a succinct explanation regarding what happened with the data (what was the identified cause ) and what we are doing to ensure it doesn't happen again, in the appropriate level of detail, in order to preserve trust with the client. 
+Also once we know for sure what the phases are we should communicate that clearly. My understanding is Phase 1 will use Fishbowl and Phase 2 (hopefully) will switch to Olo. 
+
+Michael <michael@resbyte.ai>
+20 Oct 2025, 14:48 (2 days ago)
+to Kristin, Jason, puneet, Rick, me
+
+
+Hi Kristin,
+Can you send zoom link?
+Thx!
+
+On Oct 20, 2025, at 9:51 AM, Kristin . <kristin@resbyte.ai> wrote:
+
+﻿
+Sorry, I had the wrong time and timezone. 
+Noon PDT is 1 PM MDT, and 2 PM Central.
+Yes I can schedule a zoom call with you guys
+
+On Mon, 20 Oct 2025 at 10:47, Kristin . <kristin@resbyte.ai> wrote:
+I had a call with Rick just now and he mentioned he is not available at 11 MDT, 12 Central.
+
+On Mon, 20 Oct 2025 at 10:38, Michael . <michael@resbyte.ai> wrote:
+
+Thanks!  I talked to Puneet this morning - I suggest We let Jason work with Puneet today on the tech issues.
+
+Kristin, Rick and I can review and work on the "Brand Awareness" emails/MMS at Noon PT today and get those moving as LM top priority.  
+
+Kristin - do you have access to the zoom to set a Noon PT call with Rick and I?
+
+Let me know - Thx!
+-Michael 
+
+On Mon, 20 Oct 2025 at 09:15, Jason Mosby <jason@resbyte.ai> wrote:
+I have an opening at 1pm EDT.
+
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+On 10/20/2025 10:09 AM, Kristin . wrote:
+12:00 PDT works for me.
+
+On Mon, 20 Oct 2025 at 09:42, Michael . <michael@resbyte.ai> wrote:
+
+Hi All,
+
+Do we want to set an update call this afternoon to recap the pricing issues, Master Doc vs older images in Asset library and shift to brand vs transnational (discount coupon) strategy?
+
+Lots to unpack and focus on with a tight timeline.  Proposing 12pm Pacific (or other times) what works?
+
+Thanks,
+-Michal 
+
+On Thu, 16 Oct 2025 at 15:42, Kristin . <kristin@resbyte.ai> wrote:
+Hi Michael, 
+My plan is to ask the designer to replace the current product image for the one for Crêpe la Madeleine. This is in the asset library in Resbyte.ai and in the Master Product sheet (you can find it if you don't use the accented letter e). But how do I determine the original price and the sales price from the Master Products sheet?
+Here's what I see for that row:
+<image.png>
+
+
+On Thu, 16 Oct 2025 at 14:55, Michael <michael@resbyte.ai> wrote:
+
+Thanks Kristin - I know the process but I have been asking for a couple weeks now to swap that image 
+1) it looks awful 
+2) they don’t make it any more
+Brought it up to Puneet on the after action call right now 
+Talk in 10 mins?
+
+On Oct 16, 2025, at 12:36 PM, Kristin . <kristin@resbyte.ai> wrote:
+
+﻿
+Hi Michael,
+The templates are based on images provided to me in a PowerPoint for the approved email ad templates. It should not matter what image is shown in the ad templates as food item, as the system is supposed to dynamically pass the correct product data through and the generated assets that appear in Resbyte will have the correct images.  That is my understanding.
+If you would like all the Ad template designs that are shown to the client to include an example food image that is actually included in the Master products data file, that will take additional time for the templates to be updated. I'll need to know where to get the food image photo associated to the food item to pass along to the designer. If you would like me to do that, please let me know. This would add additional days to completion of the first set of ad templates (MMS, Insta/FB, Google). And we till need to get the promos to add to all of them given that the strategy has changed to using discount codes from Fishbowl.
+
+Kristin
+
+On Thu, 16 Oct 2025 at 13:17, Michael <michael@resbyte.ai> wrote:
+
+PS - GET RID Of BEEF MEAL IMAGE ON THE SLIDE WE KEEP ASKING THEM TO APPROVE!
+It’s discontinued and horrible looking!
+Create a new slide with Chicken Cordon Blue or something…
+
+THX!!!
+
+On Oct 16, 2025, at 12:09 PM, Jason Mosby <jason@resbyte.ai> wrote:
+
+﻿
+The overnight team had been promoting code from staging to live without notifying the other teams and completing a QA process.
+They have also been making updates directly in the live environment.
+There was confusion about how they should apply la Madeleine's Master Price List to the Asset Manager as the formats are not directly compatible. This is a manually process, and QA was not being applied consistently.
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+On 10/16/2025 12:16 PM, Kristin . wrote:
+Hi Jason, thanks.
+IMO someone (me or Michael on the thread) needs to reply to each of Sarah's questions. We should provide a succinct explanation regarding what happened with the data (what was the identified cause ) and what we are doing to ensure it doesn't happen again, in the appropriate level of detail, in order to preserve trust with the client. 
+Also once we know for sure what the phases are we should communicate that clearly. My understanding is Phase 1 will use Fishbowl and Phase 2 (hopefully) will switch to Olo. 
+
+Kristin . <kristin@resbyte.ai>
+20 Oct 2025, 14:51 (2 days ago)
+to Michael, Jason, puneet, Rick, me
+
+This is in the Google calendar meeting.
+But for convenience:
+
+Kristin Bromm is inviting you to a scheduled Zoom meeting. Join Zoom Meeting https://us06web.zoom.us/j/84499895822?pwd=z2aIUPdVd802xDlXXuw1cip53T2ea4.1 Meeting ID: 844 9989 5822 Passcode: 915021 --- One tap mobile +17193594580,,84499895822#,,,,*915021# US +16694449171,,84499895822#,,,,*915021# US Join instructions https://us06web.zoom.us/meetings/84499895822/invitations?signature=-ECT6nuxqxauNDaQ6n8Zi4nIfUHfmSEdgdE2ZpzDaPk
+
+Michael . <michael@resbyte.ai>
+20 Oct 2025, 14:55 (2 days ago)
+to Kristin, Jason, puneet, Rick, me
+
+I am fine with either - just didn't see a google invite - so use this below?
+
+On Mon, 20 Oct 2025 at 11:51, Kristin . <kristin@resbyte.ai> wrote:
+This is in the Google calendar meeting.
+But for convenience:
+
+Kristin Bromm is inviting you to a scheduled Zoom meeting. Join Zoom Meeting https://us06web.zoom.us/j/84499895822?pwd=z2aIUPdVd802xDlXXuw1cip53T2ea4.1 Meeting ID: 844 9989 5822 Passcode: 915021 --- One tap mobile +17193594580,,84499895822#,,,,*915021# US +16694449171,,84499895822#,,,,*915021# US Join instructions https://us06web.zoom.us/meetings/84499895822/invitations?signature=-ECT6nuxqxauNDaQ6n8Zi4nIfUHfmSEdgdE2ZpzDaPk
+
+On Mon, 20 Oct 2025 at 12:48, Michael <michael@resbyte.ai> wrote:
+
+Hi Kristin,
+Can you send zoom link?
+Thx!
+
+On Oct 20, 2025, at 9:51 AM, Kristin . <kristin@resbyte.ai> wrote:
+
+﻿
+Sorry, I had the wrong time and timezone. 
+Noon PDT is 1 PM MDT, and 2 PM Central.
+Yes I can schedule a zoom call with you guys
+
+On Mon, 20 Oct 2025 at 10:47, Kristin . <kristin@resbyte.ai> wrote:
+I had a call with Rick just now and he mentioned he is not available at 11 MDT, 12 Central.
+
+On Mon, 20 Oct 2025 at 10:38, Michael . <michael@resbyte.ai> wrote:
+
+Thanks!  I talked to Puneet this morning - I suggest We let Jason work with Puneet today on the tech issues.
+
+Kristin, Rick and I can review and work on the "Brand Awareness" emails/MMS at Noon PT today and get those moving as LM top priority.  
+
+Kristin - do you have access to the zoom to set a Noon PT call with Rick and I?
+
+Let me know - Thx!
+-Michael 
+
+On Mon, 20 Oct 2025 at 09:15, Jason Mosby <jason@resbyte.ai> wrote:
+I have an opening at 1pm EDT.
+
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+On 10/20/2025 10:09 AM, Kristin . wrote:
+12:00 PDT works for me.
+
+On Mon, 20 Oct 2025 at 09:42, Michael . <michael@resbyte.ai> wrote:
+
+Hi All,
+
+Do we want to set an update call this afternoon to recap the pricing issues, Master Doc vs older images in Asset library and shift to brand vs transnational (discount coupon) strategy?
+
+Lots to unpack and focus on with a tight timeline.  Proposing 12pm Pacific (or other times) what works?
+
+Thanks,
+-Michal 
+
+On Thu, 16 Oct 2025 at 15:42, Kristin . <kristin@resbyte.ai> wrote:
+Hi Michael, 
+My plan is to ask the designer to replace the current product image for the one for Crêpe la Madeleine. This is in the asset library in Resbyte.ai and in the Master Product sheet (you can find it if you don't use the accented letter e). But how do I determine the original price and the sales price from the Master Products sheet?
+Here's what I see for that row:
+<image.png>
+
+
+On Thu, 16 Oct 2025 at 14:55, Michael <michael@resbyte.ai> wrote:
+
+Thanks Kristin - I know the process but I have been asking for a couple weeks now to swap that image 
+1) it looks awful 
+2) they don’t make it any more
+Brought it up to Puneet on the after action call right now 
+Talk in 10 mins?
+
+On Oct 16, 2025, at 12:36 PM, Kristin . <kristin@resbyte.ai> wrote:
+
+﻿
+Hi Michael,
+The templates are based on images provided to me in a PowerPoint for the approved email ad templates. It should not matter what image is shown in the ad templates as food item, as the system is supposed to dynamically pass the correct product data through and the generated assets that appear in Resbyte will have the correct images.  That is my understanding.
+If you would like all the Ad template designs that are shown to the client to include an example food image that is actually included in the Master products data file, that will take additional time for the templates to be updated. I'll need to know where to get the food image photo associated to the food item to pass along to the designer. If you would like me to do that, please let me know. This would add additional days to completion of the first set of ad templates (MMS, Insta/FB, Google). And we till need to get the promos to add to all of them given that the strategy has changed to using discount codes from Fishbowl.
+
+Kristin
+
+On Thu, 16 Oct 2025 at 13:17, Michael <michael@resbyte.ai> wrote:
+
+PS - GET RID Of BEEF MEAL IMAGE ON THE SLIDE WE KEEP ASKING THEM TO APPROVE!
+It’s discontinued and horrible looking!
+Create a new slide with Chicken Cordon Blue or something…
+
+THX!!!
+
+On Oct 16, 2025, at 12:09 PM, Jason Mosby <jason@resbyte.ai> wrote:
+
+﻿
+The overnight team had been promoting code from staging to live without notifying the other teams and completing a QA process.
+They have also been making updates directly in the live environment.
+There was confusion about how they should apply la Madeleine's Master Price List to the Asset Manager as the formats are not directly compatible. This is a manually process, and QA was not being applied consistently.
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+On 10/16/2025 12:16 PM, Kristin . wrote:
+Hi Jason, thanks.
+IMO someone (me or Michael on the thread) needs to reply to each of Sarah's questions. We should provide a succinct explanation regarding what happened with the data (what was the identified cause ) and what we are doing to ensure it doesn't happen again, in the appropriate level of detail, in order to preserve trust with the client. 
+Also once we know for sure what the phases are we should communicate that clearly. My understanding is Phase 1 will use Fishbowl and Phase 2 (hopefully) will switch to Olo. 
+
+Jason Mosby
+20 Oct 2025, 15:02 (2 days ago)
+to Michael, Kristin, puneet, Rick, me
+
+If this meeting is occurring now, I have a conflict.
+
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+On 10/20/2025 12:54 PM, Michael . wrote:
+I am fine with either - just didn't see a google invite - so use this below?
+
+On Mon, 20 Oct 2025 at 11:51, Kristin . <kristin@resbyte.ai> wrote:
+This is in the Google calendar meeting.
+But for convenience:
+
+Kristin Bromm is inviting you to a scheduled Zoom meeting. Join Zoom Meeting https://us06web.zoom.us/j/84499895822?pwd=z2aIUPdVd802xDlXXuw1cip53T2ea4.1 Meeting ID: 844 9989 5822 Passcode: 915021 --- One tap mobile +17193594580,,84499895822#,,,,*915021# US +16694449171,,84499895822#,,,,*915021# US Join instructions https://us06web.zoom.us/meetings/84499895822/invitations?signature=-ECT6nuxqxauNDaQ6n8Zi4nIfUHfmSEdgdE2ZpzDaPk
+
+On Mon, 20 Oct 2025 at 12:48, Michael <michael@resbyte.ai> wrote:
+
+Hi Kristin,
+Can you send zoom link?
+Thx!
+
+On Oct 20, 2025, at 9:51 AM, Kristin . <kristin@resbyte.ai> wrote:
+
+﻿
+Sorry, I had the wrong time and timezone. 
+Noon PDT is 1 PM MDT, and 2 PM Central.
+Yes I can schedule a zoom call with you guys
+
+On Mon, 20 Oct 2025 at 10:47, Kristin . <kristin@resbyte.ai> wrote:
+I had a call with Rick just now and he mentioned he is not available at 11 MDT, 12 Central.
+
+On Mon, 20 Oct 2025 at 10:38, Michael . <michael@resbyte.ai> wrote:
+
+Thanks!  I talked to Puneet this morning - I suggest We let Jason work with Puneet today on the tech issues.
+
+Kristin, Rick and I can review and work on the "Brand Awareness" emails/MMS at Noon PT today and get those moving as LM top priority.  
+
+Kristin - do you have access to the zoom to set a Noon PT call with Rick and I?
+
+Let me know - Thx!
+-Michael 
+
+On Mon, 20 Oct 2025 at 09:15, Jason Mosby <jason@resbyte.ai> wrote:
+I have an opening at 1pm EDT.
+
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+On 10/20/2025 10:09 AM, Kristin . wrote:
+12:00 PDT works for me.
+
+On Mon, 20 Oct 2025 at 09:42, Michael . <michael@resbyte.ai> wrote:
+
+Hi All,
+
+Do we want to set an update call this afternoon to recap the pricing issues, Master Doc vs older images in Asset library and shift to brand vs transnational (discount coupon) strategy?
+
+Lots to unpack and focus on with a tight timeline.  Proposing 12pm Pacific (or other times) what works?
+
+Thanks,
+-Michal 
+
+On Thu, 16 Oct 2025 at 15:42, Kristin . <kristin@resbyte.ai> wrote:
+Hi Michael, 
+My plan is to ask the designer to replace the current product image for the one for Crêpe la Madeleine. This is in the asset library in Resbyte.ai and in the Master Product sheet (you can find it if you don't use the accented letter e). But how do I determine the original price and the sales price from the Master Products sheet?
+Here's what I see for that row:
+<image.png>
+
+
+On Thu, 16 Oct 2025 at 14:55, Michael <michael@resbyte.ai> wrote:
+
+Thanks Kristin - I know the process but I have been asking for a couple weeks now to swap that image 
+1) it looks awful 
+2) they don’t make it any more
+Brought it up to Puneet on the after action call right now 
+Talk in 10 mins?
+
+On Oct 16, 2025, at 12:36 PM, Kristin . <kristin@resbyte.ai> wrote:
+
+﻿
+Hi Michael,
+The templates are based on images provided to me in a PowerPoint for the approved email ad templates. It should not matter what image is shown in the ad templates as food item, as the system is supposed to dynamically pass the correct product data through and the generated assets that appear in Resbyte will have the correct images.  That is my understanding.
+If you would like all the Ad template designs that are shown to the client to include an example food image that is actually included in the Master products data file, that will take additional time for the templates to be updated. I'll need to know where to get the food image photo associated to the food item to pass along to the designer. If you would like me to do that, please let me know. This would add additional days to completion of the first set of ad templates (MMS, Insta/FB, Google). And we till need to get the promos to add to all of them given that the strategy has changed to using discount codes from Fishbowl.
+
+Kristin
+
+On Thu, 16 Oct 2025 at 13:17, Michael <michael@resbyte.ai> wrote:
+
+PS - GET RID Of BEEF MEAL IMAGE ON THE SLIDE WE KEEP ASKING THEM TO APPROVE!
+It’s discontinued and horrible looking!
+Create a new slide with Chicken Cordon Blue or something…
+
+THX!!!
+
+On Oct 16, 2025, at 12:09 PM, Jason Mosby <jason@resbyte.ai> wrote:
+
+﻿
+The overnight team had been promoting code from staging to live without notifying the other teams and completing a QA process.
+They have also been making updates directly in the live environment.
+There was confusion about how they should apply la Madeleine's Master Price List to the Asset Manager as the formats are not directly compatible. This is a manually process, and QA was not being applied consistently.
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+On 10/16/2025 12:16 PM, Kristin . wrote:
+Hi Jason, thanks.
+IMO someone (me or Michael on the thread) needs to reply to each of Sarah's questions. We should provide a succinct explanation regarding what happened with the data (what was the identified cause ) and what we are doing to ensure it doesn't happen again, in the appropriate level of detail, in order to preserve trust with the client. 
+Also once we know for sure what the phases are we should communicate that clearly. My understanding is Phase 1 will use Fishbowl and Phase 2 (hopefully) will switch to Olo. 
+
+
+---
+
+You have requested to join Confluence
+External
+Inbox
+
+Atlassian <noreply@id.atlassian.net>
+Sat 18 Oct, 22:29 (4 days ago)
+to me
+
+Confluence logo
+Still need access to Confluence?
+It's been three days since you requested access to Confluence at resbyte.atlassian.net. Your admin can help with next steps.
+
+Skip the wait. Send your admin a reminder
+
+Parminder
+Parminder
+parminder@resbyte.ai
+Send a reminder
+
+This message was sent to you by Atlassian Cloud
+
+Atlassian logo
+
+
+--------
+
+Work Plan -
+Inbox
+
+
+pt@resbyte.ai
+Attachments
+Fri 17 Oct, 13:48 (5 days ago)
+to me, Jason
+
+Please see TAB – Task Flow
+
+ 
+
+Please update actions , dates and responsibilities . Please highlight any changes you make
+
+ 
+
+Puneet
+
+One attachment
+  • Scanned by Gmail
+
+
+----------------
+
+Staging - is this the test environment
+Inbox
+Summary
+Kristin asked if staging is the correct environment to test campaign modifications without affecting production.
+Jason provided a link to the staging environment but stated the component is incomplete and campaigns are manually generated.
+Kristin decided to ask Vimmi for context on the dialog.
+By Gemini; there may be mistakes. Learn more
+
+Kristin . <kristin@resbyte.ai>
+Fri 17 Oct, 12:20 (5 days ago)
+to Jason, me
+
+Hi Jason, I want to try modifying a campaign on staging in order to see the edit campaign dialog (this is for an issue Vimmi from Technoscore sent me). But I want to make sure I'm not doing something that will end up being pushed to production.
+
+Is staging the right place for me to test this out?
+
+image.png
+
+
+
+Jason Mosby
+Fri 17 Oct, 12:34 (5 days ago)
+to Kristin, me
+
+I am not well versed in the expected operation and workflow of this component as it was developed by the overnight team prior to our involvement with the project. This component is incomplete. The campaigns are generated manually by the overnight team.
+
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+
+Kristin . <kristin@resbyte.ai>
+Fri 17 Oct, 12:42 (5 days ago)
+to Jason, me
+
+The person who I assume is a tester is basically asking me what the text should be. I wanted to see what dialog this is on. I assume it's after the campaign was successfully modified. What I'm asking is where I can safely change a campaign so I can see the dialog.
+
+On Fri, 17 Oct 2025 at 10:34, Jason Mosby <jason@resbyte.ai> wrote:
+I am not well versed in the expected operation and workflow of this component as it was developed by the overnight team prior to our involvement with the project. This component is incomplete. The campaigns are generated manually by the overnight team.
+
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+On 10/17/2025 10:20 AM, Kristin . wrote:
+Hi Jason, I want to try modifying a campaign on staging in order to see the edit campaign dialog (this is for an issue Vimmi from Technoscore sent me). But I want to make sure I'm not doing something that will end up being pushed to production.
+
+Is staging the right place for me to test this out?
+
+image.png
+
+
+Jason Mosby
+Fri 17 Oct, 12:48 (5 days ago)
+to Kristin, me
+
+I found it:
+
+https://staging.resbyte.ai/ai-loyalty >  >  >  > 
+
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+
+Kristin . <kristin@resbyte.ai>
+Fri 17 Oct, 12:53 (5 days ago)
+to Jason, me
+
+OK, so it appears after you update the campaign?
+
+On Fri, 17 Oct 2025 at 10:48, Jason Mosby <jason@resbyte.ai> wrote:
+I found it:
+
+https://staging.resbyte.ai/ai-loyalty >  >  >  > 
+
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+On 10/17/2025 10:41 AM, Kristin . wrote:
+The person who I assume is a tester is basically asking me what the text should be. I wanted to see what dialog this is on. I assume it's after the campaign was successfully modified. What I'm asking is where I can safely change a campaign so I can see the dialog.
+
+On Fri, 17 Oct 2025 at 10:34, Jason Mosby <jason@resbyte.ai> wrote:
+I am not well versed in the expected operation and workflow of this component as it was developed by the overnight team prior to our involvement with the project. This component is incomplete. The campaigns are generated manually by the overnight team.
+
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+On 10/17/2025 10:20 AM, Kristin . wrote:
+Hi Jason, I want to try modifying a campaign on staging in order to see the edit campaign dialog (this is for an issue Vimmi from Technoscore sent me). But I want to make sure I'm not doing something that will end up being pushed to production.
+
+Is staging the right place for me to test this out?
+
+image.png
+
+
+Kristin . <kristin@resbyte.ai>
+Fri 17 Oct, 12:58 (5 days ago)
+to Jason, me
+
+Nevermind. I'll ask Vimmi when the dialog appears. She has the context.
+
+On Fri, 17 Oct 2025 at 10:53, Kristin . <kristin@resbyte.ai> wrote:
+OK, so it appears after you update the campaign?
+
+On Fri, 17 Oct 2025 at 10:48, Jason Mosby <jason@resbyte.ai> wrote:
+I found it:
+
+https://staging.resbyte.ai/ai-loyalty >  >  >  > 
+
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+On 10/17/2025 10:41 AM, Kristin . wrote:
+The person who I assume is a tester is basically asking me what the text should be. I wanted to see what dialog this is on. I assume it's after the campaign was successfully modified. What I'm asking is where I can safely change a campaign so I can see the dialog.
+
+On Fri, 17 Oct 2025 at 10:34, Jason Mosby <jason@resbyte.ai> wrote:
+I am not well versed in the expected operation and workflow of this component as it was developed by the overnight team prior to our involvement with the project. This component is incomplete. The campaigns are generated manually by the overnight team.
+
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+On 10/17/2025 10:20 AM, Kristin . wrote:
+Hi Jason, I want to try modifying a campaign on staging in order to see the edit campaign dialog (this is for an issue Vimmi from Technoscore sent me). But I want to make sure I'm not doing something that will end up being pushed to production.
+
+Is staging the right place for me to test this out?
+
+image.png
+
+-----------
+
+FW: Resbyte - Request for Acuity Tracking Pixel
+Inbox
+Summary
+Puneet is asking Brian to take over a request for Acuity to create a tracking pixel, as Acuity needs specific parameters and an endpoint.
+Tracey from Acuity stated their pixel does not capture all requested metadata natively but can add parameters for URL, referrer, timestamp, and cookie ID.
+Jason has provided an endpoint for Acuity to use, and Acuity needs 5 days to finalize the pixel.
+By Gemini; there may be mistakes. Learn more
+
+pt@resbyte.ai
+Tue 14 Oct, 12:00 (8 days ago)
+to me
+
+Dear Brian,
+
+ 
+
+We need to resolve this .
+
+ 
+
+Jason has sent back Q to Acuity – Acuity has sent some responses. They have to create a PIXEL so that it can be placed in the clients web site. This pixel will allow us to identify visitors on the web site  
+
+ 
+
+Acuity needs 5 days to finalize the pixel.
+
+ 
+
+We need to give them all the parameters – and an end point .
+
+ 
+
+The End point that Jason sent had an OLO address on it. My last message went unanswered so I am asking you to take this over and  get Acuity the info they need .
+
+ 
+
+Regards,
+
+ 
+
+Puneet
+
+ 
+
+From: Tracey Kirby <tracey.kirby@audienceacuity.com>
+Date: Friday, October 3, 2025 at 5:10 PM
+To: Jason Mosby <jason@resbyte.ai>
+Cc: pt@resbyte.ai <pt@resbyte.ai>, Michael <michael@resbyte.ai>, Stacy Falbaum <stacy.falbaum@audienceacuity.com>
+Subject: Re: Resbyte - Request for Acuity Tracking Pixel
+
+Hi Jason - 
+
+ 
+
+Our pixel does not capture anything natively - meaning we do not pass you back all the meta data.  Some of it is used for the resolution.  But, we can add a parameters for some of these (Full page URL, Referrer URL, timestamp, cookie ID).  The other we cannot pass through with this pixel.  One recommendation might be to have a separate tracking pixel (that we cannot provide though) that picks up everything you are looking for and use the cookie ID as the key-value pair.
+
+ 
+
+See my other answer in line below in red.
+
+ 
+
+Tracey
+
+ 
+
+ 
+
+From: Jason Mosby <jason@resbyte.ai>
+Date: Friday, October 3, 2025 at 8:27 AM
+To: Stacy Falbaum <stacy.falbaum@audienceacuity.com>
+Cc: pt@resbyte.ai <pt@resbyte.ai>, Michael <michael@resbyte.ai>
+Subject: Resbyte - Request for Acuity Tracking Pixel
+
+Stacy,
+
+Resbyte would like request the creation of a tracking pixel. Our use case requires a highly configurable pixel that can be deployed across our own internal sites and numerous external client domains.
+
+Core Tracking Requirements
+The pixel must automatically capture the following standard data points with each fire:
+    • IP Address
+    • HTTP User Agent
+    • Full Page URL
+    • HTTP Referrer URL
+    • Timestamp
+    • First-Party Cookie ID
+    • Page View & Virtual Page Views (to accurately track navigation within Single Page Applications - SPAs)
+
+Custom Data Layer Requirements (Configurable Variables)
+Beyond the standard data, we require a method to dynamically pass custom key-value pairs. The pixel must be configured to accept and transmit the following required custom variables:
+    • client_id (String)
+    • campaign_id (String)
+    • Eight (8) additional custom variables (e.g., var1 ... var8) to be defined dynamically at the time of implementation. We require documentation on the exact variable names and data layer syntax your pixel expects.
+
+Implementation & Scalability Questions
+    1. Pixel Configuration & Updates:
+
+        ◦ Is the pixel's configuration (e.g., the mapping of custom variables) managed through a dynamic script, or is it hard-coded?  TK: the parameter itself is hard-coded (e.g. Var1, var2, var3) but you can put anything you want in those parameters. 
+
+        ◦ If we need to add new custom variables or change mappings in the future, can this be done without replacing the pixel snippet across all deployments? TK: You would need to change any live pixels but we could do a new pixel for anything going forward and you would just maintain 2 pixels.  
+    2. Endpoint Management:
+        ◦ What is the process for updating the data collection endpoint (URL) if needed? TK: you would notify us of what you want and we will update it and let you know when it is ready.
+    3. Deployment Limits:
+        ◦ Are there any technical or contractual limits to the number of distinct domains a single pixel can be deployed on? TK: No
+        ◦ Is there a volume-based throttling or quota on the number of events collected per hour/day? TK: No
+    4. Data Segmentation:
+        ◦ How is data from different deployment sources (e.g., resbyte.ai vs. clientA.com) segmented and reported within your platform? Is there a native way to filter and view reports by domain or a custom variable like client_id? TK: We do not capture any of the data.  It is all returned to your endpoint where you can then use the client_ID and campaign_ID to segment/parse.  
+
+Feel free to reach out with any questions or concerns. Thank you.
+
+--
+
+Image removed by sender. Resbyte
+
+Jason Mosby
+
+Chief Technology Officer
+
+jason@resbyte.ai
+
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+
+ 
+
+
+pt@resbyte.ai
+Wed 15 Oct, 17:23 (7 days ago)
+to me
+
+Dear Brian,
+
+ 
+
+Need to discuss this –
+
+ 
+
+Jason has provided this end point ;
+
+ 
+
+Acuity Endpoint: https://data.resbyte.ai/capture-visitor
+
+ 
+
+Regards,
+
+ 
+
+Puneet
+
+ 
+
+From: pt@resbyte.ai <pt@resbyte.ai>
+Date: Tuesday, October 14, 2025 at 12:00 PM
+To: brian@resbyte.ai <brian@resbyte.ai>
+Subject: FW: Resbyte - Request for Acuity Tracking Pixel
+
+Dear Brian,
+
+ 
+
+We need to resolve this .
+
+ 
+
+Jason has sent back Q to Acuity – Acuity has sent some responses. They have to create a PIXEL so that it can be placed in the clients web site. This pixel will allow us to identify visitors on the web site  
+
+ 
+
+Acuity needs 5 days to finalize the pixel.
+
+ 
+
+We need to give them all the parameters – and an end point .
+
+ 
+
+The End point that Jason sent had an OLO address on it. My last message went unanswered so I am asking you to take this over and  get Acuity the info they need .
+
+ 
+
+Regards,
+
+ 
+
+Puneet
+
+ 
+
+From: Tracey Kirby <tracey.kirby@audienceacuity.com>
+Date: Friday, October 3, 2025 at 5:10 PM
+To: Jason Mosby <jason@resbyte.ai>
+Cc: pt@resbyte.ai <pt@resbyte.ai>, Michael <michael@resbyte.ai>, Stacy Falbaum <stacy.falbaum@audienceacuity.com>
+Subject: Re: Resbyte - Request for Acuity Tracking Pixel
+
+Hi Jason - 
+
+ 
+
+Our pixel does not capture anything natively - meaning we do not pass you back all the meta data.  Some of it is used for the resolution.  But, we can add a parameters for some of these (Full page URL, Referrer URL, timestamp, cookie ID).  The other we cannot pass through with this pixel.  One recommendation might be to have a separate tracking pixel (that we cannot provide though) that picks up everything you are looking for and use the cookie ID as the key-value pair.
+
+ 
+
+See my other answer in line below in red.
+
+ 
+
+Tracey
+
+ 
+
+ 
+
+From: Jason Mosby <jason@resbyte.ai>
+Date: Friday, October 3, 2025 at 8:27 AM
+To: Stacy Falbaum <stacy.falbaum@audienceacuity.com>
+Cc: pt@resbyte.ai <pt@resbyte.ai>, Michael <michael@resbyte.ai>
+Subject: Resbyte - Request for Acuity Tracking Pixel
+
+Stacy,
+
+Resbyte would like request the creation of a tracking pixel. Our use case requires a highly configurable pixel that can be deployed across our own internal sites and numerous external client domains.
+
+Core Tracking Requirements
+The pixel must automatically capture the following standard data points with each fire:
+    • IP Address
+    • HTTP User Agent
+    • Full Page URL
+    • HTTP Referrer URL
+    • Timestamp
+    • First-Party Cookie ID
+    • Page View & Virtual Page Views (to accurately track navigation within Single Page Applications - SPAs)
+
+Custom Data Layer Requirements (Configurable Variables)
+Beyond the standard data, we require a method to dynamically pass custom key-value pairs. The pixel must be configured to accept and transmit the following required custom variables:
+    • client_id (String)
+    • campaign_id (String)
+    • Eight (8) additional custom variables (e.g., var1 ... var8) to be defined dynamically at the time of implementation. We require documentation on the exact variable names and data layer syntax your pixel expects.
+
+Implementation & Scalability Questions
+    1. Pixel Configuration & Updates:
+
+        ◦ Is the pixel's configuration (e.g., the mapping of custom variables) managed through a dynamic script, or is it hard-coded?  TK: the parameter itself is hard-coded (e.g. Var1, var2, var3) but you can put anything you want in those parameters. 
+
+        ◦ If we need to add new custom variables or change mappings in the future, can this be done without replacing the pixel snippet across all deployments? TK: You would need to change any live pixels but we could do a new pixel for anything going forward and you would just maintain 2 pixels.  
+    2. Endpoint Management:
+        ◦ What is the process for updating the data collection endpoint (URL) if needed? TK: you would notify us of what you want and we will update it and let you know when it is ready.
+    3. Deployment Limits:
+        ◦ Are there any technical or contractual limits to the number of distinct domains a single pixel can be deployed on? TK: No
+        ◦ Is there a volume-based throttling or quota on the number of events collected per hour/day? TK: No
+    4. Data Segmentation:
+        ◦ How is data from different deployment sources (e.g., resbyte.ai vs. clientA.com) segmented and reported within your platform? Is there a native way to filter and view reports by domain or a custom variable like client_id? TK: We do not capture any of the data.  It is all returned to your endpoint where you can then use the client_ID and campaign_ID to segment/parse.  
+
+Feel free to reach out with any questions or concerns. Thank you.
+
+--
+
+Image removed by sender. Resbyte
+
+Jason Mosby
+
+Chief Technology Officer
+
+jason@resbyte.ai
+
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+
+ 
+
+
+Jason Mosby
+Fri 17 Oct, 11:11 (5 days ago)
+to me
+
+See my original message to Acuity below.
+
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+
+
+-------- Forwarded Message --------
+Subject:	Resbyte - Request for Acuity Tracking Pixel
+Date:	Fri, 3 Oct 2025 08:26:54 -0600
+From:	Jason Mosby <jason@resbyte.ai>
+To:	stacy.falbaum@audienceacuity.com
+CC:	pt@resbyte.ai <pt@resbyte.ai>, Michael <michael@resbyte.ai>
+
+
+Stacy,
+
+Resbyte would like request the creation of a tracking pixel. Our use case requires a highly configurable pixel that can be deployed across our own internal sites and numerous external client domains.
+
+Core Tracking Requirements
+The pixel must automatically capture the following standard data points with each fire:
+    • IP Address
+    • HTTP User Agent
+    • Full Page URL
+    • HTTP Referrer URL
+    • Timestamp
+    • First-Party Cookie ID
+    • Page View & Virtual Page Views (to accurately track navigation within Single Page Applications - SPAs)
+
+Custom Data Layer Requirements (Configurable Variables)
+Beyond the standard data, we require a method to dynamically pass custom key-value pairs. The pixel must be configured to accept and transmit the following required custom variables:
+    • client_id (String)
+    • campaign_id (String)
+    • Eight (8) additional custom variables (e.g., var1 ... var8) to be defined dynamically at the time of implementation. We require documentation on the exact variable names and data layer syntax your pixel expects.
+
+Implementation & Scalability Questions
+    1. Pixel Configuration & Updates:
+        ◦ Is the pixel's configuration (e.g., the mapping of custom variables) managed through a dynamic script, or is it hard-coded?
+        ◦ If we need to add new custom variables or change mappings in the future, can this be done without replacing the pixel snippet across all deployments?
+    2. Endpoint Management:
+        ◦ What is the process for updating the data collection endpoint (URL) if needed?
+    3. Deployment Limits:
+        ◦ Are there any technical or contractual limits to the number of distinct domains a single pixel can be deployed on?
+        ◦ Is there a volume-based throttling or quota on the number of events collected per hour/day?
+    4. Data Segmentation:
+        ◦ How is data from different deployment sources (e.g., resbyte.ai vs. clientA.com) segmented and reported within your platform? Is there a native way to filter and view reports by domain or a custom variable like client_id?
+
+Feel free to reach out with any questions or concerns. Thank you.
+
+--
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+
+
+---------
+
+
+Canceled event: SUNTECH- Ad generator @ Thu Oct 16, 2025 12:30pm - 1:45pm (UTC) (brian@resbyte.ai)
+Inbox
+
+Puneet Talwar
+Attachments
+Thu 16 Oct, 17:41 (6 days ago)
+to me
+
+Oct16Thu
+SUNTECH- Ad generator
+From Google Calendar
+This event has been cancelled.
+ 
+This event has been canceled and removed from your calendar.
+ 
+Puneet Talwar is inviting you to a scheduled Zoom meeting.
+Topic: SUNTECH Resbyte Zoom Meeting
+Time: Oct 16, 2025 08:30 AM Eastern Time (US and Canada)
+Join Zoom Meeting
+https://us06web.zoom.us/j/87561277829?pwd=3rK649oj18o0gqN9z306d8mOZn4bO7.1
+
+Meeting ID: 875 6127 7829
+Passcode: 680989
+
+---
+
+One tap mobile
++19292056099,,87561277829#,,,,*680989# US (New York)
++16469313860,,87561277829#,,,,*680989# US
+
+Join instructions
+https://us06web.zoom.us/meetings/87561277829/invitations?signature=Jo4lI3oWsqsiuDaJ-g3oHinoF8DSjD6txo_NEb0KO0M
+
+When
+Thursday Oct 16, 2025 ⋅ 12:30pm – 1:45pm (Coordinated Universal Time)
+Location
+ZOOM LINK;
+View map
+Organizer
+Puneet Talwar
+pt@resbyte.ai
+Guests
+brian@resbyte.ai
+jason@resbyte.ai
+parminder@technoscore.com
+pritpal.kandhari@prokopto.io
+shashi@technoscore.com
+sriram.palamarthy@prokopto.io
+Invitation from Google Calendar
+
+You are receiving this email because you are subscribed to calendar notifications. To stop receiving these emails, go to Calendar settings, select this calendar, and change "Other notifications".
+
+Forwarding this invitation could allow any recipient to send a response to the organizer, be added to the guest list, invite others regardless of their own invitation status, or modify your RSVP. Learn more
+
+One attachment
+  • Scanned by Gmail
+
+
+------
+
+SUNTECH- Ad generator
+External
+Inbox
+
+pt@resbyte.ai
+Attachments
+Thu 16 Oct, 17:41 (6 days ago)
+to me, Jason, Parminder, pritpal.kandhari@prokopto.io, shashi@technoscore.com, sriram.palamarthy@prokopto.io
+
+Oct16Thu
+SUNTECH- Ad generator
+From Google Calendar
+This event has been cancelled.
+
+One attachment
+  • Scanned by Gmail
+
+
+---
+
+
+Re: Acuity-Resbyte Training
+External
+Inbox
+
+Summary
+Puneet thanked Brian for the valuable training and stated they would review the information.
+Brian provided resources and asked for questions or additional match levels achieved.
+By Gemini; there may be mistakes. Learn more
+
+Brian Chew <brian.chew@audienceacuity.com>
+Attachments
+Thu 16 Oct, 14:45 (6 days ago)
+to Puneet, jason@resbyte.ai, me, Stacy
+
+Hi Puneet, Jason, Brian, and team,
+
+Thank you all for your time this afternoon. I don’t have Nitisha, Tanmay, or Han’s email addresses on the invite, so please forward this to them if they need the information also.
+
+As discussed, I am sharing/attaching the following:
+Link to the consumer guide that includes installation details and how to use the app
+Overview of how to call the stored procedure and required data formatting
+Parameterized script that includes
+The GENERATE_REQUEST() procedure from the doc above that will paste cleanly into a Worksheet, 
+Two options for creating a formatted version of your data as either a table or view — you will need to edit to include your column names
+Configuration and execution of the procedure. Results can be viewed in the UI.
+Sample script for taking the unmatched (“no_match”) records and querying non-standard match types: phone_only, address_only, name_zip.
+Previous set of sample queries that showed different types of non-standard matching, including simple matching on names within a radius of a restaurant location.
+
+Please let us know if you have any questions or what additional levels of match you’re able to achieve.
+
+Best,
+Brian
+
+Brian Chew  
+
+VP Solutions Engineering
+
+www.audienceacuity.com
+
+ 
+
+From: pt@resbyte.ai
+When: 10:00 AM - 11:00 AM October 16, 2025
+Subject: Acuity-Resbyte Training
+Location: ZOOM Meeting
+
+
+ 
+Puneet Talwar is inviting you to a scheduled Zoom meeting.
+Topic: ACUITY Zoom Meeting
+Time: Oct 16, 2025 01:00 PM Eastern Time (US and Canada)
+Join Zoom Meeting
+https://us06web.zoom.us/j/89411026686?pwd=uSR2J81E6aibjGNTmAy9eQWkC5aiOW.1
+
+Meeting ID: 894 1102 6686
+Passcode: 296435
+
+---
+
+One tap mobile
++16469313860,,89411026686#,,,,*296435# US
++19292056099,,89411026686#,,,,*296435# US (New York)
+
+Join instructions
+https://us06web.zoom.us/meetings/89411026686/invitations?signature=xDvs2ttygndHaRKPvFPt79ep2RWqvkcsd1tQLOXmKPU
+
+When
+Thursday Oct 16, 2025 ⋅ 5pm – 6pm (Coordinated Universal Time)
+Location
+ZOOM Meeting
+View map
+Organizer
+Puneet Talwar
+pt@resbyte.ai
+Guests
+brian@resbyte.ai
+jason@resbyte.ai
+Brian Chew
+stacy.falbaum@audienceacuity.com
+View all guest info
+Reply for brian.chew@audienceacuity.com
+Yes
+No
+Maybe
+More options
+Invitation from Google Calendar
+
+You are receiving this email because you are an attendee on the event.
+
+Forwarding this invitation could allow any recipient to send a response to the organizer, be added to the guest list, invite others regardless of their own invitation status, or modify your RSVP. Learn more
+
+ 5 attachments
+  • Scanned by Gmail
+
+pt@resbyte.ai
+Thu 16 Oct, 17:35 (6 days ago)
+to Brian, jason@resbyte.ai, me, Stacy
+
+Dear Brian,
+
+ 
+
+Just want to thank you for your time and very valuable training today.
+
+ 
+
+We ll review all of this information and I m sure we ll have some questions .
+
+ 
+
+Always appreciate your insights and your expertise.
+
+ 
+
+Regards,
+
+Puneet Talwar
+
+ 
+
+ 
+
+From: Brian Chew <brian.chew@audienceacuity.com>
+Date: Thursday, October 16, 2025 at 2:45 PM
+To: Puneet Talwar <pt@resbyte.ai>, jason@resbyte.ai <jason@resbyte.ai>, brian@resbyte.ai <brian@resbyte.ai>
+Cc: Stacy Falbaum <stacy.falbaum@audienceacuity.com>
+Subject: Re: Acuity-Resbyte Training
+
+Hi Puneet, Jason, Brian, and team,
+
+ 
+
+Thank you all for your time this afternoon. I don’t have Nitisha, Tanmay, or Han’s email addresses on the invite, so please forward this to them if they need the information also.
+
+ 
+
+As discussed, I am sharing/attaching the following:
+
+Link to the consumer guide that includes installation details and how to use the app
+Overview of how to call the stored procedure and required data formatting
+Parameterized script that includes
+The GENERATE_REQUEST() procedure from the doc above that will paste cleanly into a Worksheet, 
+Two options for creating a formatted version of your data as either a table or view — you will need to edit to include your column names
+Configuration and execution of the procedure. Results can be viewed in the UI.
+Sample script for taking the unmatched (“no_match”) records and querying non-standard match types: phone_only, address_only, name_zip.
+Previous set of sample queries that showed different types of non-standard matching, including simple matching on names within a radius of a restaurant location.
+ 
+
+Please let us know if you have any questions or what additional levels of match you’re able to achieve.
+
+ 
+
+Best,
+
+Brian
+
+ 
+
+Brian Chew  
+
+VP Solutions Engineering
+
+www.audienceacuity.com
+
+ 
+
+From: pt@resbyte.ai
+When: 10:00 AM - 11:00 AM October 16, 2025
+Subject: Acuity-Resbyte Training
+Location: ZOOM Meeting
+
+ 
+
+ 
+
+ 
+
+Puneet Talwar is inviting you to a scheduled Zoom meeting.
+
+Topic: ACUITY Zoom Meeting
+Time: Oct 16, 2025 01:00 PM Eastern Time (US and Canada)
+Join Zoom Meeting
+https://us06web.zoom.us/j/89411026686?pwd=uSR2J81E6aibjGNTmAy9eQWkC5aiOW.1
+
+Meeting ID: 894 1102 6686
+Passcode: 296435
+
+---
+
+One tap mobile
++16469313860,,89411026686#,,,,*296435# US
++19292056099,,89411026686#,,,,*296435# US (New York)
+
+Join instructions
+https://us06web.zoom.us/meetings/89411026686/invitations?signature=xDvs2ttygndHaRKPvFPt79ep2RWqvkcsd1tQLOXmKPU
+
+When
+Thursday Oct 16, 2025 ⋅ 5pm – 6pm (Coordinated Universal Time)
+
+Location
+ZOOM Meeting
+View map
+
+Organizer
+Puneet Talwar
+
+pt@resbyte.ai
+
+Guests
+brian@resbyte.ai
+
+jason@resbyte.ai
+
+Brian Chew
+
+stacy.falbaum@audienceacuity.com
+
+View all guest info
+
+Reply for brian.chew@audienceacuity.com
+
+Yes
+
+No
+
+Maybe
+
+
+More options
+
+
+Invitation from Google Calendar
+
+You are receiving this email because you are an attendee on the event.
+
+Forwarding this invitation could allow any recipient to send a response to the organizer, be added to the guest list, invite others regardless of their own invitation status, or modify your RSVP. Learn more
+
+ 
+
+-------
+
+Jason Mosby
+
+1:04:27
+
+Yeah, I'll have a better sense of, we'll have a better sense of what we're going to do. And I'll have something that Brian and I have something to you with what the plan is within 24 hours probably. We're going to be executing before for them, but we'll have something documented.
+Puneet Talwar
+
+1:04:42
+
+No, I understand. I mean, you need to regroup. So Brian, how do you want to do our call? I know you have a deadline at three. I have to go handle the client stuff after that. Do you think you can speak to Jason and then speak with me? How do you want to do it?
+Brian
+
+1:04:56
+
+That sounds, that sounds the best way to do it.
+Puneet Talwar
+
+1:04:59
+
+Yeah. Let me show you. Does that give you enough room?
+Brian
+
+1:05:03
+
+Um, yeah, two 30.
+1:05:07
+
+Um, do you think we'll be done by 2.30?
+Jason Mosby
+
+1:05:14
+
+Well, I mean, Nitish and I have another standing meeting at 2.30.
+Puneet Talwar
+
+1:05:19
+
+You and I will be done before 2.30. I don't need you. I just need to speak to Brian. So if you have a meeting at 2.30, if you can finish by Brian to 2.30 and then you can go to your meeting. Yeah, that should be fine. Then I can talk to Brian at go 2.30 through the checklist.
+1:05:33
+
+Yes.
+Puneet Talwar
+
+1:05:34
+
+So fine. I'll send you an invite for 2.30. You'll finish with Jason. And then I'll prepare the answers and I'll deal with the client after three. All right, thank you everybody for being on the call and then we'll follow through on this call and what has to happen next.
+1:05:50
+
+All right, thank you.
+1:05:54
+
+
+-----
+
+Vimmi Kataria
+
+1:03:05
+
+Some are with and some are without. It is a replica from the master sheet.
+Jason Mosby
+
+1:03:12
+
+When we generate the ads, we see the accents.
+Puneet Talwar
+
+1:03:15
+
+You do see the accents. Yeah, when we generate the assets.
+Jason Mosby
+
+1:03:18
+
+The one of the images that's not loading is crepe and it does have the accent.
+Puneet Talwar
+
+1:03:23
+
+Okay, then that's fine. As long as the accent is there, then there's no problem.
+Jason Mosby
+
+1:03:28
+
+Yeah, inconsistent in the data that you've received or inconsistent in the asset manager, you know, we need to review that.
+Puneet Talwar
+
+1:03:35
+
+No, I think it's an Excel problem, right? I think Brian pointed it out and I remember that also because Excel doesn't, anytime we are trying transferring data from one system to an Excel sheet and Excel sheet back to, you know, some other system, you're going to lose the accents.
+Jason Mosby
+
+1:03:52
+
+Yeah, but and I can send the example that we were looking for. It's one of the missing images that we know loads, but it does have crepe with the accent over the first E. And it also has the registration mark for the word Nutella in it. So it's showing all the foreign characters properly in itself.
+Vimmi Kataria
+
+1:04:10
+
+Then it's fine.
+Puneet Talwar
+
+1:04:11
+
+I mean, as long as the images have them, that's what matters, right? That's the main thing.
+Jason Mosby
+
+1:04:16
+
+I'll send an example of that for confirmation. As have the accents, then that's OK.
+Vimmi Kataria
+
+1:04:21
+
+And one more thing I just want to bring into your notice that, as you mentioned, that the pricing issue has been resolved by Christine. So basically, we have asked Christine over the email. So she gave us the website for the La Madeleine. And we have checked that website also. So some of the prices. The issue is same on the website as well.
+
+AD GENERATOR - DEMO Feedback
+External
+Inbox
+
+
+pt@resbyte.ai
+Wed 15 Oct, 17:15 (7 days ago)
+to Parminder, shashi@technoscore.com, Jason, me, pritpal.kandhari@prokopto.io
+
+Dear Parminder, Shashi
+
+ 
+
+We had a client demo yesterday of the ad s module / library . The presentation did not go as we expected . There were a list of issues including some items that were previously discussed .
+
+ 
+
+Request an all hands call – start at 6 PM IST – Thursday AM .
+
+ 
+
+I m sending a zoom to all. bUt lets be prepated to get this job completed .
+
+ 
+
+Here s the feedback from thje call.
+
+ 
+
+There were the following data issues (saw on staging and production)
+
+Instances of the wrong images were shown (ex., page 1 Petite Caesar Salade showing regular side salad)
+Instances of wrong pricing (ex., page 1 dipped cookie has wrong old and discounted price, flavored iced latte)
+<image.png>
+Instances of some items appearing that had been previously removed.
+Instances apparent duplicates. It's really that one of the items is in a group. The way we handle grouped items has to be thought out (?).  For example, Delicious Breakfast Beverage shows a coffee for $0.88 and also a separate asset for delicious Coffee for $3.32.
+Alcoholic beverages were appearing - any alcoholic beverages should be removed.
+Certain items previously removed were appearing again- Delicious sausage (2 pieces) and delicious Bacon (3 pieces). Noted that the sausage image is not using the wood table format.
+<image.png>
+French accented characters: We were unable to find an example to see if we are able to show the French accents in our assets. Check the data file to see if it supports the accented e character. The accent is over the e like this:
+ 
+
+Look forward to our meeting tom. TO facilititate the timing for the India team we ll start at 6 PM IST/ 830 AM EST
+
+ 
+
+ 
+
+Regards
+
+Puneet
+
+ 
+
+-------------------------------
+
+Points from Client Call
+Inbox
+
+
+puneet@byteready.co <puneet@byteready.co>
+Wed 15 Oct, 16:23 (7 days ago)
+to me, Jason
+
+Here are the points discussed at our call;
+
+ 
+
+Changes
+ 
+
+Pricing
+Assets – Product Images
+Language – ( accent – Crepe)
+Searchable tool bar on Asset manager
+Brand Standards in the Resbyte system
+ Petite Ceasar Salad- showing regular salad
+House salad/ vs Ceaser salad
+Cookie – pricing - $1 Value
+Ads from Sub heads- not Food items
+ No Alcohol –
+Delicious Sausage- 2 PCS  ( Check for STOCK Images – remove )
+SEARCH Function for items
+OLO Updated feed from Olo
+EXEL file – Accents on words like ‘Crepe’  
+Previous corrections – by Michael / Maddy- Deleted in Asset manager
+ 
+
+ 
+
+ 
+
+We ll need to discuss on our planning call tonight
+
+ 
+
+ 
+
+Regards
+
+Puneet
+
+-----------
+
+Fwd: Notes and Action Items from 10/14 call with client
+Inbox
+Summary
+Kristin asked Michael if a call was scheduled for today, as she has other commitments this afternoon.
+Michael suggested a call for tomorrow morning to recap calls and troubleshoot why the system is not catching changes.
+By Gemini; there may be mistakes. Learn more
+
+Jason Mosby <jason@resbyte.ai>
+Wed 15 Oct, 12:26 (7 days ago)
+to me
+
+See below.
+
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+
+
+-------- Forwarded Message --------
+Subject:	Re: Notes and Action Items from 10/14 call with client
+Date:	Wed, 15 Oct 2025 09:58:41 -0600
+From:	Kristin . <kristin@resbyte.ai>
+To:	Michael . <michael@resbyte.ai>
+CC:	rick@resbyte.ai, puneet@byteready.co <puneet@byteready.co>, Jason Mosby <jason@resbyte.ai>
+
+
+Hi Michael, 
+Is there a call scheduled on this topic for today that I need to attend? I have some other commitments this afternoon so wanted to check.
+Kristin
+
+On Tue, 14 Oct 2025 at 16:13, Michael . <michael@resbyte.ai> wrote:
+
+Thanks Kristin,
+
+Adding Jason to the string - I suggest we set a call for tomorrow morning and recap calls and see why the system is not catching the changes made over the last 2 weeks.
+
+Sound off on possible times and we can set a zoom link.
+
+Thanks!
+
+-Michael 
+
+On Tue, 14 Oct 2025 at 15:08, Kristin . <kristin@resbyte.ai> wrote:
+Hi,
+
+Here's a summary of what we covered and the action items.
+
+Action items:
+Jason & Michael to verify the data file is current in staging and production, not only current but being processed by the product. Troubleshoot the reason it was not, implement the fix, and identify preventative measures. 
+Michael & Rick to determine if accented chars are supported / exported in the data file that we receive. Ex. for crepes
+Michael - Send Kristin the data file 
+Kristin - work with the ad template designer on revisions to MMS ad designs.
+We reviewed assets (email format) in Resbyte AI
+There were the following data issues (saw on staging and production)
+Instances of the wrong images were shown (ex., page 1 Petite Caesar Salade showing regular side salad)
+Instances of wrong pricing (ex., page 1 dipped cookie has wrong old and discounted price, flavored iced latte)
+image.png
+Instances of some items appearing that had been previously removed.
+Instances apparent duplicates. It's really that one of the items is in a group. The way we handle grouped items has to be thought out (?).  For example, Delicious Breakfast Beverage shows a coffee for $0.88 and also a separate asset for delicious Coffee for $3.32.
+Alcoholic beverages were appearing - any alcoholic beverages should be removed.
+Certain items previously removed were appearing again- Delicious sausage (2 pieces) and delicious Bacon (3 pieces). Noted that the sausage image is not using the wood table format.
+image.png
+French accented characters: We were unable to find an example to see if we are able to show the French accents in our assets. Check the data file to see if it supports the accented e character. The accent is over the e like this: image.png
+Reviewed MMS designs and got feedback from Mandy. 
+ Sentence case fixes. Emojis added to all examples in the text portion. Combine image from design 1  and emojis on text from design 4. Swap pure white backing behind logo for off white in design 2. 
+  
+Discussed "Grab and Go" items are. These should not be offered discounts. 
+
+Product feature ideas: Support a text search capability in asset images, add filtering of assets by category, for example Retail, Breakfast, etc.
+
+
+
+---------
+
+Resbyte - One Click Purchase Mockups
+Inbox
+
+
+Jason Mosby <jason@resbyte.ai>
+Attachments
+Tue 14 Oct, 15:48 (8 days ago)
+to Michael, kristin, pt@resbyte.ai, me
+
+1. Landing Page
+
+2. Checkout Page
+
+There may be some distortions in the images due to the export process.
+
+--
+Resbyte	
+Jason Mosby
+Chief Technology Officer
+jason@resbyte.ai
+CONFIDENTIALITY NOTICE: This message is intended only for the person or entity to which it is addressed and may contain confidential or privileged material. Any unauthorized review, use, disclosure or distribution is prohibited.
+ 2 attachments
+  • Scanned by Gmail
+
+ 
+
+ 
+
